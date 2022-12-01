@@ -12,53 +12,37 @@ namespace ImmersiveWeathers
 {
     internal sealed class IWFramework : Mod
     {
+        // Main method
         public override void Entry(IModHelper helper)
         {
+            // When day begins, generate a weather forecast
             this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherMachine;
         }
 
+        // Handle weather forecasting steps
         private void StartDay_WeatherMachine(object sender, DayStartedEventArgs e)
         {
-            // Grab information about the weather
+            // Grab information about the game's current weather states
             WeatherState weatherForecast = new WeatherState();
 
-            // Print weather update to SMAPI terminal
+            // Print appropriate weather update to SMAPI terminal
             WeatherMan(weatherForecast);
         }
 
-        /*
-        // Checks tomorrow's forecast
-        private static string WeatherForecast()
-        {
-            int tomorrowState = Game1.weatherForTomorrow;
-            string weatherTomorrow;
-            if (tomorrowState == 0)
-            {
-                weatherTomorrow = "sunny";
-            }
-            else if (tomorrowState == 1)
-            {
-                weatherTomorrow = "rain";
-            }
-            else
-        }
-        */
-
-        // Prepares weather statements for TV.
+        // Prepare weather statements for SMAPI terminal
         private void WeatherMan(WeatherState weatherForecast)
         {
             // Today's weather
             string weatherStringToday = TodayWeather(weatherForecast);
-
-            /*
+                        
             // Tomorrow's weather
-            string weatherStringTomorrow = TomorrowWeather(weatherTomorrow);
-            */
-
-            string weatherString = weatherStringToday;
+            string weatherStringTomorrow = TomorrowWeather(weatherForecast);
+            
+            string weatherString = $"{weatherStringToday} {weatherStringTomorrow}";
             BroadCast(weatherString);
         }
 
+        // Translate today's weather state into a string.
         private static string TodayWeather(WeatherState weatherForecast)
         {
             string weatherStringToday = "";
@@ -83,15 +67,45 @@ namespace ImmersiveWeathers
             return weatherStringToday;
         }
 
+        // Translate tomorrow's weather state into a string.
+        private static string TomorrowWeather(WeatherState weatherForecast)
+        {
+            string weatherStringTomorrow = "";
+            switch (weatherForecast.WeatherTomorrow)
+            {
+                case WeatherType.Sunny:
+                    weatherStringTomorrow = "Tomorrow, it will be sunny.";
+                    break;
+                case WeatherType.Windy:
+                    weatherStringTomorrow = "Tomorrow, it will be windy.";
+                    break;
+                case WeatherType.Raining:
+                    weatherStringTomorrow = "Tomorrow, it will be rainy.";
+                    break;
+                case WeatherType.Storming:
+                    weatherStringTomorrow = "Tomorrow, it will be storming.";
+                    break;
+                case WeatherType.Snowing:
+                    weatherStringTomorrow = "Tomorrow, it will be snowing.";
+                    break;
+                case WeatherType.Unknown:
+                    weatherStringTomorrow = "Huh, that's weird. I can't make sense of tomorrow's weather!";
+                    break;
+            }
+            return weatherStringTomorrow;
+        }
+
+        // Broadcast weather to SMAPI terminal
         private void BroadCast(string weatherString)
         {
             this.Monitor.Log($"{weatherString}", LogLevel.Info);
         }
     }
 
+    // Generate object containing all weather information
     internal class WeatherState
     {
-        // Relevant properties
+        // Define relevant properties
         public WeatherType WeatherToday { get; set; }
         public WeatherType WeatherTomorrow { get; set; }
 
@@ -101,9 +115,13 @@ namespace ImmersiveWeathers
             // Check today's weather
             Dictionary<string, bool> weatherStatesToday = CheckWeather();
             WeatherToday = ParseWeather(weatherStatesToday);
+
+            // Check tomorrow's weather
+            int tomorrowState = Game1.weatherForTomorrow;
+            WeatherTomorrow = ParseWeather(tomorrowState);
         }
 
-        // Checks current weather states
+        // Check today's weather states
         private static Dictionary<string, bool> CheckWeather()
         {
             Dictionary<string, bool> weatherStatesToday = new(){
@@ -115,7 +133,7 @@ namespace ImmersiveWeathers
             return weatherStatesToday;
         }
 
-        // Parses today's weather
+        // Parse today's weather states
         private static WeatherType ParseWeather(Dictionary<string, bool> weatherStatesToday)
         {
             WeatherType weatherNow;
@@ -131,14 +149,35 @@ namespace ImmersiveWeathers
                 weatherNow = WeatherType.Sunny;
             return weatherNow;
         }
+
+        // Parse tomorrow's weather
+        private static WeatherType ParseWeather(int tomorrowState)
+        {
+            WeatherType WeatherTomorrow;
+            if ((tomorrowState == 0) || (tomorrowState == 4) || (tomorrowState == 6))
+                WeatherTomorrow = WeatherType.Sunny;
+            else if (tomorrowState == 1)
+                WeatherTomorrow = WeatherType.Raining;
+            else if (tomorrowState == 2)
+                WeatherTomorrow = WeatherType.Windy;
+            else if (tomorrowState == 3)
+                WeatherTomorrow = WeatherType.Storming;
+            else if (tomorrowState == 5)
+                WeatherTomorrow = WeatherType.Snowing;
+            else
+                WeatherTomorrow = WeatherType.Unknown;
+            return WeatherTomorrow;
+        }
     }
 
+    // List of all possible weather states
     internal enum WeatherType
     {
         Sunny,
         Windy,
         Raining,
         Storming,
-        Snowing
+        Snowing,
+        Unknown
     }
 }
