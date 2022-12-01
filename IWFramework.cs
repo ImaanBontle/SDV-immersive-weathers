@@ -12,20 +12,33 @@ namespace ImmersiveWeathers
     {
         public override void Entry(IModHelper helper)
         {
-            this.Helper.Events.GameLoop.DayStarted += GameLoop_DayStarted;
+            this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherMachine;
         }
 
-        private void GameLoop_DayStarted(object sender, DayStartedEventArgs e)
+        private void StartDay_WeatherMachine(object sender, DayStartedEventArgs e)
         {
-            // Grab information about today's weather.
+            // Grab information about today's weather
+            Dictionary<string, bool> weatherCheck = CheckWeather();
+
+            // Print weather update to SMAPI terminal
+            BroadCaster(weatherCheck);
+        }
+
+        // Checks today's weather
+        private static Dictionary<string, bool> CheckWeather()
+        {
             Dictionary<string, bool> weatherCheck = new Dictionary<string, bool>(){
                 { "rainCheck", Game1.isRaining },
                 { "stormCheck", Game1.isLightning },
                 { "windCheck", Game1.isDebrisWeather },
                 { "snowCheck", Game1.isSnowing }
             };
-
-            // Print weather update to SMAPI terminal.
+            return weatherCheck;
+        }
+       
+        // Broadcasts today's weather to the terminal
+        private void BroadCaster(Dictionary<string, bool> weatherCheck)
+        {
             if (weatherCheck["stormCheck"] == true)
             {
                 Monitor.Log("There is a thunderstorm today.", LogLevel.Info);
@@ -46,27 +59,6 @@ namespace ImmersiveWeathers
             {
                 Monitor.Log("It is sunny today.", LogLevel.Info);
             }
-
-            //weatherCheck.Add("rainCheck", Game1.isRaining);
-            //weatherCheck.Add("stormCheck", Game1.isLightning);
-
-            //List<bool> weatherCheck = new List<bool>()
-            //{
-            //    Game1.isRaining
-            //};
-            //bool rainCheck = Game1.isRaining;
-        }
-
-
-       
-        private void OnButtonPressed(object sender, ButtonPressedEventArgs e)
-        {
-            // ignore if player hasn't loaded a save yet
-            if (!Context.IsWorldReady)
-                return;
-
-            // print button presses to the console window
-            this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
         }
     }
 }
