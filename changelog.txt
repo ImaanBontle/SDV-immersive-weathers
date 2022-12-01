@@ -1,0 +1,8 @@
+v0.1.1:
+-----
+- Restructured code into classes and methods.
+- Weather types are now stored in a WeatherState class. Has functionality for predicting tomorrow's weather (not yet implemented).
+
+v0.1.0:
+-----
+- Initial release for purpose of generating update key for GitHub.
