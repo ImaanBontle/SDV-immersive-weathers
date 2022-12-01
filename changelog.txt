@@ -1,3 +1,7 @@
+v0.2.0:
+-----
+- Added predictions for tomorrow's weather.
+
 v0.1.1:
 -----
 - Restructured code into classes and methods.
