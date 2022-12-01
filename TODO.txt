@@ -1,0 +1,10 @@
+- (high) Add functionality to predict upcoming weather
+- (high) Arrange code into methods
+- (medium) Prepare SMAPI environment with useful mods e.g. CJB Cheats
+- (medium) Prepare for modular design
+	- Add classes for modules as they are designed
+	- Investigate VS ability to build projects independently of solutions
+	- Include checks for presence of sister mods before calling relevant methods
+	- First sister mod: Climate Control for weather probabilities
+	- Add submodules to git repository so users can find them easily
+
