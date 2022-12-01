@@ -1,0 +1,10 @@
+﻿{
+  "Name": "ImmersiveWeathers",
+  "Author": "MsBontle",
+  "Version": "0.1.0",
+  "Description": "Framework for influencing the game's weather systems.",
+  "UniqueID": "MsBontle.ImmersiveWeathers",
+  "EntryDll": "ImmersiveWeathers.dll",
+  "MinimumApiVersion": "3.17.0",
+  "UpdateKeys": []
+}
