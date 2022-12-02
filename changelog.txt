@@ -1,3 +1,7 @@
+v0.3.0:
+-----
+- Added basic API for use by sister mods. Can grab current weather states from main framework.
+
 v0.2.0:
 -----
 - Added predictions for tomorrow's weather.
