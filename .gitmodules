@@ -1,0 +1,4 @@
+[submodule "SDV-IW-climate-control"]
+	path = SDV-IW-climate-control
+	url = https://github.com/ImaanBontle/SDV-IW-climate-control.git
+	branch = main
