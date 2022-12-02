@@ -1,6 +1,12 @@
+v0.3.1:
+-----
+- Moved API to separate C# file.
+- Added translation of weather states between integers and strings to API.
+- Added Festival and Wedding to API weather states, just in case someone needs these converted when talking to the game (use GetWeatherInfo() if you just need the weather and not the integer states).
+
 v0.3.0:
 -----
-- Added basic API for use by sister mods. Can grab current weather states from main framework.
+- Added API for integration with sister mods.
 
 v0.2.0:
 -----
