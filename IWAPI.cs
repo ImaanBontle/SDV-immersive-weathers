@@ -13,14 +13,6 @@ namespace ImmersiveWeathers
     // Mod API - all exposed methods, fields and properties
     public class IWAPI
     {
-        // Generate container for weather information
-        public class WeatherState
-        {
-            // Define relevant properties
-            public WeatherType WeatherToday { get; set; }
-            public WeatherType WeatherTomorrow { get; set; }
-        }
-
         // List of all possible weather states
         public enum WeatherType
         {
@@ -37,8 +29,7 @@ namespace ImmersiveWeathers
         // Create Tuple with weather information
         public Tuple<string, string> GetWeatherInfo()
         {
-            WeatherState weatherInfo = new();
-            weatherInfo = WeatherUtils.PopulateWeather.Populate(weatherInfo);
+            WeatherUtils.WeatherState weatherInfo = WeatherUtils.PopulateWeather.Populate();
             return new Tuple<string, string>(weatherInfo.WeatherToday.ToString(), weatherInfo.WeatherTomorrow.ToString());
         }
 
