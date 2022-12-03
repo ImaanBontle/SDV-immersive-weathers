@@ -11,6 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.dll" />
+    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.2" />
   </ItemGroup>
 
@@ -19,7 +24,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="LICENSE">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="README.md">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

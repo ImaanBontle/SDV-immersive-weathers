@@ -51,5 +51,15 @@ namespace ImmersiveWeathers
         {
             return WeatherUtils.TranslateWeatherStates.TranslateTomorrow(stringState);
         }
+
+        // Grab a random number from the PRNG
+        public double RollTheDice()
+        {
+            return IWFramework.PRNG.NextDouble();
+        }
+        public int RollTheDiceInt()
+        {
+            return IWFramework.PRNG.Next();
+        }
     }
 }
