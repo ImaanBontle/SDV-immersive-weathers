@@ -7,17 +7,29 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
+using static ImmersiveWeathers.IWAPI;
 
 namespace ImmersiveWeathers
 {
     public class WeatherUtils
     {
+        // Generate container for weather information
+        public class WeatherState
+        {
+            // Define relevant properties
+            public IWAPI.WeatherType WeatherToday { get; set; }
+            public IWAPI.WeatherType WeatherTomorrow { get; set; }
+        }
+
         // Populate a weatherState object with current weather information
         public class PopulateWeather
         {
             // Generate properties
-            public static IWAPI.WeatherState Populate(IWAPI.WeatherState weatherState)
+            public static WeatherState Populate()
             {
+                // Create container instance
+                WeatherState weatherState = new();
+
                 // Check today's weather
                 Dictionary<string, bool> weatherStatesToday = CheckWeather();
                 weatherState.WeatherToday = ParseWeather(weatherStatesToday);
