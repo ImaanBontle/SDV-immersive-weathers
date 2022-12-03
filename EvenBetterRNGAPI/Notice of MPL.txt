@@ -1,0 +1,5 @@
+NOTICE:
+The EvenBetterRNG Stardew Valley mod API and the associated library are distributed under the Mozilla Public License, and not my parent mods' MIT License (or other applicable license if this has changed). Please contact the EvenBetterRNG mod author if you have any further questions about this.
+
+EvenBetterRNG mod page (retrieved 2nd December 2022): https://www.nexusmods.com/stardewvalley/mods/8680?tab=description
+EvenBetterRNG source code (as of 2nd December 2022): https://sourceforge.net/p/sdvmod-even-better-rng/code/ci/default/tree/

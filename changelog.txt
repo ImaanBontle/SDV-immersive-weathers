@@ -1,3 +1,7 @@
+v0.4.0:
+-----
+- Added integration with the EvenBetterRNG mod. Can call RollTheDice() or RollTheDiceInt() from the IW API to access the cached RNG for ImmersiveWeathers. Will return numbers from System.Random() otherwise.
+
 v0.3.2:
 -----
 - General clean up of code.
