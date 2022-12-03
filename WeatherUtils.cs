@@ -57,13 +57,13 @@ namespace ImmersiveWeathers
             private static IWAPI.WeatherType ParseWeather(Dictionary<string, bool> weatherStatesToday)
             {
                 IWAPI.WeatherType weatherNow;
-                if (weatherStatesToday["stormCheck"] == true)
+                if (weatherStatesToday["stormCheck"])
                     weatherNow = IWAPI.WeatherType.Storming;
-                else if (weatherStatesToday["rainCheck"] == true)
+                else if (weatherStatesToday["rainCheck"])
                     weatherNow = IWAPI.WeatherType.Raining;
-                else if (weatherStatesToday["snowCheck"] == true)
+                else if (weatherStatesToday["snowCheck"])
                     weatherNow = IWAPI.WeatherType.Snowing;
-                else if (weatherStatesToday["windCheck"] == true)
+                else if (weatherStatesToday["windCheck"])
                     weatherNow = IWAPI.WeatherType.Windy;
                 else
                     weatherNow = IWAPI.WeatherType.Sunny;
@@ -74,18 +74,29 @@ namespace ImmersiveWeathers
             private static IWAPI.WeatherType ParseWeather(int tomorrowState)
             {
                 IWAPI.WeatherType WeatherTomorrow;
-                if ((tomorrowState == 0) || (tomorrowState == 4) || (tomorrowState == 6))
-                    WeatherTomorrow = IWAPI.WeatherType.Sunny;
-                else if (tomorrowState == 1)
-                    WeatherTomorrow = IWAPI.WeatherType.Raining;
-                else if (tomorrowState == 2)
-                    WeatherTomorrow = IWAPI.WeatherType.Windy;
-                else if (tomorrowState == 3)
-                    WeatherTomorrow = IWAPI.WeatherType.Storming;
-                else if (tomorrowState == 5)
-                    WeatherTomorrow = IWAPI.WeatherType.Snowing;
-                else
-                    WeatherTomorrow = IWAPI.WeatherType.Unknown;
+                switch (tomorrowState)
+                {
+                    case 0:
+                    case 4:
+                    case 6:
+                        WeatherTomorrow = IWAPI.WeatherType.Sunny;
+                        break;
+                    case 1:
+                        WeatherTomorrow = IWAPI.WeatherType.Raining;
+                        break;
+                    case 2:
+                        WeatherTomorrow = IWAPI.WeatherType.Windy;
+                        break;
+                    case 3:
+                        WeatherTomorrow = IWAPI.WeatherType.Storming;
+                        break;
+                    case 5:
+                        WeatherTomorrow = IWAPI.WeatherType.Snowing;
+                        break;
+                    default:
+                        WeatherTomorrow = IWAPI.WeatherType.Unknown;
+                        break;
+                }
                 return WeatherTomorrow;
             }
         }
