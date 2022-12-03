@@ -14,7 +14,7 @@ namespace ImmersiveWeathers
     internal class WeatherMan
     {
         // Prepare weather statements for SMAPI terminal
-        public static string Predict(IWAPI.WeatherState weatherForecast)
+        public static string Predict(WeatherUtils.WeatherState weatherForecast)
         {
             // Today's weather
             string weatherStringToday = TodayWeather(weatherForecast);
@@ -27,7 +27,7 @@ namespace ImmersiveWeathers
         }
 
         // Translate today's weather state into a string.
-        private static string TodayWeather(IWAPI.WeatherState weatherForecast)
+        private static string TodayWeather(WeatherUtils.WeatherState weatherForecast)
         {
             string weatherStringToday = "";
             switch (weatherForecast.WeatherToday)
@@ -52,7 +52,7 @@ namespace ImmersiveWeathers
         }
 
         // Translate tomorrow's weather state into a string.
-        private static string TomorrowWeather(IWAPI.WeatherState weatherForecast)
+        private static string TomorrowWeather(WeatherUtils.WeatherState weatherForecast)
         {
             string weatherStringTomorrow = "";
             switch (weatherForecast.WeatherTomorrow)

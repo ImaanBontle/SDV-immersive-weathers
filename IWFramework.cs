@@ -28,11 +28,11 @@ namespace ImmersiveWeathers
         // Main method
         public override void Entry(IModHelper helper)
         {
-            // Grab PRNG from EvenBetterRNG Mod API
+            // Grab PRNG from EvenBetterRNG Mod API, if present
             this.Helper.Events.GameLoop.GameLaunched += GameLoop_LoadPRNG;
 
             // When day begins, generate a weather forecast
-            this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster;
+            //this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster; // Commented out during CC testing. Likely will repurpose for preventing TV chances
         }
 
         private void GameLoop_LoadPRNG(object sender, GameLaunchedEventArgs e)
@@ -47,8 +47,7 @@ namespace ImmersiveWeathers
         private void StartDay_WeatherForecaster(object sender, DayStartedEventArgs e)
         {
             // Grab information about the game's current weather state
-            IWAPI.WeatherState weatherForecast = new IWAPI.WeatherState();
-            weatherForecast = WeatherUtils.PopulateWeather.Populate(weatherForecast);
+            WeatherUtils.WeatherState weatherForecast = WeatherUtils.PopulateWeather.Populate();
 
             // Print appropriate weather update to SMAPI terminal
             string weatherString = WeatherMan.Predict(weatherForecast);

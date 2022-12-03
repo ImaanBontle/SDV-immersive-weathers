@@ -1,3 +1,7 @@
+v0.4.1:
+-----
+- Moved WeatherState class to WeatherUtils, until I figure out how to usefully broadcast custom classes across APIs. WeatherTypes remain in IW API since they are a useful reference.
+
 v0.4.0:
 -----
 - Added integration with the EvenBetterRNG mod. Can call RollTheDice() or RollTheDiceInt() from the IW API to access the cached RNG for ImmersiveWeathers. Will return numbers from System.Random() otherwise.
