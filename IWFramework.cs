@@ -1,17 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Dynamic;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks.Dataflow;
 using EvenBetterRNG;
+using Microsoft.VisualBasic;
 using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
+using StardewValley.Locations;
 using StardewValley.Monsters;
+using StardewValley.Tools;
 using static ImmersiveWeathers.IWAPI;
+
+// TODO: Update API <----- v0.5.0
+// TODO: Implement broadcast in Framework and cache values <----- v0.6.0
+// TODO: Standardise trace vs info messages. Add traces for every time a mod does an action, framework receives a broadcast, and messages sent to player <----- v0.6.0
+// TODO: Add config for SMAPI logging <----- v0.6.0
+// TODO: Write custom log messages for weather changes <----- v0.7.0
+// TODO: Add mod config menu (make sure to reload any changes from player) <----- v0.8.0
+// TODO: Improve comments <----- v1.0.0
 
 namespace ImmersiveWeathers
 {
