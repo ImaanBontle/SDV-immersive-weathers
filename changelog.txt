@@ -1,3 +1,11 @@
+v0.5.0
+-----
+- Integrated TODO into code, rather than separate file
+
+v0.4.2:
+-----
+- Minor code cleanup
+
 v0.4.1:
 -----
 - Moved WeatherState class to WeatherUtils, until I figure out how to usefully broadcast custom classes across APIs. WeatherTypes remain in IW API since they are a useful reference.
