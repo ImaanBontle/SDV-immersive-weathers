@@ -26,6 +26,15 @@ namespace ImmersiveWeathers
             Unknown = 7
         }
 
+        // List of all possible seasons
+        public enum SeasonType
+        {
+            Spring = 0,
+            Summer = 1,
+            Fall = 2,
+            Winter = 3
+        }
+
         // Create Tuple with weather information
         public Tuple<string, string> GetWeatherInfo()
         {
@@ -51,6 +60,18 @@ namespace ImmersiveWeathers
         public int RollTheDiceInt()
         {
             return IWFramework.PRNG.Next();
+        }
+
+        // List of supported sister mods
+        public enum FollowTheWhiteRabbit
+        {
+            ClimateControl = 0
+        }
+
+        // How framework should respond to request
+        public void WakeUpNeo_TheyreWatchingYou(string messageForNeo, int thisIsMyName)
+        {
+            IWFramework.dialTheMatrix.HeIsTheOne(messageForNeo, thisIsMyName);
         }
     }
 }
