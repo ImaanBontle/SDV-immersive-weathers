@@ -100,14 +100,14 @@ namespace ImmersiveWeathers
 
     // SPECIAL NOTES:
     //
+    // Event handler and definitions for broadcasting to the framework's SMAPI log
+    //
     // Some utilities for sister mods to broadcast centrally through the framework.
-    // Tried to make this understandable by using Matrix references but it's still advanced.
     // Basically I'm generating my own internal event calls, similar to how SMAPI works.
+    // Tried to make this understandable by using Matrix references but it's still advanced.
     //
     // These bits not to be included in general-release API, only for sister mods.
     // (The calls won't work anyway if you're not in that list).
-    //
-    // Event handler and definitions for broadcasting to the framework's SMAPI log
     public class DialTheMatrix
     {
         public EventHandler<EnterTheMatrx> PickUpNeo;
