@@ -53,8 +53,11 @@ namespace ImmersiveWeathers
         // Define PRNG field for use by sister mods
         public static Random PRNG = new();
 
+        // How to track sister mods
+        public TrackSisterMods trackSisterMods = new();
+
         // Define field for storing list of sister mods
-        public static Dictionary<IWAPI.FollowTheWhiteRabbit, bool> sisterMods = new();
+        //public static Dictionary<IWAPI.FollowTheWhiteRabbit, bool> sisterMods = new();
 
         // Define field for handling event calls
         public static DialTheMatrix dialTheMatrix = new();
@@ -90,8 +93,8 @@ namespace ImmersiveWeathers
                 PRNG = eBRNG.GetNewRandom();
             }
             // Make a list of all sister mods that are present so can delay console logging until all have reported in
-            if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
-                sisterMods.Add(IWAPI.FollowTheWhiteRabbit.ClimateControl, false);
+            //if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
+                //sisterMods.Add(IWAPI.FollowTheWhiteRabbit.ClimateControl, false);
         }
         // ----------------
         // FORECAST WEATHER
@@ -119,10 +122,39 @@ namespace ImmersiveWeathers
         // ------------------
         // INTERPRET MESSAGES
         // ------------------
-        // Interpret messages from sister mods
-        private void TrinityIsCalling(object sender, EventArgs e)
+        // Sort messages from sister mods into expected calls
+        private void TrinityIsCalling(object sender, EnterTheMatrx e)
         {
-            this.Monitor.Log("Acknowledge call from mod", LogLevel.Info);
+            switch (e.MessageFromTrinity.MessageType)
+            {
+                case TypeOfMessage.saveLoaded:
+                    SaveLoadedMessages(e);
+                    break;
+                case TypeOfMessage.titleReturned:
+                    break;
+                case TypeOfMessage.dayStarted:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // Sort calls into sister mods
+        private void SaveLoadedMessages(EnterTheMatrx e)
+        {
+            switch (e.MessageFromTrinity.SisterMod)
+            {
+                case FollowTheWhiteRabbit.ClimateControl:
+                    if (!trackSisterMods.ClimateControl.ModelLoaded)
+                    {
+                        trackSisterMods.ClimateControl.ModelLoaded = true;
+                        trackSisterMods.ClimateControl.ModelType = e.MessageFromTrinity.ModelType;
+                        e.MessageFromNeo.GoAheadToLoad = true;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
