@@ -32,19 +32,19 @@ namespace ImmersiveWeathers
             string weatherStringToday = "";
             switch (weatherForecast.WeatherToday)
             {
-                case IWAPI.WeatherType.Sunny:
+                case IWAPI.WeatherType.sunny:
                     weatherStringToday = "It is sunny today.";
                     break;
-                case IWAPI.WeatherType.Windy:
+                case IWAPI.WeatherType.windy:
                     weatherStringToday = "It is windy today.";
                     break;
-                case IWAPI.WeatherType.Raining:
+                case IWAPI.WeatherType.raining:
                     weatherStringToday = "It is raining today.";
                     break;
-                case IWAPI.WeatherType.Storming:
+                case IWAPI.WeatherType.storming:
                     weatherStringToday = "It is stormy today.";
                     break;
-                case IWAPI.WeatherType.Snowing:
+                case IWAPI.WeatherType.snowing:
                     weatherStringToday = "It is snowing today.";
                     break;
             }
@@ -57,22 +57,22 @@ namespace ImmersiveWeathers
             string weatherStringTomorrow = "";
             switch (weatherForecast.WeatherTomorrow)
             {
-                case IWAPI.WeatherType.Sunny:
+                case IWAPI.WeatherType.sunny:
                     weatherStringTomorrow = "Tomorrow, it will be sunny.";
                     break;
-                case IWAPI.WeatherType.Windy:
+                case IWAPI.WeatherType.windy:
                     weatherStringTomorrow = "Tomorrow, it will be windy.";
                     break;
-                case IWAPI.WeatherType.Raining:
+                case IWAPI.WeatherType.raining:
                     weatherStringTomorrow = "Tomorrow, it will be rainy.";
                     break;
-                case IWAPI.WeatherType.Storming:
+                case IWAPI.WeatherType.storming:
                     weatherStringTomorrow = "Tomorrow, it will be storming.";
                     break;
-                case IWAPI.WeatherType.Snowing:
+                case IWAPI.WeatherType.snowing:
                     weatherStringTomorrow = "Tomorrow, it will be snowing.";
                     break;
-                case IWAPI.WeatherType.Unknown:
+                case IWAPI.WeatherType.unknown:
                     weatherStringTomorrow = "Huh, that's weird. I can't make sense of tomorrow's weather!";
                     break;
             }

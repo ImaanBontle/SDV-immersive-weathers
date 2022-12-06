@@ -16,23 +16,37 @@ namespace ImmersiveWeathers
         // List of all possible weather states
         public enum WeatherType
         {
-            Sunny = 0,
-            Raining = 1,
-            Windy = 2,
-            Storming = 3,
-            Festival = 4,
-            Snowing = 5,
-            Wedding = 6,
-            Unknown = 7
+            sunny = 0,
+            raining = 1,
+            windy = 2,
+            storming = 3,
+            festival = 4,
+            snowing = 5,
+            wedding = 6,
+            unknown = 7
         }
 
         // List of all possible seasons
         public enum SeasonType
         {
-            Spring = 0,
-            Summer = 1,
-            Fall = 2,
-            Winter = 3
+            spring = 0,
+            summer = 1,
+            fall = 2,
+            winter = 3
+        }
+
+        // List of weather-models
+        public enum WeatherModel
+        {
+            none = 0,
+            custom = 1,
+            standard = 2
+        }
+
+        // List of supported sister mods
+        public enum FollowTheWhiteRabbit
+        {
+            ClimateControl = 0
         }
 
         // Create Tuple with weather information
@@ -62,16 +76,10 @@ namespace ImmersiveWeathers
             return IWFramework.PRNG.Next();
         }
 
-        // List of supported sister mods
-        public enum FollowTheWhiteRabbit
-        {
-            ClimateControl = 0
-        }
-
         // How framework should respond to request
-        public void WakeUpNeo_TheyreWatchingYou(string messageForNeo, int thisIsMyName)
+        public void WakeUpNeo_TheyreWatchingYou()
         {
-            IWFramework.dialTheMatrix.HeIsTheOne(messageForNeo, thisIsMyName);
+            IWFramework.dialTheMatrix.HeIsTheOne();
         }
     }
 }

@@ -31,37 +31,51 @@ using static ImmersiveWeathers.IWAPI;
 
 namespace ImmersiveWeathers
 {
-    // Main mod class
+    // ----------
+    // MAIN CLASS
+    // ----------
+    // SMAPI loads this on launch
     internal sealed class IWFramework : Mod
     {
-        // Share ImmersiveWeathers API
-        public override object GetApi()
+        // --------
+        // SEND API
+        // --------
+        // Tells SMAPI how to get an API copy for each mod
+        public override object GetApi(IModInfo mod)
         {
             return new IWAPI();
         }
 
+        // --------------------
+        // FIELDS AND VARIABLES
+        // --------------------
+        // SMAPI initialises fields on launch
         // Define PRNG field for use by sister mods
         public static Random PRNG = new();
-
-        // How to allow sister mods to connect to the Framework
-        public static DialTheMatrix dialTheMatrix = new();
 
         // Define field for storing list of sister mods
         public static Dictionary<IWAPI.FollowTheWhiteRabbit, bool> sisterMods = new();
 
-        // Main method
+        // -----------
+        // MAIN METHOD
+        // -----------
+        // SMAPI calls this on launch
         public override void Entry(IModHelper helper)
         {
-            // When game is loaded, initialise variables
+            // ---------
+            // GAME LOAD
+            // ---------
+            // When game loaded, initialised variables
             this.Helper.Events.GameLoop.GameLaunched += GameLoop_InitializeVariables;
-            // Listen for sister mods when they call
-            dialTheMatrix.PickUpNeo += MyNameIsTrinity;
 
             // When day begins, generate a weather forecast
             //this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster; // Commented out during CC testing. Likely will repurpose for preventing TV chances
         }
 
-        // Initialize variables
+        // --------------------
+        // INITIALIZE VARIABLES
+        // --------------------
+        // Initialize variables on game launch
         private void GameLoop_InitializeVariables(object sender, GameLaunchedEventArgs e)
         {
             // Grab PRNG from EvenBetterRNG Mod API, if present
@@ -70,12 +84,14 @@ namespace ImmersiveWeathers
             {
                 PRNG = eBRNG.GetNewRandom();
             }
-            // Make a list of sister mods that are present so the Framework can track who has made contact before each terminal broadcast goes out
-            // Ensures the Framework is always the last to act during any sequence
+            // Make a list of all sister mods that are present so can delay console logging until all have reported in
             if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
                 sisterMods.Add(IWAPI.FollowTheWhiteRabbit.ClimateControl, false);
         }
-        // Handle weather forecasting steps
+        // ----------------
+        // FORECAST WEATHER
+        // ----------------
+        // Forecast the weather once the day has started and all sister mods have reported in
         private void StartDay_WeatherForecaster(object sender, DayStartedEventArgs e)
         {
             // Grab information about the game's current weather state
@@ -86,48 +102,13 @@ namespace ImmersiveWeathers
             BroadCast(weatherString);
         }
 
-        // Broadcast weather to SMAPI terminal
-        private void BroadCast(string weatherString)
+        // ---------
+        // BROADCAST
+        // ---------
+        // Broadcast updates to SMAPI terminal
+        private void BroadCast(string terminalUpdate)
         {
-            this.Monitor.Log($"{weatherString}", LogLevel.Info);
+            this.Monitor.Log($"{terminalUpdate}", LogLevel.Info);
         }
-
-        // Broadcast incoming messages to SMAPI terminal
-        public void MyNameIsTrinity(object sender, EnterTheMatrx enterTheMatrix)
-        {
-            this.Monitor.Log($"{enterTheMatrix.TheMatrixHasYou}: {enterTheMatrix.MessageForNeo}", LogLevel.Info);
-        }
-    }
-
-
-    // SPECIAL NOTES:
-    //
-    // Event handler and definitions for broadcasting to the framework's SMAPI log
-    //
-    // Some utilities for sister mods to broadcast centrally through the framework.
-    // Basically I'm generating my own internal event calls, similar to how SMAPI works.
-    // Tried to make this understandable by using Matrix references but it's still advanced.
-    //
-    // These bits not to be included in general-release API, only for sister mods.
-    // (The calls won't work anyway if you're not in that list).
-    public class DialTheMatrix
-    {
-        public EventHandler<EnterTheMatrx> PickUpNeo;
-        public void HeIsTheOne(string messageForNeo, int thisIsMyName)
-        {
-            EnterTheMatrx enterTheMatrix = new()
-            {
-                MessageForNeo = messageForNeo,
-                TheMatrixHasYou = (IWAPI.FollowTheWhiteRabbit) thisIsMyName
-            };
-            PickUpNeo.Invoke(this, enterTheMatrix);
-        }
-    }
-
-    // Properties to broadcast
-    public class EnterTheMatrx : EventArgs
-    {
-        public string MessageForNeo { get; set; }
-        public FollowTheWhiteRabbit TheMatrixHasYou { get; set; }
     }
 }
