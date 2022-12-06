@@ -19,7 +19,7 @@ using StardewValley.Monsters;
 using StardewValley.Tools;
 using static ImmersiveWeathers.IWAPI;
 
-// TODO: API implement of object transfer was failure. SMAPI seems to hate this despite 100 legitimate implementations. So need to scratch changes and start again. Will have to define a bunch of overloaded methods and hope a better solution materialises in the future. Sorry Imaan......
+// TODO: Nvm, it's possible, but you need to ensure there is a shared project reference!
 
 // TODO: Update API <----- v0.5.0
 // TODO: Implement broadcast in Framework and cache values <----- v0.6.0
