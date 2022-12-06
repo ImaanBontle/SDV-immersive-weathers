@@ -145,7 +145,7 @@ namespace ImmersiveWeathers
             switch (e.MessageFromTrinity.SisterMod)
             {
                 case FollowTheWhiteRabbit.ClimateControl:
-                    if (!trackSisterMods.ClimateControl.ModelLoaded)
+                    if ((!trackSisterMods.ClimateControl.ModelLoaded) || (trackSisterMods.ClimateControl.ModelType != e.MessageFromTrinity.ModelType))
                     {
                         trackSisterMods.ClimateControl.ModelLoaded = true;
                         trackSisterMods.ClimateControl.ModelType = e.MessageFromTrinity.ModelType;
