@@ -49,6 +49,14 @@ namespace ImmersiveWeathers
             ClimateControl = 0
         }
 
+        // Broadcast types
+        public enum TypeOfMessage
+        {
+            saveLoaded = 0,
+            titleReturned = 1,
+            dayStarted = 2
+        }
+
         // Create Tuple with weather information
         public Tuple<string, string> GetWeatherInfo()
         {
@@ -77,9 +85,21 @@ namespace ImmersiveWeathers
         }
 
         // How framework should respond to request
-        public void WakeUpNeo_TheyreWatchingYou()
+        public void WakeUpNeo_TheyreWatchingYou(RedPillOrBluePill incomingMessage)
         {
-            IWFramework.dialTheMatrix.HeIsTheOne();
+            IWFramework.dialTheMatrix.HeIsTheOne(incomingMessage);
+        }
+    }
+
+    // Class carrier for in-out messages
+    public class RedPillOrBluePill
+    {
+        public MessageFromTrinity MessageFromTrinity { get; set; }
+        public MessageFromNeo MessageFromNeo { get; set; }
+        public RedPillOrBluePill()
+        {
+            MessageFromTrinity = new MessageFromTrinity();
+            MessageFromNeo = new MessageFromNeo();
         }
     }
 }

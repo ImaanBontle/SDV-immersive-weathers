@@ -56,6 +56,9 @@ namespace ImmersiveWeathers
         // Define field for storing list of sister mods
         public static Dictionary<IWAPI.FollowTheWhiteRabbit, bool> sisterMods = new();
 
+        // Define field for handling event calls
+        public static DialTheMatrix dialTheMatrix = new();
+
         // -----------
         // MAIN METHOD
         // -----------
@@ -67,6 +70,8 @@ namespace ImmersiveWeathers
             // ---------
             // When game loaded, initialised variables
             this.Helper.Events.GameLoop.GameLaunched += GameLoop_InitializeVariables;
+            // Also set up internal event handler
+            dialTheMatrix.PickUpNeo += TrinityIsCalling;
 
             // When day begins, generate a weather forecast
             //this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster; // Commented out during CC testing. Likely will repurpose for preventing TV chances
@@ -109,6 +114,15 @@ namespace ImmersiveWeathers
         private void BroadCast(string terminalUpdate)
         {
             this.Monitor.Log($"{terminalUpdate}", LogLevel.Info);
+        }
+
+        // ------------------
+        // INTERPRET MESSAGES
+        // ------------------
+        // Interpret messages from sister mods
+        private void TrinityIsCalling(object sender, EventArgs e)
+        {
+            this.Monitor.Log("Acknowledge call from mod", LogLevel.Info);
         }
     }
 }
