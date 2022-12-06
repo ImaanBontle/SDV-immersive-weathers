@@ -10,17 +10,17 @@ namespace ImmersiveWeathers
     // EVENT HANDLER
     // -------------
     // Custom event handler to transmit external information internally to the framework
-    public class DialTheMatrix
+    public class EventManager
     {
-        public EventHandler<EnterTheMatrx> PickUpNeo;
-        public void HeIsTheOne(RedPillOrBluePill incomingMessage)
+        public EventHandler<EventContainer> SendToFramework;
+        public void GrabReply(MessageContainer Message)
         {
-            EnterTheMatrx enterTheMatrix = new()
+            EventContainer eventContainer = new()
             {
-                MessageFromTrinity = incomingMessage.MessageFromTrinity
+                Message = Message.Message
             };
-            PickUpNeo.Invoke(this, enterTheMatrix);
-            incomingMessage.MessageFromNeo = enterTheMatrix.MessageFromNeo;
+            SendToFramework.Invoke(this, eventContainer);
+            Message.Response = eventContainer.Response;
         }
     }
 
@@ -28,14 +28,14 @@ namespace ImmersiveWeathers
     // EVENT PROPERTIES
     // ----------------
     // How to attach in-out information to the event handler
-    public class EnterTheMatrx : EventArgs
+    public class EventContainer : EventArgs
     {
-        public MessageFromTrinity MessageFromTrinity { get; set; }
-        public MessageFromNeo MessageFromNeo { get; set; }
-        public EnterTheMatrx()
+        public Message Message { get; set; }
+        public Response Response { get; set; }
+        public EventContainer()
         {
-            MessageFromTrinity = new MessageFromTrinity();
-            MessageFromNeo = new MessageFromNeo();
+            Message = new Message();
+            Response = new Response();
         }
     }
 
@@ -43,19 +43,22 @@ namespace ImmersiveWeathers
     // INCOMING MESSAGES
     // -----------------
     // All possible incoming messages
-    public class MessageFromTrinity
+    public class Message
     {
-        public IWAPI.FollowTheWhiteRabbit SisterMod { get; set; }
-        public IWAPI.TypeOfMessage MessageType { get; set; }
+        public IWAPI.SisterMods SisterMod { get; set; }
+        public IWAPI.MessageTypes MessageType { get; set; }
         public IWAPI.WeatherModel ModelType { get; set; }
+        public IWAPI.WeatherType WeatherType { get; set; }
+        public bool CouldChange { get; set; }
     }
 
     // -----------------
     // OUTGOING MESSAGES
     // -----------------
     // All possible messages to sister mods
-    public class MessageFromNeo
+    public class Response
     {
         public bool GoAheadToLoad { get; set; }
+        public bool Acknowledged { get; set; }
     }
 }

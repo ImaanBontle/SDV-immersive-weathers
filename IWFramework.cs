@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Dynamic;
 using System.Linq;
@@ -18,8 +19,6 @@ using StardewValley.Locations;
 using StardewValley.Monsters;
 using StardewValley.Tools;
 using static ImmersiveWeathers.IWAPI;
-
-// TODO: Nvm, it's possible, but you need to ensure there is a shared project reference!
 
 // TODO: Update API <----- v0.5.0
 // TODO: Implement broadcast in Framework and cache values <----- v0.6.0
@@ -54,13 +53,10 @@ namespace ImmersiveWeathers
         public static Random PRNG = new();
 
         // How to track sister mods
-        public TrackSisterMods trackSisterMods = new();
-
-        // Define field for storing list of sister mods
-        //public static Dictionary<IWAPI.FollowTheWhiteRabbit, bool> sisterMods = new();
+        public TrackSisters trackSisters = new();
 
         // Define field for handling event calls
-        public static DialTheMatrix dialTheMatrix = new();
+        public static EventManager eventManager = new();
 
         // -----------
         // MAIN METHOD
@@ -72,19 +68,19 @@ namespace ImmersiveWeathers
             // GAME LOAD
             // ---------
             // When game loaded, initialised variables
-            this.Helper.Events.GameLoop.GameLaunched += GameLoop_InitializeVariables;
+            this.Helper.Events.GameLoop.GameLaunched += GameLoop_Initialize;
             // Also set up internal event handler
-            dialTheMatrix.PickUpNeo += TrinityIsCalling;
+            eventManager.SendToFramework += ReceiveEvent;
 
             // When day begins, generate a weather forecast
-            //this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster; // Commented out during CC testing. Likely will repurpose for preventing TV chances
+            this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster;
         }
 
         // --------------------
         // INITIALIZE VARIABLES
         // --------------------
         // Initialize variables on game launch
-        private void GameLoop_InitializeVariables(object sender, GameLaunchedEventArgs e)
+        private void GameLoop_Initialize(object sender, GameLaunchedEventArgs e)
         {
             // Grab PRNG from EvenBetterRNG Mod API, if present
             IEvenBetterRNGAPI eBRNG = this.Helper.ModRegistry.GetApi<IEvenBetterRNGAPI>("pepoluan.EvenBetterRNG");
@@ -93,8 +89,8 @@ namespace ImmersiveWeathers
                 PRNG = eBRNG.GetNewRandom();
             }
             // Make a list of all sister mods that are present so can delay console logging until all have reported in
-            //if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
-                //sisterMods.Add(IWAPI.FollowTheWhiteRabbit.ClimateControl, false);
+            if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
+                trackSisters.ClimateControlPresent = true;
         }
         // ----------------
         // FORECAST WEATHER
@@ -102,12 +98,44 @@ namespace ImmersiveWeathers
         // Forecast the weather once the day has started and all sister mods have reported in
         private void StartDay_WeatherForecaster(object sender, DayStartedEventArgs e)
         {
+            // Check if waiting for any sister mods first
+            bool continueForecast;
+            continueForecast = CheckForSistersReady();
+            if (continueForecast)
+            {
+                ForecastWeather();
+            }
+        }
+
+        private bool CheckForSistersReady()
+        {
+            // Wait until all sister mods have reported in
+            bool continueForecast = true;
+            foreach (PropertyInfo property in typeof(MorningUpdate).GetProperties())
+            {
+                if ((bool)property.GetValue(trackSisters.MorningUpdate) == false)
+                {
+                    continueForecast = false;
+                    break;
+                }
+            }
+            return continueForecast;
+        }
+
+        private void ForecastWeather()
+        {
             // Grab information about the game's current weather state
             WeatherUtils.WeatherState weatherForecast = WeatherUtils.PopulateWeather.Populate();
 
             // Print appropriate weather update to SMAPI terminal
             string weatherString = WeatherMan.Predict(weatherForecast);
             BroadCast(weatherString);
+            
+            // Set flags back to false
+            foreach (PropertyInfo property in typeof(MorningUpdate).GetProperties())
+            {
+                property.SetValue(trackSisters.MorningUpdate, false);
+            }
         }
 
         // ---------
@@ -123,16 +151,19 @@ namespace ImmersiveWeathers
         // INTERPRET MESSAGES
         // ------------------
         // Sort messages from sister mods into expected calls
-        private void TrinityIsCalling(object sender, EnterTheMatrx e)
+        private void ReceiveEvent(object sender, EventContainer e)
         {
-            switch (e.MessageFromTrinity.MessageType)
+            switch (e.Message.MessageType)
             {
-                case TypeOfMessage.saveLoaded:
+                case MessageTypes.saveLoaded:
                     SaveLoadedMessages(e);
                     break;
-                case TypeOfMessage.titleReturned:
+                case MessageTypes.titleReturned:
                     break;
-                case TypeOfMessage.dayStarted:
+                case MessageTypes.dayStarted:
+                    DayLoadedMessage(e);
+                    if (CheckForSistersReady())
+                        ForecastWeather();
                     break;
                 default:
                     break;
@@ -140,17 +171,39 @@ namespace ImmersiveWeathers
         }
 
         // Sort calls into sister mods
-        private void SaveLoadedMessages(EnterTheMatrx e)
+        private void SaveLoadedMessages(EventContainer e)
         {
-            switch (e.MessageFromTrinity.SisterMod)
+            switch (e.Message.SisterMod)
             {
-                case FollowTheWhiteRabbit.ClimateControl:
-                    if ((!trackSisterMods.ClimateControl.ModelLoaded) || (trackSisterMods.ClimateControl.ModelType != e.MessageFromTrinity.ModelType))
+                case SisterMods.ClimateControl:
+                    if ((!trackSisters.ClimateControl.ModelLoaded) || (trackSisters.ClimateControl.ModelType != e.Message.ModelType))
                     {
-                        trackSisterMods.ClimateControl.ModelLoaded = true;
-                        trackSisterMods.ClimateControl.ModelType = e.MessageFromTrinity.ModelType;
-                        e.MessageFromNeo.GoAheadToLoad = true;
+                        trackSisters.ClimateControl.ModelLoaded = true;
+                        trackSisters.ClimateControl.ModelType = e.Message.ModelType;
+                        e.Response.GoAheadToLoad = true;
                     }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void DayLoadedMessage(EventContainer e)
+        {
+            switch (e.Message.SisterMod)
+            {
+                case SisterMods.ClimateControl:
+                    if (e.Message.CouldChange)
+                    {
+                        trackSisters.ClimateControl.ChangedWeather = true;
+                        trackSisters.ClimateControl.ChangedToType = e.Message.WeatherType;
+                    }
+                    else
+                    {
+                        trackSisters.ClimateControl.ChangedWeather = false;
+                    }
+                    trackSisters.MorningUpdate.ClimateControl = true;
+                    e.Response.Acknowledged = true;
                     break;
                 default:
                     break;

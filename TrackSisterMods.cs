@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace ImmersiveWeathers
 {
-    internal class TrackSisterMods
+    internal class TrackSisters
     {
         public bool ClimateControlPresent { get; set; } = false;
         public ClimateControl ClimateControl { get; set; }
-        public TrackSisterMods()
+        public MorningUpdate MorningUpdate { get; set; }
+        public TrackSisters()
         {
             ClimateControl = new ClimateControl();
+            MorningUpdate = new MorningUpdate();
         }
     }
 
@@ -20,5 +22,12 @@ namespace ImmersiveWeathers
     {
         public bool ModelLoaded { get; set; } = false;
         public IWAPI.WeatherModel ModelType { get; set; }
+        public bool ChangedWeather { get; set; }
+        public IWAPI.WeatherType ChangedToType { get; set; }
+    }
+
+    internal class MorningUpdate
+    {
+        public bool ClimateControl { get; set; } = false;
     }
 }

@@ -44,13 +44,13 @@ namespace ImmersiveWeathers
         }
 
         // List of supported sister mods
-        public enum FollowTheWhiteRabbit
+        public enum SisterMods
         {
             ClimateControl = 0
         }
 
         // Broadcast types
-        public enum TypeOfMessage
+        public enum MessageTypes
         {
             saveLoaded = 0,
             titleReturned = 1,
@@ -85,21 +85,21 @@ namespace ImmersiveWeathers
         }
 
         // How framework should respond to request
-        public void WakeUpNeo_TheyreWatchingYou(RedPillOrBluePill incomingMessage)
+        public void ProcessMessage(MessageContainer Message)
         {
-            IWFramework.dialTheMatrix.HeIsTheOne(incomingMessage);
+            IWFramework.eventManager.GrabReply(Message);
         }
     }
 
     // Class carrier for in-out messages
-    public class RedPillOrBluePill
+    public class MessageContainer
     {
-        public MessageFromTrinity MessageFromTrinity { get; set; }
-        public MessageFromNeo MessageFromNeo { get; set; }
-        public RedPillOrBluePill()
+        public Message Message { get; set; }
+        public Response Response { get; set; }
+        public MessageContainer()
         {
-            MessageFromTrinity = new MessageFromTrinity();
-            MessageFromNeo = new MessageFromNeo();
+            Message = new Message();
+            Response = new Response();
         }
     }
 }
