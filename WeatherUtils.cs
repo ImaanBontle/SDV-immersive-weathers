@@ -58,15 +58,15 @@ namespace ImmersiveWeathers
             {
                 IWAPI.WeatherType weatherNow;
                 if (weatherStatesToday["stormCheck"])
-                    weatherNow = IWAPI.WeatherType.Storming;
+                    weatherNow = IWAPI.WeatherType.storming;
                 else if (weatherStatesToday["rainCheck"])
-                    weatherNow = IWAPI.WeatherType.Raining;
+                    weatherNow = IWAPI.WeatherType.raining;
                 else if (weatherStatesToday["snowCheck"])
-                    weatherNow = IWAPI.WeatherType.Snowing;
+                    weatherNow = IWAPI.WeatherType.snowing;
                 else if (weatherStatesToday["windCheck"])
-                    weatherNow = IWAPI.WeatherType.Windy;
+                    weatherNow = IWAPI.WeatherType.windy;
                 else
-                    weatherNow = IWAPI.WeatherType.Sunny;
+                    weatherNow = IWAPI.WeatherType.sunny;
                 return weatherNow;
             }
 
@@ -79,22 +79,22 @@ namespace ImmersiveWeathers
                     case 0:
                     case 4:
                     case 6:
-                        WeatherTomorrow = IWAPI.WeatherType.Sunny;
+                        WeatherTomorrow = IWAPI.WeatherType.sunny;
                         break;
                     case 1:
-                        WeatherTomorrow = IWAPI.WeatherType.Raining;
+                        WeatherTomorrow = IWAPI.WeatherType.raining;
                         break;
                     case 2:
-                        WeatherTomorrow = IWAPI.WeatherType.Windy;
+                        WeatherTomorrow = IWAPI.WeatherType.windy;
                         break;
                     case 3:
-                        WeatherTomorrow = IWAPI.WeatherType.Storming;
+                        WeatherTomorrow = IWAPI.WeatherType.storming;
                         break;
                     case 5:
-                        WeatherTomorrow = IWAPI.WeatherType.Snowing;
+                        WeatherTomorrow = IWAPI.WeatherType.snowing;
                         break;
                     default:
-                        WeatherTomorrow = IWAPI.WeatherType.Unknown;
+                        WeatherTomorrow = IWAPI.WeatherType.unknown;
                         break;
                 }
                 return WeatherTomorrow;

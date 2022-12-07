@@ -1,10 +1,13 @@
 v0.5.0
 -----
-- Integrated TODO into code, rather than separate file
+- Integrated TODO into code, rather than separate file.
+- Revised API.
+- Integrated method for transferring messages by passing objects in and out of framework.
+- Framework now waits for all sister mods to complete tasks before predicting weather for tomorrow.
 
 v0.4.2:
 -----
-- Minor code cleanup
+- Minor code cleanup.
 
 v0.4.1:
 -----

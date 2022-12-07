@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Dynamic;
 using System.Linq;
@@ -20,7 +21,7 @@ using StardewValley.Tools;
 using static ImmersiveWeathers.IWAPI;
 
 // TODO: Update API <----- v0.5.0
-// TODO: Implement broadcast in Framework and cache values <----- v0.6.0
+// TODO: Implement broadcast in Framework and cache values <----- v0.5.0
 // TODO: Standardise trace vs info messages. Add traces for every time a mod does an action, framework receives a broadcast, and messages sent to player <----- v0.6.0
 // TODO: Add config for SMAPI logging <----- v0.6.0
 // TODO: Write custom log messages for weather changes <----- v0.7.0
@@ -29,38 +30,57 @@ using static ImmersiveWeathers.IWAPI;
 
 namespace ImmersiveWeathers
 {
-    // Main mod class
+    // ----------
+    // MAIN CLASS
+    // ----------
+    // SMAPI loads this on launch
     internal sealed class IWFramework : Mod
     {
-        // Share ImmersiveWeathers API
-        public override object GetApi()
+        // --------
+        // SEND API
+        // --------
+        // Tells SMAPI how to get an API copy for each mod
+        public override object GetApi(IModInfo mod)
         {
             return new IWAPI();
         }
 
+        // --------------------
+        // FIELDS AND VARIABLES
+        // --------------------
+        // SMAPI initialises fields on launch
         // Define PRNG field for use by sister mods
         public static Random PRNG = new();
 
-        // How to allow sister mods to connect to the Framework
-        public static DialTheMatrix dialTheMatrix = new();
+        // How to track sister mods
+        public TrackSisters trackSisters = new();
 
-        // Define field for storing list of sister mods
-        public static Dictionary<IWAPI.FollowTheWhiteRabbit, bool> sisterMods = new();
+        // Define field for handling event calls
+        public static EventManager eventManager = new();
 
-        // Main method
+        // -----------
+        // MAIN METHOD
+        // -----------
+        // SMAPI calls this on launch
         public override void Entry(IModHelper helper)
         {
-            // When game is loaded, initialise variables
-            this.Helper.Events.GameLoop.GameLaunched += GameLoop_InitializeVariables;
-            // Listen for sister mods when they call
-            dialTheMatrix.PickUpNeo += MyNameIsTrinity;
+            // ---------
+            // GAME LOAD
+            // ---------
+            // When game loaded, initialised variables
+            this.Helper.Events.GameLoop.GameLaunched += GameLoop_Initialize;
+            // Also set up internal event handler
+            eventManager.SendToFramework += ReceiveEvent;
 
             // When day begins, generate a weather forecast
-            //this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster; // Commented out during CC testing. Likely will repurpose for preventing TV chances
+            this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster;
         }
 
-        // Initialize variables
-        private void GameLoop_InitializeVariables(object sender, GameLaunchedEventArgs e)
+        // --------------------
+        // INITIALIZE VARIABLES
+        // --------------------
+        // Initialize variables on game launch
+        private void GameLoop_Initialize(object sender, GameLaunchedEventArgs e)
         {
             // Grab PRNG from EvenBetterRNG Mod API, if present
             IEvenBetterRNGAPI eBRNG = this.Helper.ModRegistry.GetApi<IEvenBetterRNGAPI>("pepoluan.EvenBetterRNG");
@@ -68,13 +88,41 @@ namespace ImmersiveWeathers
             {
                 PRNG = eBRNG.GetNewRandom();
             }
-            // Make a list of sister mods that are present so the Framework can track who has made contact before each terminal broadcast goes out
-            // Ensures the Framework is always the last to act during any sequence
+            // Make a list of all sister mods that are present so can delay console logging until all have reported in
             if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
-                sisterMods.Add(IWAPI.FollowTheWhiteRabbit.ClimateControl, false);
+                trackSisters.ClimateControlPresent = true;
         }
-        // Handle weather forecasting steps
+        // ----------------
+        // FORECAST WEATHER
+        // ----------------
+        // Forecast the weather once the day has started and all sister mods have reported in
         private void StartDay_WeatherForecaster(object sender, DayStartedEventArgs e)
+        {
+            // Check if waiting for any sister mods first
+            bool continueForecast;
+            continueForecast = CheckForSistersReady();
+            if (continueForecast)
+            {
+                ForecastWeather();
+            }
+        }
+
+        private bool CheckForSistersReady()
+        {
+            // Wait until all sister mods have reported in
+            bool continueForecast = true;
+            foreach (PropertyInfo property in typeof(MorningUpdate).GetProperties())
+            {
+                if ((bool)property.GetValue(trackSisters.MorningUpdate) == false)
+                {
+                    continueForecast = false;
+                    break;
+                }
+            }
+            return continueForecast;
+        }
+
+        private void ForecastWeather()
         {
             // Grab information about the game's current weather state
             WeatherUtils.WeatherState weatherForecast = WeatherUtils.PopulateWeather.Populate();
@@ -82,50 +130,84 @@ namespace ImmersiveWeathers
             // Print appropriate weather update to SMAPI terminal
             string weatherString = WeatherMan.Predict(weatherForecast);
             BroadCast(weatherString);
-        }
-
-        // Broadcast weather to SMAPI terminal
-        private void BroadCast(string weatherString)
-        {
-            this.Monitor.Log($"{weatherString}", LogLevel.Info);
-        }
-
-        // Broadcast incoming messages to SMAPI terminal
-        public void MyNameIsTrinity(object sender, EnterTheMatrx enterTheMatrix)
-        {
-            this.Monitor.Log($"{enterTheMatrix.TheMatrixHasYou}: {enterTheMatrix.MessageForNeo}", LogLevel.Info);
-        }
-    }
-
-
-    // SPECIAL NOTES:
-    //
-    // Event handler and definitions for broadcasting to the framework's SMAPI log
-    //
-    // Some utilities for sister mods to broadcast centrally through the framework.
-    // Basically I'm generating my own internal event calls, similar to how SMAPI works.
-    // Tried to make this understandable by using Matrix references but it's still advanced.
-    //
-    // These bits not to be included in general-release API, only for sister mods.
-    // (The calls won't work anyway if you're not in that list).
-    public class DialTheMatrix
-    {
-        public EventHandler<EnterTheMatrx> PickUpNeo;
-        public void HeIsTheOne(string messageForNeo, int thisIsMyName)
-        {
-            EnterTheMatrx enterTheMatrix = new()
+            
+            // Set flags back to false
+            foreach (PropertyInfo property in typeof(MorningUpdate).GetProperties())
             {
-                MessageForNeo = messageForNeo,
-                TheMatrixHasYou = (IWAPI.FollowTheWhiteRabbit) thisIsMyName
-            };
-            PickUpNeo.Invoke(this, enterTheMatrix);
+                property.SetValue(trackSisters.MorningUpdate, false);
+            }
         }
-    }
 
-    // Properties to broadcast
-    public class EnterTheMatrx : EventArgs
-    {
-        public string MessageForNeo { get; set; }
-        public FollowTheWhiteRabbit TheMatrixHasYou { get; set; }
+        // ---------
+        // BROADCAST
+        // ---------
+        // Broadcast updates to SMAPI terminal
+        private void BroadCast(string terminalUpdate)
+        {
+            this.Monitor.Log($"{terminalUpdate}", LogLevel.Info);
+        }
+
+        // ------------------
+        // INTERPRET MESSAGES
+        // ------------------
+        // Sort messages from sister mods into expected calls
+        private void ReceiveEvent(object sender, EventContainer e)
+        {
+            switch (e.Message.MessageType)
+            {
+                case MessageTypes.saveLoaded:
+                    SaveLoadedMessages(e);
+                    break;
+                case MessageTypes.titleReturned:
+                    break;
+                case MessageTypes.dayStarted:
+                    DayLoadedMessage(e);
+                    if (CheckForSistersReady())
+                        ForecastWeather();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // Sort calls into sister mods
+        private void SaveLoadedMessages(EventContainer e)
+        {
+            switch (e.Message.SisterMod)
+            {
+                case SisterMods.ClimateControl:
+                    if ((!trackSisters.ClimateControl.ModelLoaded) || (trackSisters.ClimateControl.ModelType != e.Message.ModelType))
+                    {
+                        trackSisters.ClimateControl.ModelLoaded = true;
+                        trackSisters.ClimateControl.ModelType = e.Message.ModelType;
+                        e.Response.GoAheadToLoad = true;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void DayLoadedMessage(EventContainer e)
+        {
+            switch (e.Message.SisterMod)
+            {
+                case SisterMods.ClimateControl:
+                    if (e.Message.CouldChange)
+                    {
+                        trackSisters.ClimateControl.ChangedWeather = true;
+                        trackSisters.ClimateControl.ChangedToType = e.Message.WeatherType;
+                    }
+                    else
+                    {
+                        trackSisters.ClimateControl.ChangedWeather = false;
+                    }
+                    trackSisters.MorningUpdate.ClimateControl = true;
+                    e.Response.Acknowledged = true;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
