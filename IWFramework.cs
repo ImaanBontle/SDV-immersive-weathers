@@ -21,7 +21,7 @@ using StardewValley.Tools;
 using static ImmersiveWeathers.IWAPI;
 
 // TODO: Update API <----- v0.5.0
-// TODO: Implement broadcast in Framework and cache values <----- v0.6.0
+// TODO: Implement broadcast in Framework and cache values <----- v0.5.0
 // TODO: Standardise trace vs info messages. Add traces for every time a mod does an action, framework receives a broadcast, and messages sent to player <----- v0.6.0
 // TODO: Add config for SMAPI logging <----- v0.6.0
 // TODO: Write custom log messages for weather changes <----- v0.7.0
