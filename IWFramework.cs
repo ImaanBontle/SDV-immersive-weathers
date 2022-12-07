@@ -20,10 +20,8 @@ using StardewValley.Monsters;
 using StardewValley.Tools;
 using static ImmersiveWeathers.IWAPI;
 
-// TODO: Update API <----- v0.5.0
-// TODO: Implement broadcast in Framework and cache values <----- v0.5.0
-// TODO: Standardise trace vs info messages. Add traces for every time a mod does an action, framework receives a broadcast, and messages sent to player <----- v0.6.0
-// TODO: Add config for SMAPI logging <----- v0.6.0
+// TODO: When SDV 1.6 releases, check for compatibility with new weather flags: weatherForTomorrow etc are switching to strings instead of integers. See https://stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.6 for more information.
+
 // TODO: Write custom log messages for weather changes <----- v0.7.0
 // TODO: Add mod config menu (make sure to reload any changes from player) <----- v0.8.0
 // TODO: Improve comments <----- v1.0.0
@@ -49,6 +47,11 @@ namespace ImmersiveWeathers
         // FIELDS AND VARIABLES
         // --------------------
         // SMAPI initialises fields on launch
+        // Define config fields and variables
+        private ModConfig Config;
+        private bool terminalLogging;
+        private bool hUDMessages;
+
         // Define PRNG field for use by sister mods
         public static Random PRNG = new();
 
@@ -82,15 +85,28 @@ namespace ImmersiveWeathers
         // Initialize variables on game launch
         private void GameLoop_Initialize(object sender, GameLaunchedEventArgs e)
         {
+            // Tell SMAPI where to grab config options
+            this.Config = this.Helper.ReadConfig<ModConfig>();
+            terminalLogging = Config.PrintToTerminal;
+            hUDMessages = Config.PrintHUDMessage;
+            if (terminalLogging)
+                this.Monitor.Log("Terminal logging enabled. Will print weather updates to terminal.", LogLevel.Info);
+            if (hUDMessages)
+                this.Monitor.Log("HUD messages enabled. Will print weather updates to player HUD.", LogLevel.Trace);
+
             // Grab PRNG from EvenBetterRNG Mod API, if present
             IEvenBetterRNGAPI eBRNG = this.Helper.ModRegistry.GetApi<IEvenBetterRNGAPI>("pepoluan.EvenBetterRNG");
             if (eBRNG != null)
             {
+                this.Monitor.Log("EvenBetterRNG detected. Will utilise their better random number generator.", LogLevel.Trace);
                 PRNG = eBRNG.GetNewRandom();
             }
             // Make a list of all sister mods that are present so can delay console logging until all have reported in
             if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
+            {
                 trackSisters.ClimateControlPresent = true;
+                this.Monitor.Log("ClimateControl detected. Enabling integration...", LogLevel.Trace);
+            }
         }
         // ----------------
         // FORECAST WEATHER
@@ -99,10 +115,12 @@ namespace ImmersiveWeathers
         private void StartDay_WeatherForecaster(object sender, DayStartedEventArgs e)
         {
             // Check if waiting for any sister mods first
+            this.Monitor.Log("Day started. Waiting for sister mods before continuing...", LogLevel.Trace);
             bool continueForecast;
             continueForecast = CheckForSistersReady();
             if (continueForecast)
             {
+                this.Monitor.Log("No sister mods were loaded. Will only provide player with weather predictions.", LogLevel.Trace);
                 ForecastWeather();
             }
         }
@@ -144,7 +162,16 @@ namespace ImmersiveWeathers
         // Broadcast updates to SMAPI terminal
         private void BroadCast(string terminalUpdate)
         {
-            this.Monitor.Log($"{terminalUpdate}", LogLevel.Info);
+            if (terminalLogging)
+            {
+                this.Monitor.Log($"Broadcasting the following message to player terminal: \"{terminalUpdate}\"", LogLevel.Trace);
+                this.Monitor.Log($"{terminalUpdate}", LogLevel.Info);
+            }
+            if (hUDMessages)
+            {
+                this.Monitor.Log($"Broadcasting the following message to player HUD: \"{terminalUpdate}\"", LogLevel.Trace);
+                Game1.addHUDMessage(new HUDMessage($"{terminalUpdate}", ""));
+            }
         }
 
         // ------------------
@@ -162,7 +189,8 @@ namespace ImmersiveWeathers
                     break;
                 case MessageTypes.dayStarted:
                     DayLoadedMessage(e);
-                    if (CheckForSistersReady())
+                    if (CheckForSistersReady() && (terminalLogging || hUDMessages))
+                        this.Monitor.Log("All sister mods reported in. Preparing to broadcast weather predictions...", LogLevel.Trace);
                         ForecastWeather();
                     break;
                 default:
@@ -178,10 +206,13 @@ namespace ImmersiveWeathers
                 case SisterMods.ClimateControl:
                     if ((!trackSisters.ClimateControl.ModelLoaded) || (trackSisters.ClimateControl.ModelType != e.Message.ModelType))
                     {
+                        this.Monitor.Log("Permission granted: model not yet cached or model is different from the current cache.", LogLevel.Trace);
                         trackSisters.ClimateControl.ModelLoaded = true;
                         trackSisters.ClimateControl.ModelType = e.Message.ModelType;
                         e.Response.GoAheadToLoad = true;
                     }
+                    else
+                        this.Monitor.Log("Request denied: model is already cached.", LogLevel.Trace);
                     break;
                 default:
                     break;
@@ -195,11 +226,13 @@ namespace ImmersiveWeathers
                 case SisterMods.ClimateControl:
                     if (e.Message.CouldChange)
                     {
+                        this.Monitor.Log($"Acknowledged: weather successfully changed to {e.Message.WeatherType}.", LogLevel.Trace);
                         trackSisters.ClimateControl.ChangedWeather = true;
                         trackSisters.ClimateControl.ChangedToType = e.Message.WeatherType;
                     }
                     else
                     {
+                        this.Monitor.Log($"Acknowledged: failed to change weather.", LogLevel.Trace);
                         trackSisters.ClimateControl.ChangedWeather = false;
                     }
                     trackSisters.MorningUpdate.ClimateControl = true;

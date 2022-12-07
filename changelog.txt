@@ -1,3 +1,9 @@
+v0.6.0:
+-----
+- Added trace messages to SMAPI log for easier debugging.
+- Fixed bug where weather would be reported as Sunny on Summer 13 & 26, despite weather being hardcoded to storm.
+- Added config option to enable/disable weather updates to terminal / player HUD.
+
 v0.5.0
 -----
 - Integrated TODO into code, rather than separate file.

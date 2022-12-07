@@ -79,7 +79,10 @@ namespace ImmersiveWeathers
                     case 0:
                     case 4:
                     case 6:
-                        WeatherTomorrow = IWAPI.WeatherType.sunny;
+                        if (((Game1.Date.DayOfMonth + 1)%13 == 0) && (Game1.Date.Season == "summer"))
+                            WeatherTomorrow = IWAPI.WeatherType.storming;
+                        else
+                            WeatherTomorrow = IWAPI.WeatherType.sunny;
                         break;
                     case 1:
                         WeatherTomorrow = IWAPI.WeatherType.raining;
