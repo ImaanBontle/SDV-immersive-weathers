@@ -10,7 +10,7 @@ namespace ImmersiveWeathers
     // EVENT HANDLER
     // -------------
     // Custom event handler to transmit external information internally to the framework
-    public class EventManager
+    internal class EventManager
     {
         public EventHandler<EventContainer> SendToFramework;
         public void GrabReply(MessageContainer Message)
@@ -28,7 +28,7 @@ namespace ImmersiveWeathers
     // EVENT PROPERTIES
     // ----------------
     // How to attach in-out information to the event handler
-    public class EventContainer : EventArgs
+    internal class EventContainer : EventArgs
     {
         public Message Message { get; set; }
         public Response Response { get; set; }
