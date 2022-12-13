@@ -104,7 +104,7 @@ namespace ImmersiveWeathers
             if (gMCM != null)
             {
                 this.Monitor.Log("GenericModConfigMenu detected. Registering config options.", LogLevel.Trace);
-                GMCMHandler.Register(Config, gMCM, this.ModManifest);
+                GMCMHandler.Register(Config, gMCM, this.ModManifest, this.Helper);
             }
             // Make a list of all sister mods that are present so can delay console logging until all have reported in
             if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
