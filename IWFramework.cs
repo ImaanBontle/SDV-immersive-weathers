@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks.Dataflow;
 using EvenBetterRNG;
+using GenericModConfigMenu;
 using Microsoft.VisualBasic;
 using Microsoft.Xna.Framework;
 using StardewModdingAPI;
@@ -25,6 +26,7 @@ using static ImmersiveWeathers.IWAPI;
 // TODO: Write custom log messages for weather changes <----- v0.7.0
 // TODO: Add mod config menu (make sure to reload any changes from player) <----- v0.8.0
 // TODO: Improve comments <----- v1.0.0
+// TODO: Simplify trace messages
 
 namespace ImmersiveWeathers
 {
@@ -49,8 +51,6 @@ namespace ImmersiveWeathers
         // SMAPI initialises fields on launch
         // Define config fields and variables
         private ModConfig Config;
-        private bool terminalLogging;
-        private bool hUDMessages;
 
         // Define PRNG field for use by sister mods
         public static Random PRNG = new();
@@ -87,11 +87,9 @@ namespace ImmersiveWeathers
         {
             // Tell SMAPI where to grab config options
             this.Config = this.Helper.ReadConfig<ModConfig>();
-            terminalLogging = Config.PrintToTerminal;
-            hUDMessages = Config.PrintHUDMessage;
-            if (terminalLogging)
+            if (Config.PrintToTerminal)
                 this.Monitor.Log("Terminal logging enabled. Will print weather updates to terminal.", LogLevel.Info);
-            if (hUDMessages)
+            if (Config.PrintHUDMessage)
                 this.Monitor.Log("HUD messages enabled. Will print weather updates to player HUD.", LogLevel.Trace);
 
             // Grab PRNG from EvenBetterRNG Mod API, if present
@@ -100,6 +98,13 @@ namespace ImmersiveWeathers
             {
                 this.Monitor.Log("EvenBetterRNG detected. Will utilise their better random number generator.", LogLevel.Trace);
                 PRNG = eBRNG.GetNewRandom();
+            }
+            // Grab GenericModConfigMenu API
+            IGenericModConfigMenuApi gMCM = this.Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
+            if (gMCM != null)
+            {
+                this.Monitor.Log("GenericModConfigMenu detected. Registering config options.", LogLevel.Trace);
+                GMCMHandler.Register(Config, gMCM, this.ModManifest);
             }
             // Make a list of all sister mods that are present so can delay console logging until all have reported in
             if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
@@ -162,12 +167,12 @@ namespace ImmersiveWeathers
         // Broadcast updates to SMAPI terminal
         private void BroadCast(string terminalUpdate)
         {
-            if (terminalLogging)
+            if (Config.PrintToTerminal)
             {
                 this.Monitor.Log($"Broadcasting the following message to player terminal: \"{terminalUpdate}\"", LogLevel.Trace);
                 this.Monitor.Log($"{terminalUpdate}", LogLevel.Info);
             }
-            if (hUDMessages)
+            if (Config.PrintHUDMessage)
             {
                 this.Monitor.Log($"Broadcasting the following message to player HUD: \"{terminalUpdate}\"", LogLevel.Trace);
                 Game1.addHUDMessage(new HUDMessage($"{terminalUpdate}", ""));
@@ -189,7 +194,7 @@ namespace ImmersiveWeathers
                     break;
                 case MessageTypes.dayStarted:
                     DayLoadedMessage(e);
-                    if (CheckForSistersReady() && (terminalLogging || hUDMessages))
+                    if (CheckForSistersReady() && (Config.PrintToTerminal || Config.PrintHUDMessage))
                         this.Monitor.Log("All sister mods reported in. Preparing to broadcast weather predictions...", LogLevel.Trace);
                         ForecastWeather();
                     break;
