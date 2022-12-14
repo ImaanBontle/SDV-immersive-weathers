@@ -7,11 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.6.0...HEAD)
 
-### Added
-
-- GMCM integration
-- Switched to better changelog system
-
 ### Planned
 
 - More colourful flavour text
