@@ -31,7 +31,7 @@ namespace ImmersiveWeathers
                 mod: ModManifest,
                 getValue: () => Config.PrintToTerminal,
                 setValue: value => Config.PrintToTerminal = value,
-                name: () => "SMAPI Terminal",
+                name: () => "SMAPI Terminal:",
                 tooltip: () => "If true, weather predictions are printed to the SMAPI terminal."
                 );
 
@@ -40,7 +40,7 @@ namespace ImmersiveWeathers
                 mod: ModManifest,
                 getValue: () => Config.PrintHUDMessage,
                 setValue: value => Config.PrintHUDMessage = value,
-                name: () => "In-Game HUD",
+                name: () => "In-Game HUD:",
                 tooltip: () => "If true, weather predictions are printed using the in-game HUD.");
         }
     }
