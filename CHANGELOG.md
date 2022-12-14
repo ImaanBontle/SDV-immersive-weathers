@@ -5,11 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.6.0...HEAD)
+## [Unreleased](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.7.0...HEAD)
 
 ### Planned
 
 - More colourful flavour text
+
+## [v0.7.0](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.6.0...v0.7.0) - 2022-12-14
+
+### What Changed 🚀
+
+Generic Mod Config Menu added!
+
+### 👽️ Integrations
+
+- Generic Mod Config Menu now supported (#27)
+
+### 📄 Documentation
+
+- Switched to improved changelog system (#26)
+
+**Full Changelog**: https://github.com/ImaanBontle/SDV-immersive-weathers/compare/0.6.0...v0.7.0
 
 ## [v0.6.0](https://github.com/ImaanBontle/SDV-immersive-weathers/compare/0.6.0...v0.6.1)
 
@@ -39,7 +55,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.3.2](https://github.com/ImaanBontle/SDV-immersive-weathers/compare/0.3.1...0.3.2)
 
 - General clean up of code.
-- Created two new class files, WeatherMan and WeatherUtils, which respectively handle terminal output about the current weather and grab/translate weather states. This makes IWFramework cleaner and easier to read. 
+- Created two new class files, WeatherMan and WeatherUtils, which respectively handle terminal output about the current weather and grab/translate weather states. This makes IWFramework cleaner and easier to read.
 - Made calls to separate classes explicit for readability purposes.
 - Left WeatherState and WeatherType inside the API even though they can't be easily called, so that the information can be easily found by other users.
 
@@ -63,5 +79,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Weather types are now stored in a WeatherState class. Has functionality for predicting tomorrow's weather (not yet implemented).
 
 ## [v0.1.0]
------
+
+
+---
+
 - Initial release for purpose of generating update key for GitHub.
