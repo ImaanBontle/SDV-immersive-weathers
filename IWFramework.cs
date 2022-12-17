@@ -71,12 +71,12 @@ namespace ImmersiveWeathers
             // GAME LOAD
             // ---------
             // When game loaded, initialised variables
-            this.Helper.Events.GameLoop.GameLaunched += GameLoop_Initialize;
+            Helper.Events.GameLoop.GameLaunched += GameLoop_Initialize;
             // Also set up internal event handler
             eventManager.SendToFramework += ReceiveEvent;
 
             // When day begins, generate a weather forecast
-            this.Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster;
+            Helper.Events.GameLoop.DayStarted += StartDay_WeatherForecaster;
         }
 
         // --------------------
@@ -86,31 +86,29 @@ namespace ImmersiveWeathers
         private void GameLoop_Initialize(object sender, GameLaunchedEventArgs e)
         {
             // Tell SMAPI where to grab config options
-            this.Config = this.Helper.ReadConfig<ModConfig>();
+            Config = Helper.ReadConfig<ModConfig>();
             if (Config.PrintToTerminal)
-                this.Monitor.Log("Terminal logging enabled. Will print weather updates to terminal.", LogLevel.Info);
+                Monitor.Log("Terminal logging enabled.", LogLevel.Info);
             if (Config.PrintHUDMessage)
-                this.Monitor.Log("HUD messages enabled. Will print weather updates to player HUD.", LogLevel.Trace);
+                Monitor.Log("HUD messages enabled.", LogLevel.Trace);
 
             // Grab PRNG from EvenBetterRNG Mod API, if present
-            IEvenBetterRNGAPI eBRNG = this.Helper.ModRegistry.GetApi<IEvenBetterRNGAPI>("pepoluan.EvenBetterRNG");
+            IEvenBetterRNGAPI eBRNG = Helper.ModRegistry.GetApi<IEvenBetterRNGAPI>("pepoluan.EvenBetterRNG");
             if (eBRNG != null)
             {
-                this.Monitor.Log("EvenBetterRNG detected. Will utilise their better random number generator.", LogLevel.Trace);
                 PRNG = eBRNG.GetNewRandom();
             }
             // Grab GenericModConfigMenu API
-            IGenericModConfigMenuApi gMCM = this.Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
+            IGenericModConfigMenuApi gMCM = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (gMCM != null)
             {
-                this.Monitor.Log("GenericModConfigMenu detected. Registering config options.", LogLevel.Trace);
-                GMCMHandler.Register(Config, gMCM, this.ModManifest, this.Helper);
+                GMCMHandler.Register(Config, gMCM, ModManifest, Helper);
             }
             // Make a list of all sister mods that are present so can delay console logging until all have reported in
-            if (this.Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
+            if (Helper.ModRegistry.IsLoaded("MsBontle.ClimateControl"))
             {
                 trackSisters.ClimateControlPresent = true;
-                this.Monitor.Log("ClimateControl detected. Enabling integration...", LogLevel.Trace);
+                Monitor.Log("ClimateControl detected. Enabling integration...", LogLevel.Trace);
             }
         }
         // ----------------
@@ -120,12 +118,12 @@ namespace ImmersiveWeathers
         private void StartDay_WeatherForecaster(object sender, DayStartedEventArgs e)
         {
             // Check if waiting for any sister mods first
-            this.Monitor.Log("Day started. Waiting for sister mods before continuing...", LogLevel.Trace);
+            Monitor.Log("Day started. Waiting for sister mods before continuing...", LogLevel.Trace);
             bool continueForecast;
             continueForecast = CheckForSistersReady();
             if (continueForecast)
             {
-                this.Monitor.Log("No sister mods were loaded. Will only provide player with weather predictions.", LogLevel.Trace);
+                Monitor.Log("No sister mods were loaded. Will only provide player with weather predictions.", LogLevel.Trace);
                 ForecastWeather();
             }
         }
@@ -169,12 +167,11 @@ namespace ImmersiveWeathers
         {
             if (Config.PrintToTerminal)
             {
-                this.Monitor.Log($"Broadcasting the following message to player terminal: \"{terminalUpdate}\"", LogLevel.Trace);
-                this.Monitor.Log($"{terminalUpdate}", LogLevel.Info);
+                Monitor.Log($"{terminalUpdate}", LogLevel.Info);
             }
             if (Config.PrintHUDMessage)
             {
-                this.Monitor.Log($"Broadcasting the following message to player HUD: \"{terminalUpdate}\"", LogLevel.Trace);
+                Monitor.Log($"Broadcasting the following message to player HUD: \"{terminalUpdate}\"", LogLevel.Trace);
                 Game1.addHUDMessage(new HUDMessage($"{terminalUpdate}", ""));
             }
         }
@@ -195,7 +192,7 @@ namespace ImmersiveWeathers
                 case MessageTypes.dayStarted:
                     DayLoadedMessage(e);
                     if (CheckForSistersReady() && (Config.PrintToTerminal || Config.PrintHUDMessage))
-                        this.Monitor.Log("All sister mods reported in. Preparing to broadcast weather predictions...", LogLevel.Trace);
+                        Monitor.Log("All sister mods reported in. Preparing to broadcast weather predictions...", LogLevel.Trace);
                         ForecastWeather();
                     break;
                 default:
@@ -211,13 +208,13 @@ namespace ImmersiveWeathers
                 case SisterMods.ClimateControl:
                     if ((!trackSisters.ClimateControl.ModelLoaded) || (trackSisters.ClimateControl.ModelType != e.Message.ModelType))
                     {
-                        this.Monitor.Log("Permission granted: model not yet cached or model is different from the current cache.", LogLevel.Trace);
+                        Monitor.Log("Permission granted: model not yet cached or model is different from the current cache.", LogLevel.Trace);
                         trackSisters.ClimateControl.ModelLoaded = true;
                         trackSisters.ClimateControl.ModelType = e.Message.ModelType;
                         e.Response.GoAheadToLoad = true;
                     }
                     else
-                        this.Monitor.Log("Request denied: model is already cached.", LogLevel.Trace);
+                        Monitor.Log("Request denied: model is already cached.", LogLevel.Trace);
                     break;
                 default:
                     break;
@@ -231,13 +228,13 @@ namespace ImmersiveWeathers
                 case SisterMods.ClimateControl:
                     if (e.Message.CouldChange)
                     {
-                        this.Monitor.Log($"Acknowledged: weather successfully changed to {e.Message.WeatherType}.", LogLevel.Trace);
+                        Monitor.Log($"Acknowledged: weather successfully changed to {e.Message.WeatherType}.", LogLevel.Trace);
                         trackSisters.ClimateControl.ChangedWeather = true;
                         trackSisters.ClimateControl.ChangedToType = e.Message.WeatherType;
                     }
                     else
                     {
-                        this.Monitor.Log($"Acknowledged: failed to change weather.", LogLevel.Trace);
+                        Monitor.Log($"Acknowledged: failed to change weather.", LogLevel.Trace);
                         trackSisters.ClimateControl.ChangedWeather = false;
                     }
                     trackSisters.MorningUpdate.ClimateControl = true;
