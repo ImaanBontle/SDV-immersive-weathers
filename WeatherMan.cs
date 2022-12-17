@@ -10,10 +10,18 @@ using StardewValley;
 
 namespace ImmersiveWeathers
 {
-    // Handle weather predictions
+    /// <summary>
+    /// Handles all weather prediction functions.
+    /// </summary>
     internal class WeatherMan
     {
-        // Prepare weather statements for SMAPI terminal
+        /// <summary>
+        /// Prepare weather statements for broadcasting.
+        /// </summary>
+        /// <param name="weatherForecast">The forecasted weather for today and tomorrow.</param>
+        /// <returns>
+        /// <see langword="string"/>: Statement about weather today and tomorrow.
+        /// </returns>
         public static string Predict(WeatherUtils.WeatherState weatherForecast)
         {
             // Today's weather
@@ -26,7 +34,13 @@ namespace ImmersiveWeathers
             return weatherString;
         }
 
-        // Translate today's weather state into a string.
+        /// <summary>
+        /// Translates today's weather into a string.
+        /// </summary>
+        /// <param name="weatherForecast">The forecasted weather for today and tomorrow.</param>
+        /// <returns>
+        /// <see langword="string"/>: Statement about today's weather.
+        /// </returns>
         private static string TodayWeather(WeatherUtils.WeatherState weatherForecast)
         {
             string weatherStringToday = "";
@@ -51,7 +65,13 @@ namespace ImmersiveWeathers
             return weatherStringToday;
         }
 
-        // Translate tomorrow's weather state into a string.
+        /// <summary>
+        /// Translates tomorrow's weather into a string.
+        /// </summary>
+        /// <param name="weatherForecast">The forecasted weather for today and tomorrow.</param>
+        /// <returns>
+        /// <see langword="string"/>: Statement about tomorrows's weather.
+        /// </returns>
         private static string TomorrowWeather(WeatherUtils.WeatherState weatherForecast)
         {
             string weatherStringTomorrow = "";

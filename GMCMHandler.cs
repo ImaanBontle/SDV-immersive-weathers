@@ -8,15 +8,25 @@ using System.Threading.Tasks;
 
 namespace ImmersiveWeathers
 {
+    /// <summary>
+    /// Handles integration with Generic Mod Config Menu.
+    /// </summary>
     internal class GMCMHandler
     {
-        internal static void Register(ModConfig Config, IGenericModConfigMenuApi gMCM, StardewModdingAPI.IManifest ModManifest, IModHelper Helper)
+        /// <summary>
+        /// Register mod configuration with Generic Mod Config Menu.
+        /// </summary>
+        /// <param name="s_config">The configuration data.</param>
+        /// <param name="gMCM">The Generic Mod Config Menu API.</param>
+        /// <param name="ModManifest">This mod's manifest.</param>
+        /// <param name="Helper">The mod class' helper object.</param>
+        internal static void Register(ModConfig s_config, IGenericModConfigMenuApi gMCM, IManifest ModManifest, IModHelper Helper)
         {
             // Register mod
             gMCM.Register(
                 mod: ModManifest,
-                reset: () => Config = new ModConfig(),
-                save: () => Helper.WriteConfig(Config)
+                reset: () => s_config = new ModConfig(),
+                save: () => Helper.WriteConfig(s_config)
                 );
 
             // Add section title
@@ -29,8 +39,8 @@ namespace ImmersiveWeathers
             // Add terminal logging
             gMCM.AddBoolOption(
                 mod: ModManifest,
-                getValue: () => Config.PrintToTerminal,
-                setValue: value => Config.PrintToTerminal = value,
+                getValue: () => s_config.PrintToTerminal,
+                setValue: value => s_config.PrintToTerminal = value,
                 name: () => "SMAPI Terminal:",
                 tooltip: () => "If true, weather predictions are printed to the SMAPI terminal."
                 );
@@ -38,8 +48,8 @@ namespace ImmersiveWeathers
             // Add HUD logging
             gMCM.AddBoolOption(
                 mod: ModManifest,
-                getValue: () => Config.PrintHUDMessage,
-                setValue: value => Config.PrintHUDMessage = value,
+                getValue: () => s_config.PrintHUDMessage,
+                setValue: value => s_config.PrintHUDMessage = value,
                 name: () => "In-Game HUD:",
                 tooltip: () => "If true, weather predictions are printed using the in-game HUD.");
         }
