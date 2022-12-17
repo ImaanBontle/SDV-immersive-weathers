@@ -10,10 +10,14 @@ using StardewValley;
 
 namespace ImmersiveWeathers
 {
-    // Mod API - all exposed methods, fields and properties
+    /// <summary>
+    /// ImmersiveWeathers API.
+    /// </summary>
     public class IIWAPI
     {
-        // List of all possible weather states
+        /// <summary>
+        /// <see cref="Enum"/> of all possible weather states.
+        /// </summary>
         public enum WeatherType
         {
             sunny = 0,
@@ -26,7 +30,9 @@ namespace ImmersiveWeathers
             unknown = 7
         }
 
-        // List of all possible seasons
+        /// <summary>
+        /// <see cref="Enum"/> of all possible seasons.
+        /// </summary>
         public enum SeasonType
         {
             spring = 0,
@@ -35,7 +41,9 @@ namespace ImmersiveWeathers
             winter = 3
         }
 
-        // List of weather-models
+        /// <summary>
+        /// <see cref="Enum"/> of all possible weather models.
+        /// </summary>
         public enum WeatherModel
         {
             none = 0,
@@ -43,13 +51,17 @@ namespace ImmersiveWeathers
             standard = 2
         }
 
-        // List of supported sister mods
+        /// <summary>
+        /// <see cref="Enum"/> of all supported sister mods.
+        /// </summary>
         public enum SisterMods
         {
             ClimateControl = 0
         }
 
-        // Broadcast types
+        /// <summary>
+        /// <see cref="Enum"/> of all possible messages to the framework.
+        /// </summary>
         public enum MessageTypes
         {
             saveLoaded = 0,
@@ -57,44 +69,87 @@ namespace ImmersiveWeathers
             dayStarted = 2
         }
 
-        // Create Tuple with weather information
+        /// <summary>
+        /// Request information about today's and tomorrow's weather.
+        /// </summary>
+        /// <returns>
+        /// <see cref="Tuple"/>&lt;<see langword="string"/>, <see langword="string"/>&gt;: Weather today, Weather tomorrow.
+        /// </returns>
         public Tuple<string, string> GetWeatherInfo()
         {
             WeatherUtils.WeatherState weatherInfo = WeatherUtils.PopulateWeather.Populate();
             return new Tuple<string, string>(weatherInfo.WeatherToday.ToString(), weatherInfo.WeatherTomorrow.ToString());
         }
 
-        // Translate weather information between strings and integers
+        /// <summary>
+        /// Translate weather type from an integer to a string.
+        /// </summary>
+        /// <param name="integerState">The weather type in integer form.</param>
+        /// <returns>
+        /// <see langword="string"/>: Weather type in string format.
+        /// </returns>
         public string TranslateTomorrowStates(int integerState)
         {
             return WeatherUtils.TranslateWeatherStates.TranslateTomorrow(integerState);
         }
+
+        /// <summary>
+        /// Translate weather type from a string to an integer.
+        /// </summary>
+        /// <param name="stringState">The weather type as a string.</param>
+        /// <returns>
+        /// <see langword="int"/>: Weather type in integer form.
+        /// </returns>
         public int TranslateTomorrowStates(string stringState)
         {
             return WeatherUtils.TranslateWeatherStates.TranslateTomorrow(stringState);
         }
 
-        // Grab a random number from the PRNG
+        /// <summary>
+        /// Grab a random double between 0 and 1.
+        /// </summary>
+        /// <returns>
+        /// <see langword="double"/>: Random double between 0 and 1.
+        /// </returns>
         public double RollTheDice()
         {
             return IWFramework.s_pRNG.NextDouble();
         }
+
+        /// <summary>
+        /// Grab a random integer.
+        /// </summary>
+        /// <returns>
+        /// <see langword="int"/>: Random integer.
+        /// </returns>
         public int RollTheDiceInt()
         {
             return IWFramework.s_pRNG.Next();
         }
 
-        // How framework should respond to request
+        /// <summary>
+        /// Process a message for the framework.
+        /// </summary>
+        /// <remarks>Appends a reply to the message. See <see cref="Response"/>.</remarks>
+        /// <param name="Message">The message for the framework.</param>
         public void ProcessMessage(MessageContainer Message)
         {
             IWFramework.s_eventManager.GrabReply(Message);
         }
     }
 
-    // Class carrier for in-out messages
+    /// <summary>
+    /// Container for in-out messages between the framework and sister mods.
+    /// </summary>
     public class MessageContainer
     {
+        /// <summary>
+        /// The message for the framework.
+        /// </summary>
         public Message Message { get; set; }
+        /// <summary>
+        /// The response to the sender.
+        /// </summary>
         public Response Response { get; set; }
         public MessageContainer()
         {
