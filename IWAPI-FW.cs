@@ -11,7 +11,7 @@ using StardewValley;
 namespace ImmersiveWeathers
 {
     // Mod API - all exposed methods, fields and properties
-    public class IWAPI
+    public class IIWAPI
     {
         // List of all possible weather states
         public enum WeatherType
@@ -77,17 +77,17 @@ namespace ImmersiveWeathers
         // Grab a random number from the PRNG
         public double RollTheDice()
         {
-            return IWFramework.PRNG.NextDouble();
+            return IWFramework.s_pRNG.NextDouble();
         }
         public int RollTheDiceInt()
         {
-            return IWFramework.PRNG.Next();
+            return IWFramework.s_pRNG.Next();
         }
 
         // How framework should respond to request
         public void ProcessMessage(MessageContainer Message)
         {
-            IWFramework.eventManager.GrabReply(Message);
+            IWFramework.s_eventManager.GrabReply(Message);
         }
     }
 
