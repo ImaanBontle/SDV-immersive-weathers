@@ -21,9 +21,9 @@ namespace ImmersiveWeathers
     internal class ClimateControl
     {
         public bool ModelLoaded { get; set; } = false;
-        public IWAPI.WeatherModel ModelType { get; set; }
+        public IIWAPI.WeatherModel ModelType { get; set; }
         public bool ChangedWeather { get; set; }
-        public IWAPI.WeatherType ChangedToType { get; set; }
+        public IIWAPI.WeatherType ChangedToType { get; set; }
     }
 
     internal class MorningUpdate

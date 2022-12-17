@@ -45,10 +45,10 @@ namespace ImmersiveWeathers
     // All possible incoming messages
     public class Message
     {
-        public IWAPI.SisterMods SisterMod { get; set; }
-        public IWAPI.MessageTypes MessageType { get; set; }
-        public IWAPI.WeatherModel ModelType { get; set; }
-        public IWAPI.WeatherType WeatherType { get; set; }
+        public IIWAPI.SisterMods SisterMod { get; set; }
+        public IIWAPI.MessageTypes MessageType { get; set; }
+        public IIWAPI.WeatherModel ModelType { get; set; }
+        public IIWAPI.WeatherType WeatherType { get; set; }
         public bool CouldChange { get; set; }
     }
 
