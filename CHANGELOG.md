@@ -5,11 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.7.0...HEAD)
+## [Unreleased](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.8.0...HEAD)
 
 ### Planned
 
 - More colourful flavour text
+
+## [v0.8.0](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.7.0...v0.8.0) - 2022-12-18
+
+### What Changed 🚀
+
+Minor release for compatibility with ClimateControl
+
+### ⚠️ Changes
+
+- Reduced unnecessary SMAPI trace messages (#35)
+
+### 📄 Documentation
+
+- Updated code to reflect C# naming conventions (#36)
+- Added XML comments to C# code (#37)
+
+**Full Changelog**: https://github.com/ImaanBontle/SDV-immersive-weathers/compare/v0.7.0...v0.8.0
 
 ## [v0.7.0](https://github.com/ImaanBontle/SDV-immersive-weathers/commits/compare/v0.6.0...v0.7.0) - 2022-12-14
 
