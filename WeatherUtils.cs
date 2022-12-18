@@ -7,24 +7,41 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
-using static ImmersiveWeathers.IWAPI;
+using static ImmersiveWeathers.IIWAPI;
 
 namespace ImmersiveWeathers
 {
-    public class WeatherUtils
+    /// <summary>
+    /// Set of utility functions related to weather information.
+    /// </summary>
+    internal class WeatherUtils
     {
-        // Generate container for weather information
-        public class WeatherState
+        /// <summary>
+        /// Generic container for today's and tomorrow' weather.
+        /// </summary>
+        internal class WeatherState
         {
-            // Define relevant properties
-            public IWAPI.WeatherType WeatherToday { get; set; }
-            public IWAPI.WeatherType WeatherTomorrow { get; set; }
+            /// <summary>
+            /// The weather today.
+            /// </summary>
+            public WeatherType WeatherToday { get; set; }
+            /// <summary>
+            /// The weather tomorrow.
+            /// </summary>
+            public WeatherType WeatherTomorrow { get; set; }
         }
 
-        // Populate a weatherState object with current weather information
-        public class PopulateWeather
+        /// <summary>
+        /// Populates a <see cref="WeatherState"/> object with the latest weather information.
+        /// </summary>
+        internal class PopulateWeather
         {
-            // Generate properties
+            /// <summary>
+            /// Generates the populated <see cref="WeatherState"/> object.
+            /// </summary>
+            /// <returns>
+            /// A <see cref="WeatherState"/> object.
+            /// </returns>
             public static WeatherState Populate()
             {
                 // Create container instance
@@ -41,7 +58,12 @@ namespace ImmersiveWeathers
                 return weatherState;
             }
 
-            // Check today's weather states
+            /// <summary>
+            /// Checks today's weather in-game.
+            /// </summary>
+            /// <returns>
+            /// &lt;<see langword="string"/>, <see langword="bool"/>&gt;: &lt;type of weather checked, is it active?&gt;
+            /// </returns>
             private static Dictionary<string, bool> CheckWeather()
             {
                 Dictionary<string, bool> weatherStatesToday = new(){
@@ -53,81 +75,110 @@ namespace ImmersiveWeathers
                 return weatherStatesToday;
             }
 
-            // Parse today's weather states
-            private static IWAPI.WeatherType ParseWeather(Dictionary<string, bool> weatherStatesToday)
+            /// <summary>
+            /// Make sense of today's weather states.
+            /// </summary>
+            /// <param name="weatherStatesToday">Possible weather states today.</param>
+            /// <returns>
+            /// A <see cref="WeatherType"/> object.
+            /// </returns>
+            private static WeatherType ParseWeather(Dictionary<string, bool> weatherStatesToday)
             {
-                IWAPI.WeatherType weatherNow;
+                WeatherType weatherNow;
                 if (weatherStatesToday["stormCheck"])
-                    weatherNow = IWAPI.WeatherType.storming;
+                    weatherNow = WeatherType.storming;
                 else if (weatherStatesToday["rainCheck"])
-                    weatherNow = IWAPI.WeatherType.raining;
+                    weatherNow = WeatherType.raining;
                 else if (weatherStatesToday["snowCheck"])
-                    weatherNow = IWAPI.WeatherType.snowing;
+                    weatherNow = WeatherType.snowing;
                 else if (weatherStatesToday["windCheck"])
-                    weatherNow = IWAPI.WeatherType.windy;
+                    weatherNow = WeatherType.windy;
                 else
-                    weatherNow = IWAPI.WeatherType.sunny;
+                    weatherNow = WeatherType.sunny;
                 return weatherNow;
             }
 
-            // Parse tomorrow's weather
-            private static IWAPI.WeatherType ParseWeather(int tomorrowState)
+            /// <summary>
+            /// Make sense of tomorrow's weather.
+            /// </summary>
+            /// <param name="tomorrowState">Integer representation of tomorrow's weather.</param>
+            /// <returns>
+            /// A <see cref="WeatherType"/> object.
+            /// </returns>
+            private static WeatherType ParseWeather(int tomorrowState)
             {
-                IWAPI.WeatherType WeatherTomorrow;
+                WeatherType WeatherTomorrow;
                 switch (tomorrowState)
                 {
                     case 0:
                     case 4:
                     case 6:
                         if (((Game1.Date.DayOfMonth + 1)%13 == 0) && (Game1.Date.Season == "summer"))
-                            WeatherTomorrow = IWAPI.WeatherType.storming;
+                            WeatherTomorrow = WeatherType.storming;
                         else
-                            WeatherTomorrow = IWAPI.WeatherType.sunny;
+                            WeatherTomorrow = WeatherType.sunny;
                         break;
                     case 1:
-                        WeatherTomorrow = IWAPI.WeatherType.raining;
+                        WeatherTomorrow = WeatherType.raining;
                         break;
                     case 2:
-                        WeatherTomorrow = IWAPI.WeatherType.windy;
+                        WeatherTomorrow = WeatherType.windy;
                         break;
                     case 3:
-                        WeatherTomorrow = IWAPI.WeatherType.storming;
+                        WeatherTomorrow = WeatherType.storming;
                         break;
                     case 5:
-                        WeatherTomorrow = IWAPI.WeatherType.snowing;
+                        WeatherTomorrow = WeatherType.snowing;
                         break;
                     default:
-                        WeatherTomorrow = IWAPI.WeatherType.unknown;
+                        WeatherTomorrow = WeatherType.unknown;
                         break;
                 }
                 return WeatherTomorrow;
             }
         }
 
-        public class TranslateWeatherStates
+        /// <summary>
+        /// Handles translation of weather states between strings and integers.
+        /// </summary>
+        internal class TranslateWeatherStates
         {
+            /// <summary>
+            /// Translate weather type from an integer to a string.
+            /// </summary>
+            /// <param name="integerState">The weather type in integer form.</param>
+            /// <returns>
+            /// <see langword="string"/>: Weather type in string format.
+            /// </returns>
             public static string TranslateTomorrow(int integerState)
             {
                 string stringState = "";
-                foreach (int i in Enum.GetValues(typeof(IWAPI.WeatherType)))
+                foreach (int i in Enum.GetValues(typeof(WeatherType)))
                 {
                     if (integerState == i)
                     {
-                        stringState = Enum.GetName(typeof(IWAPI.WeatherType), i);
+                        stringState = Enum.GetName(typeof(WeatherType), i);
                         break;
                     }
                 }
                 return stringState;
             }
 
+            /// <summary>
+            /// Translate weather type from a string to an integer.
+            /// </summary>
+            /// <param name="stringState">The weather type as a string.</param>
+            /// <returns>
+            /// <see langword="int"/>: Weather type in integer form.
+            /// </returns>
             public static int TranslateTomorrow(string stringState)
             {
                 int integerState = 7;
-                foreach (string name in Enum.GetNames(typeof(IWAPI.WeatherType)))
+                foreach (string name in Enum.GetNames(typeof(WeatherType)))
                 {
                     if (stringState == name)
                     {
-                        integerState = (int)Enum.Parse(typeof(IWAPI.WeatherType), name);
+                        integerState = (int)Enum.Parse(typeof(WeatherType), name);
                         break;
                     }
                 }

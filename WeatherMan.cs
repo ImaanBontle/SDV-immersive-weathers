@@ -10,10 +10,18 @@ using StardewValley;
 
 namespace ImmersiveWeathers
 {
-    // Handle weather predictions
+    /// <summary>
+    /// Handles all weather prediction functions.
+    /// </summary>
     internal class WeatherMan
     {
-        // Prepare weather statements for SMAPI terminal
+        /// <summary>
+        /// Prepare weather statements for broadcasting.
+        /// </summary>
+        /// <param name="weatherForecast">The forecasted weather for today and tomorrow.</param>
+        /// <returns>
+        /// <see langword="string"/>: Statement about weather today and tomorrow.
+        /// </returns>
         public static string Predict(WeatherUtils.WeatherState weatherForecast)
         {
             // Today's weather
@@ -26,53 +34,65 @@ namespace ImmersiveWeathers
             return weatherString;
         }
 
-        // Translate today's weather state into a string.
+        /// <summary>
+        /// Translates today's weather into a string.
+        /// </summary>
+        /// <param name="weatherForecast">The forecasted weather for today and tomorrow.</param>
+        /// <returns>
+        /// <see langword="string"/>: Statement about today's weather.
+        /// </returns>
         private static string TodayWeather(WeatherUtils.WeatherState weatherForecast)
         {
             string weatherStringToday = "";
             switch (weatherForecast.WeatherToday)
             {
-                case IWAPI.WeatherType.sunny:
+                case IIWAPI.WeatherType.sunny:
                     weatherStringToday = "It is sunny today.";
                     break;
-                case IWAPI.WeatherType.windy:
+                case IIWAPI.WeatherType.windy:
                     weatherStringToday = "It is windy today.";
                     break;
-                case IWAPI.WeatherType.raining:
+                case IIWAPI.WeatherType.raining:
                     weatherStringToday = "It is raining today.";
                     break;
-                case IWAPI.WeatherType.storming:
+                case IIWAPI.WeatherType.storming:
                     weatherStringToday = "It is stormy today.";
                     break;
-                case IWAPI.WeatherType.snowing:
+                case IIWAPI.WeatherType.snowing:
                     weatherStringToday = "It is snowing today.";
                     break;
             }
             return weatherStringToday;
         }
 
-        // Translate tomorrow's weather state into a string.
+        /// <summary>
+        /// Translates tomorrow's weather into a string.
+        /// </summary>
+        /// <param name="weatherForecast">The forecasted weather for today and tomorrow.</param>
+        /// <returns>
+        /// <see langword="string"/>: Statement about tomorrows's weather.
+        /// </returns>
         private static string TomorrowWeather(WeatherUtils.WeatherState weatherForecast)
         {
             string weatherStringTomorrow = "";
             switch (weatherForecast.WeatherTomorrow)
             {
-                case IWAPI.WeatherType.sunny:
+                case IIWAPI.WeatherType.sunny:
                     weatherStringTomorrow = "Tomorrow, it will be sunny.";
                     break;
-                case IWAPI.WeatherType.windy:
+                case IIWAPI.WeatherType.windy:
                     weatherStringTomorrow = "Tomorrow, it will be windy.";
                     break;
-                case IWAPI.WeatherType.raining:
+                case IIWAPI.WeatherType.raining:
                     weatherStringTomorrow = "Tomorrow, it will be rainy.";
                     break;
-                case IWAPI.WeatherType.storming:
+                case IIWAPI.WeatherType.storming:
                     weatherStringTomorrow = "Tomorrow, it will be storming.";
                     break;
-                case IWAPI.WeatherType.snowing:
+                case IIWAPI.WeatherType.snowing:
                     weatherStringTomorrow = "Tomorrow, it will be snowing.";
                     break;
-                case IWAPI.WeatherType.unknown:
+                case IIWAPI.WeatherType.unknown:
                     weatherStringTomorrow = "Huh, that's weird. I can't make sense of tomorrow's weather!";
                     break;
             }
