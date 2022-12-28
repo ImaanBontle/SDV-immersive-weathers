@@ -7,8 +7,38 @@
 	</p>
 
 <!--Badges-->
-	
-	
+
+<p>
+	<a href="">
+		<img src="https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers" alt="release">
+	</a>
+	<a href="">
+		<img src="https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers?include_prereleases&label=beta" alt="release">
+	</a>
+	<a>
+		<img src="https://img.shields.io/github/release-date/ImaanBontle/SDV-immersive-weathers" alt="release date">
+	</a>
+	<a>
+		<img src="https://img.shields.io/github/license/ImaanBontle/SDV-immersive-weathers" alt="license">
+	</a>
+	</br>
+	<a>
+		<img src="https://img.shields.io/github/commits-since/ImaanBontle/SDV-immersive-weathers/latest?include_prereleases" alt="commits since latest release">
+	</a>
+	<a href="">
+		<img src="https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers" alt="last commit">
+	</a>
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/issues">
+		<img src="https://img.shields.io/github/issues-raw/ImaanBontle/SDV-immersive-weathers" alt="open issues">
+	</a>
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/pulls">
+		<img src="https://img.shields.io/github/issues-pr/ImaanBontle/SDV-immersive-weathers" alt="pull requests">
+	</a>
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/graphs/contributors">
+		<img src="https://img.shields.io/github/contributors/ImaanBontle/SDV-immersive-weathers" alt="contributors">
+	</a>
+</p>
+
 </div>
 
 <!--
