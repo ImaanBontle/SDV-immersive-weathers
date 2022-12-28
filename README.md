@@ -30,7 +30,7 @@
 <br>
 
 <!--Table of Contents-->
-# Table of Contents
+# Table of Contents {#contents}
 - [About Immersive Weathers](#about)
 	- [Framework](#about-framework)
 	- [Climate Control](#about-climate-control)
@@ -54,13 +54,19 @@
 - [Acknowledgements](#acknowledgements)
 
 <!--About the Mods-->
-## About the Mods {#about}
+## About Immersive Weathers {#about}
 
 <!--Framework-->
 ### Framework {#about-framework}
 
 <!--Climate Control-->
 ### Climate Control {#about-climate-control}
+
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
 
 <!--Getting Started-->
 ## Getting Started {#getting-started}
@@ -71,14 +77,38 @@
 <!--Installation-->
 ### Installation {#installation}
 
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
+
 <!--How to Use-->
 ## How to Use {#usage}
+
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
 
 <!--Config Options-->
 ## Config Options {#config}
 
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
+
 <!--Known Issues-->
 ## Known Issues {#issues}
+
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
 
 <!--Mod Compatibility-->
 ## Mod Compatibility {#compatibility}
@@ -92,8 +122,20 @@
 <!--Incompatible-->
 ### Incompatible {#incompatible}
 
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
+
 <!--Future Plans-->
 ## Future Plans {#future}
+
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
 
 <!--Contributing-->
 ## Contributing {#contribute}
@@ -107,14 +149,38 @@
 <!--Translations-->
 ### Translations {#translations}
 
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
+
 <!--Support-->
 ## Support {#support}
+
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
 
 <!--License-->
 ## License {#license}
 
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
+
 <!--Acknowledgements-->
 ## Acknowledgements {#acknowledgements}
+
+<div align="right">
+
+[[Back to top](#contents)]
+
+</div>
 
 <!--Markdown Links, Images and Abbreviations-->
 <!--
