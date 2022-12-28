@@ -1,3 +1,16 @@
+<div align="center">
+	
+	<h1>Immersive Weathers</h1>
+	
+	<p>
+		Influence the weather systems in Stardew Valley!
+	</p>
+
+<!--Badges-->
+	
+	
+</div>
+
 <!--
 // Logo
 // Title
@@ -36,8 +49,10 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [translation-script]: https://gist.github.com/Pathoschild/040ff6c8dc863ed2a7a828aa04447033
 -->
 
+<!--
 # Immersive Weathers
 Framework for influencing Stardew Valley's weather systems.
 
 This is still an early test build with minimal functionality. Most features are not yet implemented.
 
+-->
