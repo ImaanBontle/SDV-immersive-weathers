@@ -10,12 +10,18 @@ This is still an early test build with minimal functionality. Most features are 
 /// Badges
 /// Links
 // ToC
-// Overview
+// About
 /// Sister Mods
-// Installation
-// Config
+// Getting Started
+/// Installation
+/// How to Use
+/// Config Options
 // Compatibility
+/// Supported
+/// Recommended
+/// Incompatible
 // Planned Features
+// Known Issues
 // Contributing
 /// Feature Requests
 /// Bug Reports
