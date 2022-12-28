@@ -31,90 +31,90 @@
 
 <!--Table of Contents-->
 # Table of Contents
-- [About the Mods](#about-the-mods)
-	- [Framework](#framework)
-	- [Climate Control](#climate-control)
+- [About the Mods](#about)
+	- [Framework](#about-framework)
+	- [Climate Control](#about-climate-control)
 - [Getting Started](#getting-started)
 	- [Requirements](#requirements)
 	- [Installation](#installation)
-- [How to Use](#how-to-use)
-	- [Config Options](#config-options)
-	- [Known Issues](#known-issues)
-- [Mod Compatibility](#mod-compatibility)
+- [How to Use](#usage)
+- [Config Options](#config)
+- [Known Issues](#issues)
+- [Mod Compatibility](#compatibility)
 	- [Supported](#supported)
 	- [Recommended](#recommended)
 	- [Incompatible](#incompatible)
-- [Future Plans](#future-plans)
-- [Contributing](#contributing)
-	- [Bug Reports](#bug-reports)
-	- [Feature Suggestions](#feature-suggestions)
+- [Future Plans](#future)
+- [Contribute](#contribute)
+	- [Bug Reports](#bugs)
+	- [Feature Suggestions](#suggestions)
 	- [Translations](#translations)
 - [Support](#support)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 <!--About the Mods-->
-## About the Mods
+## About the Mods {#about}
 
 <!--Framework-->
-### Framework
+### Framework {#about-framework}
 
 <!--Climate Control-->
-### Climate Control
+### Climate Control {#about-climate-control}
 
 <!--Getting Started-->
-## Getting Started
+## Getting Started {#getting-started}
 
 <!--Requirements-->
-### Requirements
+### Requirements {#requirements}
 
 <!--Installation-->
-### Installation
+### Installation {#installation}
 
 <!--How to Use-->
-## How to Use
+## How to Use {#usage}
 
 <!--Config Options-->
-### Config Options
+## Config Options {#config}
 
 <!--Known Issues-->
-### Known Issues
+## Known Issues {#issues}
 
 <!--Mod Compatibility-->
-## Mod Compatibility
+## Mod Compatibility {#compatibility}
 
 <!--Supported-->
-### Supported
+### Supported {#supported}
 
 <!--Recommended-->
-### Recommended
+### Recommended {#recommended}
 
 <!--Incompatible-->
-### Incompatible
+### Incompatible {#incompatible}
 
 <!--Future Plans-->
-## Future Plans
+## Future Plans {#future}
 
 <!--Contributing-->
-## Contributing
+## Contributing {#contribute}
 
 <!--Bug Reports-->
-### Bug Reports
+### Bug Reports {#bugs}
 
 <!--Feature Suggestions-->
-### Feature Suggestions
+### Feature Suggestions {#suggestions}
 
 <!--Translations-->
-### Translations
+### Translations {#translations}
 
 <!--Support-->
-## Support
+## Support {#support}
 
 <!--License-->
-## License
+## License {#license}
 
 <!--Acknowledgements-->
-## Acknowledgements
+## Acknowledgements {#acknowledgements}
 
 <!--Markdown Links, Images and Abbreviations-->
 <!--
