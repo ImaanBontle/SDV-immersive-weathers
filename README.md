@@ -17,7 +17,6 @@
 [![Last commit][last-commit-shield]][commits-link]
 
 <!--Links-->
-
 <h4>
 	<a>Nexus</a>
 	<span> &#183; </span>
@@ -69,7 +68,7 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [translation-table]: https://github.com/Pathoschild/StardewMods/#translating-the-mods
 [translation-script]: https://gist.github.com/Pathoschild/040ff6c8dc863ed2a7a828aa04447033
 -->
-
+<!--Shields-->
 [license-shield]: <https://img.shields.io/github/license/ImaanBontle/SDV-immersive-weathers>
 [license-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/blob/main/LICENSE>
 [release-shield]: <https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers>
