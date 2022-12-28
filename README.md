@@ -11,9 +11,9 @@ Influence the weather systems in Stardew Valley!
 [![Release date][release-date-shield]][release-link]
 <br>
 [![Contributors][contributors-shield]][contributors-link]
-[![Commits since latest release][commits-shield]][commits-link]
 [![Open issues][issues-shield]][issues-link]
 [![Pull requests][pulls-shield]][pulls-link]
+[![Commits since latest release][commits-shield]][commits-link]
 [![Last commit][last-commit-shield]][commits-link]
 
 <!--Links-->
