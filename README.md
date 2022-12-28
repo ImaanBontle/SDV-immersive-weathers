@@ -38,8 +38,8 @@ Influence the weather systems in Stardew Valley!
 	- [Requirements](#requirements)
 	- [Installation](#installation)
 - [How to Use](#usage)
-- [Config Options](#config)
-- [Known Issues](#issues)
+	- [Config Options](#config)
+	- [Known Issues](#issues)
 - [Mod Compatibility](#compatibility)
 	- [Supported](#supported)
 	- [Recommended](#recommended)
@@ -86,23 +86,11 @@ Influence the weather systems in Stardew Valley!
 <!--How to Use-->
 ## How to Use <a id="usage"></a>
 
-<div align="right">
-
-[[Back to top](#return-to-top)]
-
-</div>
-
 <!--Config Options-->
-## Config Options <a id="config"></a>
-
-<div align="right">
-
-[[Back to top](#return-to-top)]
-
-</div>
+### Config Options <a id="config"></a>
 
 <!--Known Issues-->
-## Known Issues <a id="issues"></a>
+### Known Issues <a id="issues"></a>
 
 <div align="right">
 
