@@ -202,11 +202,3 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [moddrop-link]: <> "ModDrop"
 [bugs-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=bug&template=bug_report.md&title=%5BBUG%5D%3A+> "Report a bug/problem"
 [request-features-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=enhancement&template=feature_request.md&title=%5BFEATURE%5D%3A+> "Request a new feature"
-
-<!--
-# Immersive Weathers
-Framework for influencing Stardew Valley's weather systems.
-
-This is still an early test build with minimal functionality. Most features are not yet implemented.
-
--->
