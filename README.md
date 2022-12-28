@@ -7,43 +7,30 @@
 	</p>
 
 <!--Badges-->
-
-<p>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/blob/main/LICENSE">
-		<img src="https://img.shields.io/github/license/ImaanBontle/SDV-immersive-weathers" alt="license">
-	</a>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/releases">
-		<img src="https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers" alt="release">
-	</a>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/releases">
-		<img src="https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers?include_prereleases&label=pre-release" alt="release">
-	</a>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/releases">
-		<img src="https://img.shields.io/github/release-date/ImaanBontle/SDV-immersive-weathers" alt="release date">
-	</a>
-	</br>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/graphs/contributors">
-		<img src="https://img.shields.io/github/contributors/ImaanBontle/SDV-immersive-weathers" alt="contributors">
-	</a>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/commits">
-		<img src="https://img.shields.io/github/commits-since/ImaanBontle/SDV-immersive-weathers/latest?include_prereleases" alt="commits since latest release">
-	</a>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/issues">
-		<img src="https://img.shields.io/github/issues-raw/ImaanBontle/SDV-immersive-weathers" alt="open issues">
-	</a>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/pulls">
-		<img src="https://img.shields.io/github/issues-pr/ImaanBontle/SDV-immersive-weathers" alt="pull requests">
-	</a>
-	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/commits">
-		<img src="https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers" alt="last commit">
-	</a>
-</p>
+[![License][license-shield]][license-link]
+[![Release][release-shield]][release-link]
+[![Pre-release][pre-release-shield]][release-link]
+[![Release date][release-date-shield]][release-link]
+</br>
+[![Contributors][contributors-shield]][contributors-link]
+[![Commits since latest release][commits-shield]][commits-link]
+[![Open issues][issues-shield]][issues-link]
+[![Pull requests][pulls-shield]][pulls-link]
+[![Last commit][last-commit-shield]][commits-link]
 
 <!--Links-->
 
 <h4>
-	
+	<a>Nexus</a>
+	<span> &#183; </span>
+	<a>ModDrop</a>
+	<span> &#183; </span>
+	<a>Report Bugs</a>
+	<span> &#183; </span>
+	<a>Request Features</a>
 </h4>
+
+
 
 </div>
 
@@ -84,6 +71,22 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [translation-table]: https://github.com/Pathoschild/StardewMods/#translating-the-mods
 [translation-script]: https://gist.github.com/Pathoschild/040ff6c8dc863ed2a7a828aa04447033
 -->
+
+[license-shield]: <https://img.shields.io/github/license/ImaanBontle/SDV-immersive-weathers>
+[license-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/blob/main/LICENSE>
+[release-shield]: <https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers>
+[release-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/releases>
+[pre-release-shield]: <https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers?include_prereleases&label=pre-release>
+[release-date-shield]: <https://img.shields.io/github/release-date/ImaanBontle/SDV-immersive-weathers>
+[contributors-shield]: <https://img.shields.io/github/contributors/ImaanBontle/SDV-immersive-weathers>
+[contributors-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/graphs/contributors>
+[commits-shield]: <https://img.shields.io/github/commits-since/ImaanBontle/SDV-immersive-weathers/latest?include_prereleases>
+[commits-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/commits>
+[issues-shield]: <https://img.shields.io/github/issues-raw/ImaanBontle/SDV-immersive-weathers>
+[issues-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues>
+[pulls-shield]: <https://img.shields.io/github/issues-pr/ImaanBontle/SDV-immersive-weathers>
+[pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls>
+[last-commit-shield]: <https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers>
 
 <!--
 # Immersive Weathers
