@@ -21,11 +21,37 @@
  &#183; 
 [ModDrop][moddrop-link]
  &#183; 
-[Report Bugs][bugs-link]
+[Report Bug][bugs-link]
  &#183; 
-[Request Features][request-features-link]
+[Request Feature][request-features-link]
 
 </div>
+
+<br>
+
+<!--Table of Contents-->
+# Table of Contents
+- [About the Mods](#about-immersive-weathers)
+	- [Framework](#about-framework)
+	- [Climate Control](#about-climate-control)
+- [Getting Started](#getting-started)
+	- [Requirements](#requirements)
+	- [Installation](#installation)
+- [How to Use](#how-to-use)
+	- [Configuration](#configuration)
+	- [Known Issues](#known-issues)
+- [Mod Compatibility](#mod-compatibility)
+	- [Supported](#supported)
+	- [Recommended](#recommended)
+	- [Incompatible](#incompatible)
+- [Future Plans](#future-plans)
+- [Contributing](#contributing)
+	- [Bug Reports](#bug-reports)
+	- [Feature Suggestions](#feature-suggestions)
+	- [Translations](#translations)
+- [Support](#support)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 <!--
 // Logo
