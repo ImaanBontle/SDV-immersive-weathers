@@ -23,7 +23,7 @@ Influence the weather systems in Stardew Valley!
  &#183; 
 [Report Bug][bugs-link]
  &#183; 
-[Request Feature][request-features-link]
+[Request a Feature][request-features-link]
 
 </div>
 
