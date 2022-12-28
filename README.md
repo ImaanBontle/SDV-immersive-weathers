@@ -9,7 +9,7 @@
 [![Release][release-shield]][release-link]
 [![Pre-release][pre-release-shield]][release-link]
 [![Release date][release-date-shield]][release-link]
-</br>
+<br>
 [![Contributors][contributors-shield]][contributors-link]
 [![Commits since latest release][commits-shield]][commits-link]
 [![Open issues][issues-shield]][issues-link]
@@ -17,17 +17,13 @@
 [![Last commit][last-commit-shield]][commits-link]
 
 <!--Links-->
-<h4>
-	<a>Nexus</a>
-	<span> &#183; </span>
-	<a>ModDrop</a>
-	<span> &#183; </span>
-	<a>Report Bugs</a>
-	<span> &#183; </span>
-	<a>Request Features</a>
-</h4>
-
-
+[Nexus][nexus-link]
+ &#183; 
+[ModDrop][moddrop-link]
+ &#183; 
+[Report Bugs][bugs-link]
+ &#183; 
+[Request Features][request-features-link]
 
 </div>
 
@@ -68,22 +64,29 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [translation-table]: https://github.com/Pathoschild/StardewMods/#translating-the-mods
 [translation-script]: https://gist.github.com/Pathoschild/040ff6c8dc863ed2a7a828aa04447033
 -->
+
 <!--Shields-->
 [license-shield]: <https://img.shields.io/github/license/ImaanBontle/SDV-immersive-weathers>
-[license-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/blob/main/LICENSE>
+[license-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/blob/main/LICENSE> "License"
 [release-shield]: <https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers>
-[release-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/releases>
+[release-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/releases> "Latest releases"
 [pre-release-shield]: <https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers?include_prereleases&label=pre-release>
 [release-date-shield]: <https://img.shields.io/github/release-date/ImaanBontle/SDV-immersive-weathers>
 [contributors-shield]: <https://img.shields.io/github/contributors/ImaanBontle/SDV-immersive-weathers>
-[contributors-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/graphs/contributors>
+[contributors-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/graphs/contributors> "Contributors"
 [commits-shield]: <https://img.shields.io/github/commits-since/ImaanBontle/SDV-immersive-weathers/latest?include_prereleases>
-[commits-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/commits>
+[commits-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/commits> "Commit history"
 [issues-shield]: <https://img.shields.io/github/issues-raw/ImaanBontle/SDV-immersive-weathers>
-[issues-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues>
+[issues-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues> "Open issues"
 [pulls-shield]: <https://img.shields.io/github/issues-pr/ImaanBontle/SDV-immersive-weathers>
-[pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls>
+[pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls> "Open pull requests"
 [last-commit-shield]: <https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers>
+
+<!--Repo Links-->
+[nexus-link]: <https://www.nexusmods.com/stardewvalley/mods/14658> "NexusMods"
+[moddrop-link]: <> "ModDrop"
+[bugs-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=bug&template=bug_report.md&title=%5BBUG%5D%3A+> "Report a bug/problem"
+[request-features-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=enhancement&template=feature_request.md&title=%5BFEATURE%5D%3A+> "Request a new feature"
 
 <!--
 # Immersive Weathers
