@@ -31,14 +31,14 @@
 
 <!--Table of Contents-->
 # Table of Contents
-- [About the Mods](#about-immersive-weathers)
-	- [Framework](#about-framework)
-	- [Climate Control](#about-climate-control)
+- [About the Mods](#about-the-mods)
+	- [Framework](#framework)
+	- [Climate Control](#climate-control)
 - [Getting Started](#getting-started)
 	- [Requirements](#requirements)
 	- [Installation](#installation)
 - [How to Use](#how-to-use)
-	- [Configuration](#configuration)
+	- [Config Options](#config-options)
 	- [Known Issues](#known-issues)
 - [Mod Compatibility](#mod-compatibility)
 	- [Supported](#supported)
@@ -53,33 +53,68 @@
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
-<!--
-// Logo
-// Title
-/// Brief few-word description
-/// Badges
-/// Links
-// ToC
-// About
-/// Sister Mods
-// Getting Started
-/// Installation
-/// How to Use
-/// Config Options
-// Compatibility
-/// Supported
-/// Recommended
-/// Incompatible
-// Planned Features
-// Known Issues
-// Contributing
-/// Feature Requests
-/// Bug Reports
-/// Translations
-// License
-// Contact
-// Acknowledgements
--->
+<!--About the Mods-->
+## About the Mods
+
+<!--Framework-->
+### Framework
+
+<!--Climate Control-->
+### Climate Control
+
+<!--Getting Started-->
+## Getting Started
+
+<!--Requirements-->
+### Requirements
+
+<!--Installation-->
+### Installation
+
+<!--How to Use-->
+## How to Use
+
+<!--Config Options-->
+### Config Options
+
+<!--Known Issues-->
+### Known Issues
+
+<!--Mod Compatibility-->
+## Mod Compatibility
+
+<!--Supported-->
+### Supported
+
+<!--Recommended-->
+### Recommended
+
+<!--Incompatible-->
+### Incompatible
+
+<!--Future Plans-->
+## Future Plans
+
+<!--Contributing-->
+## Contributing
+
+<!--Bug Reports-->
+### Bug Reports
+
+<!--Feature Suggestions-->
+### Feature Suggestions
+
+<!--Translations-->
+### Translations
+
+<!--Support-->
+## Support
+
+<!--License-->
+## License
+
+<!--Acknowledgements-->
+## Acknowledgements
 
 <!--Markdown Links, Images and Abbreviations-->
 <!--
