@@ -1,6 +1,6 @@
 <div align="center">
 
-# Immersive Weathers {#return-to-top}
+# Immersive Weathers <a id="return-to-top"></a>
 
 Influence the weather systems in Stardew Valley!
 
@@ -54,13 +54,13 @@ Influence the weather systems in Stardew Valley!
 - [Acknowledgements](#acknowledgements)
 
 <!--About the Mods-->
-## About Immersive Weathers {#about}
+## About Immersive Weathers <a id="about"></a>
 
 <!--Framework-->
-### Framework {#about-framework}
+### Framework <a id="about-framework"></a>
 
 <!--Climate Control-->
-### Climate Control {#about-climate-control}
+### Climate Control <a id="about-climate-control"></a>
 
 <div align="right">
 
@@ -69,13 +69,13 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Getting Started-->
-## Getting Started {#getting-started}
+## Getting Started <a id="getting-started"></a>
 
 <!--Requirements-->
-### Requirements {#requirements}
+### Requirements <a id="requirements"></a>
 
 <!--Installation-->
-### Installation {#installation}
+### Installation <a id="installation"></a>
 
 <div align="right">
 
@@ -84,7 +84,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--How to Use-->
-## How to Use {#usage}
+## How to Use <a id="usage"></a>
 
 <div align="right">
 
@@ -93,7 +93,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Config Options-->
-## Config Options {#config}
+## Config Options <a id="config"></a>
 
 <div align="right">
 
@@ -102,7 +102,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Known Issues-->
-## Known Issues {#issues}
+## Known Issues <a id="issues"></a>
 
 <div align="right">
 
@@ -111,16 +111,16 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Mod Compatibility-->
-## Mod Compatibility {#compatibility}
+## Mod Compatibility <a id="compatibility"></a>
 
 <!--Supported-->
-### Supported {#supported}
+### Supported <a id="supported"></a>
 
 <!--Recommended-->
-### Recommended {#recommended}
+### Recommended <a id="recommended"></a>
 
 <!--Incompatible-->
-### Incompatible {#incompatible}
+### Incompatible <a id="incompatible"></a>
 
 <div align="right">
 
@@ -129,7 +129,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Future Plans-->
-## Future Plans {#future}
+## Future Plans <a id="future"></a>
 
 <div align="right">
 
@@ -138,16 +138,16 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Contributing-->
-## Contributing {#contribute}
+## Contributing <a id="contribute"></a>
 
 <!--Bug Reports-->
-### Bug Reports {#bugs}
+### Bug Reports <a id="bugs"></a>
 
 <!--Feature Suggestions-->
-### Feature Suggestions {#suggestions}
+### Feature Suggestions <a id="suggestions"></a>
 
 <!--Translations-->
-### Translations {#translations}
+### Translations <a id="translations"></a>
 
 <div align="right">
 
@@ -156,7 +156,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Support-->
-## Support {#support}
+## Support <a id="support"></a>
 
 <div align="right">
 
@@ -165,7 +165,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--License-->
-## License {#license}
+## License <a id="license"></a>
 
 <div align="right">
 
@@ -174,7 +174,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Acknowledgements-->
-## Acknowledgements {#acknowledgements}
+## Acknowledgements <a id="acknowledgements"></a>
 
 <div align="right">
 
