@@ -9,23 +9,23 @@
 <!--Badges-->
 
 <p>
-	<a href="">
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/releases">
 		<img src="https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers" alt="release">
 	</a>
-	<a href="">
-		<img src="https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers?include_prereleases&label=beta" alt="release">
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/releases">
+		<img src="https://img.shields.io/github/v/release/ImaanBontle/SDV-immersive-weathers?include_prereleases&label=pre-release" alt="release">
 	</a>
-	<a>
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/releases">
 		<img src="https://img.shields.io/github/release-date/ImaanBontle/SDV-immersive-weathers" alt="release date">
 	</a>
-	<a>
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/blob/main/LICENSE">
 		<img src="https://img.shields.io/github/license/ImaanBontle/SDV-immersive-weathers" alt="license">
 	</a>
 	</br>
-	<a>
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/commits">
 		<img src="https://img.shields.io/github/commits-since/ImaanBontle/SDV-immersive-weathers/latest?include_prereleases" alt="commits since latest release">
 	</a>
-	<a href="">
+	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/commits">
 		<img src="https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers" alt="last commit">
 	</a>
 	<a href="https://github.com/ImaanBontle/SDV-immersive-weathers/issues">
