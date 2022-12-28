@@ -1,8 +1,8 @@
 <div align="center">
-	<h1>Immersive Weathers</h1>
-	<p>
-		Influence the weather systems in Stardew Valley!
-	</p>
+
+# Immersive Weathers
+
+Influence the weather systems in Stardew Valley!
 
 <!--Badges-->
 [![License][license-shield]][license-link]
