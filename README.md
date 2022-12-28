@@ -31,7 +31,7 @@
 
 <!--Table of Contents-->
 # Table of Contents
-- [About the Mods](#about)
+- [About Immersive Weathers](#about)
 	- [Framework](#about-framework)
 	- [Climate Control](#about-climate-control)
 - [Getting Started](#getting-started)
