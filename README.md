@@ -37,4 +37,5 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [best-readme]: https://github.com/othneildrew/Best-README-Template
 [awesome-readme]: https://github.com/Louis3797/awesome-readme-template
 [readme-article]: https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+[translation-table]: https://github.com/Pathoschild/StardewMods/#translating-the-mods
 -->
