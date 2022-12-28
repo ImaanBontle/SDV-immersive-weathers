@@ -24,3 +24,11 @@ This is still an early test build with minimal functionality. Most features are 
 // Contact
 // Acknowledgements
 -->
+
+<!--Markdown Links, Images and Abbreviations-->
+<!--
+REFERENCES FOR INSPIRATION LAYOUTS
+[best-readme]: https://github.com/othneildrew/Best-README-Template
+[awesome-readme]: https://github.com/Louis3797/awesome-readme-template
+[readme-article]: https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+-->
