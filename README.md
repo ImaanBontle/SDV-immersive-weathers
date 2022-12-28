@@ -2,7 +2,7 @@
 
 # Immersive Weathers <a id="return-to-top"></a>
 
-Influence the weather systems in Stardew Valley!
+Control the weather systems in Stardew Valley!
 
 <!--Badges-->
 [![License][license-shield]][license-link]
