@@ -6,6 +6,10 @@
 		Influence the weather systems in Stardew Valley!
 	</p>
 
+</div>
+
+<div align="center">
+
 <!--Badges-->
 [![License][license-shield]][license-link]
 [![Release][release-shield]][release-link]
