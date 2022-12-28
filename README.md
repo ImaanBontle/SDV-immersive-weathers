@@ -35,7 +35,7 @@ Influence the weather systems in Stardew Valley!
 	- [Framework](#about-framework)
 	- [Climate Control](#about-climate-control)
 - [Getting Started](#getting-started)
-	- [Requirements](#requirements)
+	- [Prerequisites](#prerequisites)
 	- [Installation](#installation)
 - [How to Use](#usage)
 	- [Config Options](#config)
@@ -71,8 +71,8 @@ Influence the weather systems in Stardew Valley!
 <!--Getting Started-->
 ## Getting Started <a id="getting-started"></a>
 
-<!--Requirements-->
-### Requirements <a id="requirements"></a>
+<!--Prerequisites-->
+### Prerequisites <a id="prerequisites"></a>
 
 <!--Installation-->
 ### Installation <a id="installation"></a>
@@ -87,7 +87,7 @@ Influence the weather systems in Stardew Valley!
 ## How to Use <a id="usage"></a>
 
 <!--Config Options-->
-### Config Options <a id="config"></a>
+### Configuration Options <a id="config"></a>
 
 <!--Known Issues-->
 ### Known Issues <a id="issues"></a>
@@ -126,7 +126,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Contributing-->
-## Contributing <a id="contribute"></a>
+## Contribute to this Project <a id="contribute"></a>
 
 <!--Bug Reports-->
 ### Bug Reports <a id="bugs"></a>
@@ -144,7 +144,7 @@ Influence the weather systems in Stardew Valley!
 </div>
 
 <!--Support-->
-## Support <a id="support"></a>
+## Support My Work <a id="support"></a>
 
 <div align="right">
 
