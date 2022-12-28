@@ -1,11 +1,8 @@
 <div align="center">
-	
 	<h1>Immersive Weathers</h1>
-	
 	<p>
 		Influence the weather systems in Stardew Valley!
 	</p>
-
 </div>
 
 <div align="center">
