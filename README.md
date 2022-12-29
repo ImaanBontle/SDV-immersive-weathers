@@ -246,7 +246,7 @@ If you encounter any bugs, please remove any [incompatible mods](#incompatible) 
 
 If the problem persists or you do not see your mod included in this list, you can [submit a bug report][bugs-link]. Try to answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] as part of the report.
 
-If you would like submit a bugfix, please submit a pull request with the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix ![fix][bugfix-label] and ![contibution][contribution-label] labels.
+If you would like submit a bugfix, please submit a pull request with the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
 ### Feature Suggestions <a id="suggestions"></a>
@@ -331,10 +331,6 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [pulls-shield]: <https://img.shields.io/github/issues-pr/ImaanBontle/SDV-immersive-weathers>
 [pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls> "Open pull requests"
 [last-commit-shield]: <https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers>
-
-<!--Repo Labels-->
-[bugfix-label]: <https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix>
-[contribution-label]: <https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution>
 
 <!--Repo Links-->
 [nexus-link]: <https://www.nexusmods.com/stardewvalley/mods/14658> "NexusMods"
