@@ -62,8 +62,8 @@ Control the weather systems in Stardew Valley!
 - [x] Draft Contributions policy
 - [x] Draft Bug Report process
 - [x] Draft Feature Suggestion process
-- [ ] Draft Translations placeholder
-- [ ] Add Placeholder Translation Table
+- [x] Draft Translations placeholder
+- [x] Add Placeholder Translation Table
 - [ ] Add Support My Work links
 - [ ] Add License description
 - [ ] Add Acknowledgements
@@ -258,13 +258,25 @@ You will be credited for any suggestions that are implemented.
 <!--Translations-->
 ### Translations <a id="translations"></a>
 
-*Translation support will be added in the next minor release.*
+Translation support will be added in the next minor release. In anticipation of this release, I am adding the following table.
 
-*In anticipation of this release, I am adding the following table. The required `default.json` file is likely empty and should be ignored.*
-
-**COMPLETED TRANSLATIONS COMING SOON**
+**The required `default.json` file is currently empty and should be ignored for now**.
 
 (❑ = untranslated, ↻ = partly translated, ✓ = fully translated)
+
+&nbsp;     | [ClimateControl][climatecontrol-translation] | [Framework][framework-translation]
+:--------- | :--------------------------------- | :----------------------------
+Chinese    | ❑                                  | ❑
+French     | ❑                                  | ❑
+German     | ❑                                  | ❑
+Hungarian  | ❑                                  | ❑
+Italian    | ❑                                  | ❑
+Japanese   | ❑                                  | ❑
+Korean     | ❑                                  | ❑
+Portuguese | ❑                                  | ❑
+Russian    | ❑                                  | ❑
+Spanish    | ❑                                  | ❑
+Turkish    | ❑                                  | ❑
 
 <div align="right">
 
@@ -376,6 +388,10 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [real-weather-link]: <https://www.nexusmods.com/stardewvalley/mods/5773> "Real Weather on NexusMods"
 [extreme-weather-link]: <https://www.nexusmods.com/stardewvalley/mods/12334> "Extreme Weather on NexusMods"
 [climates-ferngill-link]: <https://www.moddrop.com/stardew-valley/mods/664033-climates-of-ferngill> "Climates of Ferngill on ModDrop"
+
+<!--Translations-->
+[framework-translation]: <https://github.com/ImaanBontle/SDV-immersive-weathers/tree/develop/i18n> "Framework i18n folder"
+[climatecontrol-translation]: <https://github.com/ImaanBontle/SDV-IW-climate-control/tree/develop/i18n> "ClimateControl i18n folder"
 
 <!--Contact Links-->
 [nexus-profile]: <https://forums.nexusmods.com/index.php?showuser=54975162> "NexusMods Profile"
