@@ -45,7 +45,7 @@ Control the weather systems in Stardew Valley!
 	- [Supported](#supported)
 	- [Recommended](#recommended)
 	- [Incompatible](#incompatible)
-- [Future](#future)
+- [Feature Plans](#future)
 - [Contribute](#contribute)
 	- [Bug Reports](#bugs)
 	- [Feature Suggestions](#suggestions)
@@ -58,7 +58,7 @@ Control the weather systems in Stardew Valley!
 
 - [ ] Flesh out mod overviews
 - [ ] Proofread Getting Started
-- [ ] Draft Future Plans checklist
+- [x] Draft Future Plans checklist
 - [ ] Draft Contributions policy
 - [ ] Draft Bug Report process
 - [ ] Draft Feature Suggestion process
@@ -205,13 +205,26 @@ In general, any mod which alters the weather is likely to be incompatible. Curre
 </div>
 
 <!--Future Plans-->
-## Future Plans <a id="future"></a>
+## Feature Plans <a id="future"></a>
 
-The following checklist outlines a loose roadmap of plans for this mod series. These are not binding in any way and details may be changed or features dropped over time.
+The following checklist outlines my general roadmap for this mod series.
 
-**CHECKLIST COMING SOON.**
+*If you would like to suggest a feature, [see contributions](#contribute). For upcoming releases, [view the latest changelog][framework-changelog].*
 
-*For info on upcoming releases, see the [latest changelog][framework-changelog].*
+### Future Ideas (in no particular order)
+
+Please note that these ideas should not be taken as fixed commitments. Rather, they may change at any time and might even be dropped entirely. Nonetheless, I hope this provides a very general sense of where this mod project is headed.
+
+- [x] Gradual seasonal weather
+- [ ] More templates
+- [ ] Custom weather types
+- [ ] Dynamic/gradual weather transitions
+- [ ] Custom wind effects/sprites
+- [ ] Daylight savings + seasonal day/night cycles
+- [ ] Temperature and humidity (+ effects on weather)
+- [ ] Dynamic daylight (e.g. overcast, partly cloudy)
+- [ ] Realistic/inaccurate weather forecasts
+- [ ] Optional gameplay effects
 
 <div align="right">
 
