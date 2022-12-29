@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # Immersive Weathers <a id="return-to-top"></a>
 
@@ -258,11 +258,13 @@ You will be credited for any suggestions that are implemented.
 <!--Translations-->
 ### Translations <a id="translations"></a>
 
-<!--Process for adding a translation-->
-<!--Table of translations-->
-**COMING SOON**
+*Translation support will be added in the next minor release.*
+
+*In anticipation of this release, I am adding the following table. The required `default.json` file is likely empty and should be ignored.*
 
 **COMPLETED TRANSLATIONS COMING SOON**
+
+(❑ = untranslated, ↻ = partly translated, ✓ = fully translated)
 
 <div align="right">
 
