@@ -61,7 +61,7 @@ Control the weather systems in Stardew Valley!
 - [x] Draft Future Plans checklist
 - [x] Draft Contributions policy
 - [x] Draft Bug Report process
-- [ ] Draft Feature Suggestion process
+- [x] Draft Feature Suggestion process
 - [ ] Draft Translations placeholder
 - [ ] Add Placeholder Translation Table
 - [ ] Add Support My Work links
@@ -235,24 +235,25 @@ Please note that these ideas should not be taken as fixed commitments. Rather, t
 <!--Contributing-->
 ## Contribute to this Project <a id="contribute"></a>
 
-This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations). For more substantial contributions, please fork the develop repo and submit a pull request.
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations).
 
-You can also attempt to contact me on [NexusMods][nexus-profile] or by [opening an issue][issues-link] on this repo. *(Please be patient if I haven't responded, I am likely busy with studies.)*
+For more substantial contributions, please fork the develop repo and submit a pull request with the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link] on this repo. *(Please be patient if I haven't responded, I am likely busy with studies.)*
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
 
-If you encounter any bugs, please remove any [incompatible mods](#incompatible) and re-run SMAPI.
+If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to see if the problem resolves itself.
 
-If the problem persists or you do not see your mod included in this list, you can [submit a bug report][bugs-link]. Try to answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] as part of the report.
+If the bug persists or you do not see your mod included in this list, you can also [submit a bug report][bugs-link]. You should answer the prompts to the best of your ability and mention any suspected mod conflicts. You will also need to provide a link to your [SMAPI log][smapi-log] in the report.
 
-If you would like submit a bugfix, please submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
+If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
 ### Feature Suggestions <a id="suggestions"></a>
 
-<!--Process for submitting feature requests (and link)-->
-**COMING SOON**
+If you would like to suggest an idea for this mod family, please feel free to [submit a feature request][request-features-link]. While I can't guarantee they will be included, I am always open to new ideas and would love to hear from you.
+
+You will be credited for any suggestions that are implemented.
 
 <!--Translations-->
 ### Translations <a id="translations"></a>
