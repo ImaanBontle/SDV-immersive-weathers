@@ -59,7 +59,7 @@ Control the weather systems in Stardew Valley!
 - [ ] Flesh out mod overviews
 - [ ] Proofread Getting Started
 - [x] Draft Future Plans checklist
-- [ ] Draft Contributions policy
+- [x] Draft Contributions policy
 - [ ] Draft Bug Report process
 - [ ] Draft Feature Suggestion process
 - [ ] Draft Translations placeholder
@@ -235,8 +235,9 @@ Please note that these ideas should not be taken as fixed commitments. Rather, t
 <!--Contributing-->
 ## Contribute to this Project <a id="contribute"></a>
 
-<!--Outline a general policy regarding pull requests, prior contact, etc.-->
-**COMING SOON**
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations). For more substantial contributions, please fork the develop repo and submit a pull request.
+
+You can also attempt to contact me on [NexusMods][nexus-profile] or by [opening an issue][issues-link] on this repo. *(Please be patient if I haven't responded, I am likely busy with studies.)*
 
 <!--Bug Reports-->
 ### Bug Reports <a id="bugs"></a>
@@ -323,7 +324,7 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [commits-shield]: <https://img.shields.io/github/commits-since/ImaanBontle/SDV-immersive-weathers/latest?include_prereleases>
 [commits-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/commits> "Commit history"
 [issues-shield]: <https://img.shields.io/github/issues-raw/ImaanBontle/SDV-immersive-weathers>
-[issues-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues> "Open issues"
+[issues-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues> "Issues"
 [pulls-shield]: <https://img.shields.io/github/issues-pr/ImaanBontle/SDV-immersive-weathers>
 [pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls> "Open pull requests"
 [last-commit-shield]: <https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers>
@@ -368,3 +369,6 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [real-weather-link]: <https://www.nexusmods.com/stardewvalley/mods/5773> "Real Weather on NexusMods"
 [extreme-weather-link]: <https://www.nexusmods.com/stardewvalley/mods/12334> "Extreme Weather on NexusMods"
 [climates-ferngill-link]: <https://www.moddrop.com/stardew-valley/mods/664033-climates-of-ferngill> "Climates of Ferngill on ModDrop"
+
+<!--Contact Links-->
+[nexus-profile]: <https://forums.nexusmods.com/index.php?showuser=54975162> "NexusMods Profile"
