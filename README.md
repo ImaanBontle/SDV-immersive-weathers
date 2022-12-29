@@ -211,18 +211,18 @@ The following checklist outlines my general roadmap for this mod series.
 
 *If you would like to suggest a feature, [see contributions](#contribute). For upcoming releases, [view the latest changelog][framework-changelog].*
 
-### Future Ideas (in no particular order)
+### Possible Ideas (in no particular order)
 
 Please note that these ideas should not be taken as fixed commitments. Rather, they may change at any time and might even be dropped entirely. Nonetheless, I hope this provides a very general sense of where this mod project is headed.
 
 - [x] Gradual seasonal weather
-- [ ] More templates
+	- [ ] Add more templates
 - [ ] Custom weather types
 - [ ] Dynamic/gradual weather transitions
 - [ ] Custom wind effects/sprites
 - [ ] Daylight savings + seasonal day/night cycles
+	- [ ] Dynamic daylight (e.g. overcast, partly cloudy)
 - [ ] Temperature and humidity (+ effects on weather)
-- [ ] Dynamic daylight (e.g. overcast, partly cloudy)
 - [ ] Realistic/inaccurate weather forecasts
 - [ ] Optional gameplay effects
 
@@ -239,8 +239,8 @@ This project is open-source and contributions are welcome, particularly in the f
 
 You can also attempt to contact me on [NexusMods][nexus-profile] or by [opening an issue][issues-link] on this repo. *(Please be patient if I haven't responded, I am likely busy with studies.)*
 
-<!--Bug Reports-->
-### Bug Reports <a id="bugs"></a>
+<!--Bugs-->
+### Bug Fixes/Reports <a id="bugs"></a>
 
 <!--Process for submitting bug reports (and link).-->
 **COMING SOON**
