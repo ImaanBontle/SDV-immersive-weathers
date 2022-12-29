@@ -152,6 +152,7 @@ You can change each config option in-game by using the [Generic Mod Config Menu]
 <!--Known Issues-->
 ### Known Issues <a id="issues"></a>
 
+<!--Storms to rain flags not resetting in ClimateControl-->
 There are currently no known issues with this mod.
 
 *Make sure to [skim each mod's documentation](#docs) for any mod-specific issues.*
