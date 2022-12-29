@@ -60,7 +60,7 @@ Control the weather systems in Stardew Valley!
 - [ ] Proofread Getting Started
 - [x] Draft Future Plans checklist
 - [x] Draft Contributions policy
-- [ ] Draft Bug Report process
+- [x] Draft Bug Report process
 - [ ] Draft Feature Suggestion process
 - [ ] Draft Translations placeholder
 - [ ] Add Placeholder Translation Table
