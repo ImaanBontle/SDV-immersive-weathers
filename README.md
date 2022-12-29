@@ -242,8 +242,11 @@ You can also attempt to contact me on [NexusMods][nexus-profile] or by [opening 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
 
-<!--Process for submitting bug reports (and link).-->
-**COMING SOON**
+If you encounter any bugs, please remove any [incompatible mods](#incompatible) and re-run SMAPI.
+
+If the problem persists or you do not see your mod included in this list, you can [submit a bug report][bugs-link]. Try to answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] as part of the report.
+
+If you would like submit a bugfix, please submit a pull request with the [fix][bugfix-label] and [contibution][contribution-label] labels.
 
 <!--Feature Suggestions-->
 ### Feature Suggestions <a id="suggestions"></a>
@@ -329,10 +332,15 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls> "Open pull requests"
 [last-commit-shield]: <https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers>
 
+<!--Repo Labels-->
+[bugfix-label]: <https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix>
+[contribution-label]: <https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution>
+
 <!--Repo Links-->
 [nexus-link]: <https://www.nexusmods.com/stardewvalley/mods/14658> "NexusMods"
 [moddrop-link]: <> "ModDrop"
 [bugs-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=bug&template=bug_report.md&title=%5BBUG%5D%3A+> "Report a Bug/Problem"
+[smapi-log]: <https://smapi.io/log> "SMAPI Log Parser"
 [request-features-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=enhancement&template=feature_request.md&title=%5BFEATURE%5D%3A+> "Request a New Feature"
 
 <!--Dependency Links-->
