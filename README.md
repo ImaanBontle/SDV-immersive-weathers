@@ -66,7 +66,7 @@ Control the weather systems in Stardew Valley!
 - [x] Add Placeholder Translation Table
 - [x] Add Support My Work links
 - [x] Add License description
-- [ ] Add Acknowledgements
+- [x] Add Acknowledgements
 - [ ] Check all links
 - [ ] Prepare README for Climate Control
 - [ ] Prepare Supp Docs for Climate Control
@@ -152,7 +152,7 @@ You can change each config option in-game by using the [Generic Mod Config Menu]
 <!--Known Issues-->
 ### Known Issues <a id="issues"></a>
 
-<!--Storms to rain flags not resetting in ClimateControl-->
+<!--Storms-to-rain flags not resetting in ClimateControl-->
 There are currently no known issues with this mod.
 
 *Make sure to [skim each mod's documentation](#docs) for any mod-specific issues.*
@@ -196,7 +196,7 @@ In general, any mod which alters the weather is likely to be incompatible. Curre
 - [Extreme Weather][extreme-weather-link] - *incompatible*. Lol, why would you use these together?
 - [Climates of Ferngill][climates-ferngill-link] - *use with caution*. Planned features will likely render this incompatible but no obvious problems have been observed (yet). 
 
-[Content Patcher][content-patcher-link] packs that ***only*** change the appearance of weather should be compatible.
+[Content Patcher][content-patcher-link] packs that only change the appearance of weather *should* be compatible.
 
 <div align="right">
 
@@ -205,13 +205,13 @@ In general, any mod which alters the weather is likely to be incompatible. Curre
 </div>
 
 <!--Future Plans-->
-## Feature Plans <a id="future"></a>
+## Future Plans <a id="future"></a>
 
 The following checklist outlines my general roadmap for this mod series.
 
 *If you would like to suggest a feature, [see contributions](#contribute). For upcoming releases, [view the latest changelog][framework-changelog].*
 
-### Possible Ideas (in no particular order)
+### Feature Ideas (in no particular order)
 
 Please note that these ideas should not be taken as fixed commitments. Rather, they may change at any time and might even be dropped entirely. Nonetheless, I hope this provides a very general sense of where this mod project is headed.
 
@@ -287,7 +287,7 @@ Turkish    | ❑                                  | ❑
 <!--Support-->
 ## Support My Work <a id="support"></a>
 
-If you would like to support my work, you can  [buy me a coffee][ko-fi-link]. However, I will never charge for my mods.
+If you would like to support me directly, you can now [buy me a coffee][ko-fi-link]. Note that this is entirely optional. I will never charge for my mods.
 
 <div align="right">
 
@@ -298,7 +298,7 @@ If you would like to support my work, you can  [buy me a coffee][ko-fi-link]. Ho
 <!--License-->
 ## License <a id="license"></a>
 
-The source code for this mod is available under the [MIT license][license-link]. However, you may not host the mods themselves without my written permission.
+The source code for this mod is available under the [MIT license][license-link]. However, please do not host my own mod releases without my written permission.
 
 <div align="right">
 
@@ -309,8 +309,16 @@ The source code for this mod is available under the [MIT license][license-link].
 <!--Acknowledgements-->
 ## Acknowledgements <a id="acknowledgements"></a>
 
-<!--Relevant acknowledgements (APIs, ConcernedApe, Pathoschild)-->
-**COMING SOON**
+A **HUGE thank you** to [ConcernedApe][concernedape] for creating this masterpiece of a game! Without your imagination, generosity and dedication, none of us would be here enjoying this gem. Thank you from the bottom of my heart. You deserve all your success and more.
+
+Additionally, a big thanks to [Pathoschild][pathoschild] for creating SMAPI for the rest of the modding commmunity and enabling us to thrive. Thank you to all the modders who contributed to its success over the years and who built this community together. Thanks also to those who contributed to the [amazing wiki modding resources][stardew-modding-wiki] that helped me learn to mod in C# in the first place. 
+
+Lastly, thank you to all the players who have downloaded and enjoyed my mods so far. I hope you will have many more happy memories in the Valley.
+
+### Special Thanks
+
+- [spacechase0][spacechase0] for creating the [Generic Mod Config Menu][gmcm-link].
+- [Pepoluan][Pepoluan] for providing an API for [Even Better RNG][even-better-rng-link].
 
 <div align="right">
 
@@ -394,3 +402,10 @@ REFERENCES FOR INSPIRATION LAYOUTS
 <!--Contact Links-->
 [nexus-profile]: <https://forums.nexusmods.com/index.php?showuser=54975162> "NexusMods Profile"
 [ko-fi-link]: <https://ko-fi.com/msbontle> "Donate"
+
+<!--Acknowledgements-->
+[concernedape]: <https://twitter.com/ConcernedApe> "ConcernedApe on Twitter"
+[pathoschild]: <https://www.nexusmods.com/stardewvalley/users/1552317> "Pathoschild on NexusMods"
+[stardew-modding-wiki]: <https://stardewvalleywiki.com/Modding:Index> "Stardew Valley Wiki"
+[spacechase0]: <https://www.nexusmods.com/stardewvalley/users/34250790> "spacechase0 on NexusMods"
+[Pepoluan]: <https://www.nexusmods.com/stardewvalley/users/27024274> "Pepoluan on NexusMods"
