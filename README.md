@@ -64,7 +64,7 @@ Control the weather systems in Stardew Valley!
 - [x] Draft Feature Suggestion process
 - [x] Draft Translations placeholder
 - [x] Add Placeholder Translation Table
-- [ ] Add Support My Work links
+- [x] Add Support My Work links
 - [ ] Add License description
 - [ ] Add Acknowledgements
 - [ ] Check all links
@@ -287,8 +287,7 @@ Turkish    | ❑                                  | ❑
 <!--Support-->
 ## Support My Work <a id="support"></a>
 
-<!--Donation, Ko-Fi, buymeacoffee links-->
-**COMING SOON**
+If you would like to support my work, you can  [buy me a coffee][ko-fi-link]. However, I will never charge for my mods.
 
 <div align="right">
 
@@ -395,3 +394,4 @@ REFERENCES FOR INSPIRATION LAYOUTS
 
 <!--Contact Links-->
 [nexus-profile]: <https://forums.nexusmods.com/index.php?showuser=54975162> "NexusMods Profile"
+[ko-fi-link]: <https://ko-fi.com/msbontle> "Donate"
