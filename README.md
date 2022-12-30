@@ -65,7 +65,7 @@ Control the weather systems in Stardew Valley!
 - [x] Draft Translations placeholder
 - [x] Add Placeholder Translation Table
 - [x] Add Support My Work links
-- [ ] Add License description
+- [x] Add License description
 - [ ] Add Acknowledgements
 - [ ] Check all links
 - [ ] Prepare README for Climate Control
@@ -298,8 +298,7 @@ If you would like to support my work, you can  [buy me a coffee][ko-fi-link]. Ho
 <!--License-->
 ## License <a id="license"></a>
 
-<!--MIT License and link-->
-**COMING SOON**
+The source code for this mod is available under the [MIT license][license-link]. However, you may not host the mods themselves without my written permission.
 
 <div align="right">
 
