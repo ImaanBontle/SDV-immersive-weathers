@@ -75,10 +75,18 @@ Control the weather systems in Stardew Valley!
 <!--About the Mods-->
 ## About Immersive Weathers <a id="about"></a>
 
-Family of mods used to influence the weather systems in Stardew Valley. Work in progress. Only first mod released.
+Have you ever noticed that Stardew Valley's weather feels a bit simplistic and predictable after a few in-game years? Or perhaps you've searched for mods that add more variety or nuance to the in-game weather, only to discover that very few even exist? This mod suite aims to fix that!
+
+Immersive Weathers is a (growing) family of mods that adds depth and complexity to the game's simulated weather systems. Each mod in the series will focus on a different aspect of weather-related gameplay, from custom weather probabilities and climates, to dynamic weather systems, realistic weather forecasts and optional gameplay effects.
+
+The project has been designed from the ground-up in a modular way, allowing players to pick and choose which features to download and implement. It is also fully open-source, enabling better collaboration and long-term support.
+
+At the time of writing, the first mod in the series is approaching release, and more will follow in the future. For more information, see the respective mod summaries below.
+
+*Note: This project is in active early development. The list of implemented features is growing, but it will take some time to fully complete. That said, I work systematically and updates are fairly regular, so I ask for your patience and understanding while I work on this.*
 
 <!--Framework-->
-### Framework <a id="about-framework"></a>
+### Framework Mod <a id="about-framework"></a>
 
 Central framework containing useful functions for sister mods. Required for the other mods to work correctly. If others not installed, will only print weather predictions.
 
