@@ -77,19 +77,21 @@ Control the weather systems in Stardew Valley!
 
 *For install instructions, see [Getting Started](#getting-started).*
 
-*Note: This project is still in early (but active) development. The list of implemented features is growing, but it will take some time to fully complete, especially since I am a full-time graduate student. I hope you can be patient while I chip away at this.*
+*Note: This project is still in early (but active) development. The list of implemented features is growing, but it will take some time to complete, especially since I am a full-time graduate student. Please be patient while I chip away at this.*
 
-After a few playthroughs of Stardew Valley, I couldn't help but notice that the weather sometimes felt a bit simplistic. For example, why were there always the same chances each day for each type of weather? Why didn't the different weather types have more meaningful effects on your crops and activities? And why did it seemingly change overnight with barely a day's notice?
+After a few playthroughs of Stardew Valley, I couldn't help but notice that the weather felt a bit simplistic at times. Why were there always the same daily chances for each type of weather? Why didn't the different weather types affect your crops in more meaningful ways? Why did the words of a man on the telly have the power to change the weather seemingly overnight?
 
-I yearned for a way to add more nuance and realism to the experience, but sadly, I learnt that few mods exist for this. I guess it's true what they say y'all: meteorology is hard! So I set out to make my own!
+The answer must be simple: Meteorology is hard, y'all!
 
-Immersive Weathers is a family of mods aimed at adding depth and complexity to the in-game weather simulation. Each mod fleshes out a different aspect of weather-related gameplay, from custom weather probabilities and climates, to dynamic weather systems, realistic weather forecasts and optional gameplay changes.
+So hard, in fact, that few weather mods even exist for Stardew Valley! So I set out to fix that with my own (work-in-progress) mod series, Immersive Weathers.
 
-Since this project is designed from the ground-up to be modular, players can pick and choose which features to use in their games and which ones to discard. You have complete control over each feature's customisation, with the ability to opt for pre-defined templates, or to tweak each number to your personal liking, creating your own custom weather experience. Since the project is also fully open-source, there is better long-term support from other modders and an increased potential for collaboration.
+Each mod in Immersive Weathers will add nuance and realism to Stardew's weather by fleshing out different aspects of its systems and related gameplay. From crafting custom weather probabilities and climates, to simulating dynamic weather systems, modelling realistic (i.e. inaccurate) weather forecasts, introducing optional gameplay challenges, and more.
 
-Below you will find a summary for each of the released mods, as well as links to their Nexus, ModDrop and GitHub pages. If you have questions or feedback, you can post on the mod's Nexus page or open an issue on its GitHub repository.
+**And the first mod in this series, [Climate Control](#about-climate-control), has just been released!***
 
-At the time of writing, the first mod is almost released. More are planned to follow in the future, so watch for updates.
+This project is designed to be modular. Aside from the main [Framework](#about-framework) mod (which handles core functionality and cross-compatibility), players can pick and choose which features to use in their game and which ones to discard. Keep reading for a summary of each released mod in this series and the links to their Nexus, ModDrop and GitHub pages.
+
+**More mods and features will be added in future updates.*
 
 <!--Framework-->
 ### Framework (Required) <a id="about-framework"></a>
@@ -98,6 +100,10 @@ Central framework containing useful functions for sister mods. Required for the 
 
 <!--Climate Control-->
 ### Climate Control ([GitHub page][climate-control-github]) <a id="about-climate-control"></a>
+
+which allows you to define custom weather probabilities for every day of the year. Yep, gone are the days where each day of the season followed exactly the same rules! Instead, now you might find an increasing chance for snow as Winter comes, or increasingly frequent thunderstorms with Summer on the horizon.
+
+You have complete control over each feature's customisation, with the ability to tweak the numbers/models to your personal liking (or opt for one of the pre-defined templates), crafting your own unique weather experience.
 
 Allows you to set custom weather probabilities for each day of the year.
 
