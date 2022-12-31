@@ -77,31 +77,25 @@ Control the weather systems in Stardew Valley!
 
 *For install instructions, see [Getting Started](#getting-started).*
 
-*Note: This project is still in early (but active) development. The list of implemented features is growing, but it will take some time to complete, especially since I am a full-time graduate student. Please be patient while I chip away at this.*
+*Note: This project is still in early (but active) development. The list of implemented features is growing, but I am a full-time graduate student, so please be patient while I flesh things out.*
 
-After a few playthroughs of Stardew Valley, I couldn't help but notice that the weather felt a bit simplistic at times. Why were there always the same daily chances for each type of weather? Why didn't the different weather types affect your crops in more meaningful ways? Why did the words of a man on the telly have the power to change the weather seemingly overnight?
+After a few playthroughs of Stardew Valley, I couldn't help but realise I was asking myself the same repeat questions: Why did tomorrow's weather follow a fixed probability law? Why didn't each type of weather affect crops in more meaningful ways? And most bafflingly of all, why did the words of a single man on the telly seemingly have the power to change it overnight?
 
-The answer must be simple:
+The answer to all these questions is simple: Meteorology is hard, y'all!
 
-Meteorology is hard, y'all!
+So hard, in fact, that few weather mods exist for Stardew Valley. I set out to fix that, with the Immersive Weathers mod family. Each mod in the family* adds some element of nuance or realism to Stardew's weather systems, from crafting custom weather probabilities and climates, and simulating dynamic weather systems, to modelling realistic (i.e. inaccurate) weather forecasts, and introducing optional gameplay changes, the end result is a fully immersive and personalised weather experience.
 
-So hard, in fact, that few weather mods even exist for Stardew Valley! So I set out to fix that with my own (work-in-progress) mod series, Immersive Weathers.
+See below for a brief summary of what each mod can do.
 
-Each mod in Immersive Weathers will add nuance and realism to Stardew's weather by fleshing out different aspects of its systems and related gameplay. From crafting custom weather probabilities and climates, to simulating dynamic weather systems, modelling realistic (i.e. inaccurate) weather forecasts, introducing optional gameplay challenges, and more.
-
-**And the first mod in this series, [Climate Control](#about-climate-control), has just been released!***
-
-This project is designed to be modular. Aside from the main [Framework](#about-framework) mod (which handles core functionality and cross-compatibility), players can pick and choose which features to use in their game and which ones to discard. Keep reading for a summary of each released mod in this series and the links to their Nexus, ModDrop and GitHub pages.
-
-**More mods and features will be added in future updates.*
+**The first mod in this series, [Climate Control](#about-climate-control), has been released. More will be added in future updates.*
 
 <!--Framework-->
-### Framework (Required) <a id="about-framework"></a>
+### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
 
 Central framework containing useful functions for sister mods. Required for the other mods to work correctly. If others not installed, will only print weather predictions.
 
 <!--Climate Control-->
-### Climate Control ([GitHub page][climate-control-github]) <a id="about-climate-control"></a>
+### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
 
 which allows you to define custom weather probabilities for every day of the year. Yep, gone are the days where each day of the season followed exactly the same rules! Instead, now you might find an increasing chance for snow as Winter comes, or increasingly frequent thunderstorms with Summer on the horizon.
 
@@ -135,7 +129,7 @@ You will need to install the following:
 
 Review the requirements, then:
 
-1. Download the [latest version of the Framework][framework-link].
+1. Download [the latest version of the Framework][nexus-link].
 2. Extract the zip file to your `Stardew Valley/Mods` folder ([wiki guide][smapi-mod-wiki]).
 3. Repeat steps 3-4 for each sister mod you're installing ([see overview of sister mods](#about)) (***NB: currently, only Climate Control has been released!***)
 4. Run SMAPI at least once to generate the `config.json`.
@@ -380,8 +374,9 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [last-commit-shield]: <https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers>
 
 <!--Repo Links-->
-[nexus-link]: <https://www.nexusmods.com/stardewvalley/mods/14658> "NexusMods"
-[moddrop-link]: <> "ModDrop"
+[nexus-link]: <https://www.nexusmods.com/stardewvalley/mods/14658> "Framework on NexusMods"
+[moddrop-link]: <> "Framework on ModDrop"
+[github-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers> "Framework on GitHub"
 [bugs-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=bug&template=bug_report.md&title=%5BBUG%5D%3A+> "Report a Bug/Problem"
 [smapi-log]: <https://smapi.io/log> "SMAPI Log Parser"
 [request-features-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=enhancement&template=feature_request.md&title=%5BFEATURE%5D%3A+> "Request a New Feature"
@@ -393,8 +388,9 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [smapi-instructions]: <https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started#Getting_started> "SMAPI Installation Guide"
 
 <!--ImmersiveWeathers-->
-[framework-link]: <https://www.nexusmods.com/stardewvalley/mods/14658> "Download from NexusMods"
-[climate-control-github]: <https://github.com/ImaanBontle/SDV-IW-climate-control/tree/main> "Climate Control's on GitHub"
+[climate-control-nexus]: <https://www.nexusmods.com/stardewvalley/mods/14659> "Climate Control on NexusMods"
+[climate-control-moddrop]: <> "Climate Control on ModDrop"
+[climate-control-github]: <https://github.com/ImaanBontle/SDV-IW-climate-control/tree/main> "Climate Control on GitHub"
 
 <!--Documentation-->
 [framework-changelog]: <https://github.com/ImaanBontle/SDV-immersive-weathers/blob/develop/CHANGELOG.md> "Latest CHANGELOG"
