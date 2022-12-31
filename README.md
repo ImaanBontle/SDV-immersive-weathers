@@ -75,11 +75,11 @@ Control the weather systems in Stardew Valley!
 <!--About the Mods-->
 ## About Immersive Weathers <a id="about"></a>
 
-*For install instructions, see [Getting Started](#getting-started).*
-
 *Note: This project is still in early (but active) development. The list of implemented features is growing, but I am a full-time graduate student, so please be patient while I flesh things out.*
 
-After a few playthroughs of Stardew Valley, I couldn't help but realise I was asking myself the same repeat questions: Why did tomorrow's weather follow a fixed probability law? Why didn't each type of weather affect crops in more meaningful ways? And most bafflingly of all, why did the words of a single man on the telly seemingly have the power to change it overnight?
+*For install instructions, see [Getting Started](#getting-started).*
+
+After a few playthroughs of Stardew Valley, I couldn't help but realise I was asking myself the same repeat questions: Why did tomorrow's weather follow a fixed probability law? Why didn't each type of weather affect crops in more meaningful ways? And most bafflingly of all, why did the words of a single man on the telly seemingly have the power to change the weather overnight?
 
 The answer to all these questions is simple: Meteorology is hard, y'all!
 
