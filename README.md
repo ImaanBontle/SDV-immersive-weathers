@@ -81,7 +81,9 @@ Control the weather systems in Stardew Valley!
 
 After a few playthroughs of Stardew Valley, I couldn't help but notice that the weather felt a bit simplistic at times. Why were there always the same daily chances for each type of weather? Why didn't the different weather types affect your crops in more meaningful ways? Why did the words of a man on the telly have the power to change the weather seemingly overnight?
 
-The answer must be simple: Meteorology is hard, y'all!
+The answer must be simple:
+
+Meteorology is hard, y'all!
 
 So hard, in fact, that few weather mods even exist for Stardew Valley! So I set out to fix that with my own (work-in-progress) mod series, Immersive Weathers.
 
