@@ -46,7 +46,7 @@ Control the weather systems in Stardew Valley!
 	- [Supported](#supported)
 	- [Recommended](#recommended)
 	- [Incompatible](#incompatible)
-- [Feature Plans](#future)
+- [Future Plans](#future)
 - [Contributing](#contribute)
 	- [Bug Reports](#bugs)
 	- [Feature Suggestions](#suggestions)
@@ -75,18 +75,24 @@ Control the weather systems in Stardew Valley!
 <!--About the Mods-->
 ## About Immersive Weathers <a id="about"></a>
 
-Have you ever noticed that Stardew Valley's weather feels a bit simplistic and predictable after a few in-game years? Or perhaps you've searched for mods that add more variety or nuance to the in-game weather, only to discover that very few even exist? This mod suite aims to fix that!
+*For install instructions, see [Getting Started](#getting-started).*
 
-Immersive Weathers is a (growing) family of mods that adds depth and complexity to the game's simulated weather systems. Each mod in the series will focus on a different aspect of weather-related gameplay, from custom weather probabilities and climates, to dynamic weather systems, realistic weather forecasts and optional gameplay effects.
+*Note: This project is still in early (but active) development. The list of implemented features is growing, but it will take some time to fully complete, especially since I am a full-time graduate student. I hope you can be patient while I chip away at this.*
 
-The project has been designed from the ground-up in a modular way, allowing players to pick and choose which features to download and implement. It is also fully open-source, enabling better collaboration and long-term support.
+After a few playthroughs of Stardew Valley, I couldn't help but notice that the weather sometimes felt a bit simplistic. For example, why were there always the same chances each day for each type of weather? Why didn't the different weather types have more meaningful effects on your crops and activities? And why did it seemingly change overnight with barely a day's notice?
 
-At the time of writing, the first mod in the series is approaching release, and more will follow in the future. For more information, see the respective mod summaries below.
+I yearned for a way to add more nuance and realism to the experience, but sadly, I learnt that few mods exist for this. I guess it's true what they say y'all: meteorology is hard! So I set out to make my own!
 
-*Note: This project is in active early development. The list of implemented features is growing, but it will take some time to fully complete. That said, I work systematically and updates are fairly regular, so I ask for your patience and understanding while I work on this.*
+Immersive Weathers is a family of mods aimed at adding depth and complexity to the in-game weather simulation. Each mod fleshes out a different aspect of weather-related gameplay, from custom weather probabilities and climates, to dynamic weather systems, realistic weather forecasts and optional gameplay changes.
+
+Since this project is designed from the ground-up to be modular, players can pick and choose which features to use in their games and which ones to discard. You have complete control over each feature's customisation, with the ability to opt for pre-defined templates, or to tweak each number to your personal liking, creating your own custom weather experience. Since the project is also fully open-source, there is better long-term support from other modders and an increased potential for collaboration.
+
+Below you will find a summary for each of the released mods, as well as links to their Nexus, ModDrop and GitHub pages. If you have questions or feedback, you can post on the mod's Nexus page or open an issue on its GitHub repository.
+
+At the time of writing, the first mod is almost released. More are planned to follow in the future, so watch for updates.
 
 <!--Framework-->
-### Framework Mod <a id="about-framework"></a>
+### Framework (Required) <a id="about-framework"></a>
 
 Central framework containing useful functions for sister mods. Required for the other mods to work correctly. If others not installed, will only print weather predictions.
 
@@ -126,7 +132,7 @@ Review the requirements, then:
 3. Repeat steps 3-4 for each sister mod you're installing ([see overview of sister mods](#about)) (***NB: currently, only Climate Control has been released!***)
 4. Run SMAPI at least once to generate the `config.json`.
 
-That's it! If you enjoy the mod, please consider leaving a :thumbsup: on the [Nexus][nexus-link] page.
+That's it! If you enjoy the mod, please consider leaving a :thumbsup: on the [Nexus page][nexus-link]. It helps others find the mod too!
 
 <div align="right">
 
