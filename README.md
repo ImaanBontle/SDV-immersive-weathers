@@ -75,9 +75,9 @@ Control the weather systems in Stardew Valley!
 <!--About the Mods-->
 ## About Immersive Weathers <a id="about"></a>
 
-*This mod series is currently a work-in-progress. More mods and features will follow in future updates.*
+*This mod series is currently a work-in-progress.*
 
-Have you felt saddened by the lack of weather mods for Stardew Valley? Well, I did. So I set out to fix that.
+Have you ever felt saddened by the general lack of weather mods for Stardew Valley? Well, I have. And I set out to fix that.
 
 **Introducing: Immersive Weathers, a brand-new family of weather-related mods!**
 
@@ -89,12 +89,22 @@ This project follows a modular design, meaning you can pick-and-choose which one
 
 *Read on for a summary of each mod's features.*
 
-*Alternatively, [skip ahead to installation](#getting-started) or [share your feedback][discussions-tab].*
+*Alternatively, [skip to installation](#getting-started) or [share feedback][discussions-tab].*
 
 <!--Framework-->
-### Framework (Required mod) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
+### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
 
+*See [config options](#framework-config).*
+
+This mod is the central framework containing common functionality for the other mods. It also handles cross-compatibility features stemming from the modular design and implements all external mod integrations. If no other mods in the series are installed, the Framework can only print weather updates.
+
+***For players:*** *This mod **must** be installed. Without it, the others will not work.*
+
+***For modders:*** *All integrations should go through this mod. An API will be officially released soon.*
+
+<!--
 Central framework containing useful functions for sister mods. Required for the other mods to work correctly. If others not installed, will only print weather predictions.
+-->
 
 <!--Climate Control-->
 ### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
