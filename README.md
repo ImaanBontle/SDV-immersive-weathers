@@ -57,7 +57,7 @@ Control the weather systems in Stardew Valley!
 
 # Readme TODO List:
 
-- [ ] Flesh out mod overviews
+- [x] Flesh out mod overviews
 - [ ] Proofread Getting Started
 - [x] Draft Future Plans checklist
 - [x] Draft Contributions policy
