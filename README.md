@@ -94,11 +94,11 @@ This project follows a modular design, meaning you can pick-and-choose which one
 
 *See [config options](#framework-config).*
 
-This mod is the central framework containing common functionality for the other mods. It also handles cross-compatibility features stemming from the modular design and implements all external mod integrations. If no other mods in the series are installed, the Framework can only print weather updates.
-
 ***For players:*** *This mod* **must** *be installed. Without it, the others will not work.*
 
 ***For modders:*** *All integrations should go through this mod. An API will be officially released soon.*
+
+This mod is the central framework containing common functionality for the other mods. It also handles cross-compatibility features stemming from the modular design and implements all external mod integrations. If no other mods in the series are installed, the Framework can only print weather updates.
 
 <!--
 Central framework containing useful functions for sister mods. Required for the other mods to work correctly. If others not installed, will only print weather predictions.
@@ -109,11 +109,21 @@ Central framework containing useful functions for sister mods. Required for the 
 
 *See [config options](#climate-control-config).*
 
-which allows you to define custom weather probabilities for every day of the year. Yep, gone are the days where each day of the season followed exactly the same rules! Instead, now you might find an increasing chance for snow as Winter comes, or increasingly frequent thunderstorms with Summer on the horizon.
+***For players:** This mod will not work properly with any mods that change tomorrow's weather. See the [list of known conflicts](#incompatible).*
 
-You have complete control over each feature's customisation, with the ability to tweak the numbers/models to your personal liking (or opt for one of the pre-defined templates), crafting your own unique weather experience.
+**Mod Summary:** The first of the sister mods to be released, Climate Control allows you to define custom weather probabilities for every day of the year, rather than using the fixed seasonal rules in the vanilla game.
 
-Allows you to set custom weather probabilities for each day of the year.
+Yup, gone are the unrealistic days of weather being confined to separate seasons! Instead, you may experience increasingly frequent thunderstorms as Summer creeps over the horizon, or discover increasing chances for snow as Fall draws to an end. Now you finally have that excuse to dress as Ned Stark on Spirit's Eve!
+
+**Daily Weather:** The mod achieves this behaviour by defining a set weather probabilities at the start, middle and end of each season. It then takes these numbers and performs cubic spline interpolation for all the days in-between. This effectively produces a "guess" at what the weather probabilities are for each day of the year. There are two advantage to this approach: 1) No two days will have the same odds for every weather type, and 2) Weather can seem to bleed over from one period to the next.
+
+The second advantage is what results in cool side-effects like having snow at the end of Fall, similarly to how weather behaves in real-life! However, if you would prefer a simpler approach, this interpolation can be disabled and the mod will use the config values as fixed probabilities for roughly 1/3rd of the season each.
+
+**Templates:** By default, the mod uses a pre-defined "standard" climate. This template features gentle showers in Spring, heavy thunderstorms in Summer, windy, dry weather in Fall, and near-continous snowfall in Winter. In combination with the cubic interpolation mentioned above, this produces something approximated to the 'vanilla experience', but with smoother weather profiles, resulting in added realism and immersion.
+
+Other templates beyond "standard" will be added in a future update, each inspired by real-world biomes. Aside from the provided templates, you can also define your own custom template or tweak any of the released templates to your liking.
+
+***For the curious:** Want to see the **real-time impact** of tweaking the settings? After saving inside [Generic Mod Config Menu][gmcm-link], you can view the changes to the daily probabilities in your `IW-ClimateControl/data` folder. Each array begins with Spring 1 and ends with Winter 28.*
 
 <div align="right">
 
