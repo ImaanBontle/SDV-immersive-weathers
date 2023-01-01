@@ -77,19 +77,17 @@ Control the weather systems in Stardew Valley!
 
 *This mod series is currently a work-in-progress.*
 
-Have you ever felt saddened by the general lack of weather mods for Stardew Valley? Well, I have. And I set out to fix that.
-
-**Introducing: Immersive Weathers, a brand-new family of weather-related mods!**
+Have you ever felt saddened by the general lack of weather mods for Stardew Valley? Well, I definitely have. I set out to fix that. **Introducing: Immersive Weathers, a brand-new family of weather-related mods!**
 
 Each mod in Immersive Weathers adds some element of nuance or realism to Stardew's weather systems, from crafting your own custom weather probabilities and climates to modelling dynamic weather systems, simulating realistic (i.e. inaccurate) weather forecasts and even introducing optional gameplay challenges.
 
-**The first of these mods, [Climate Control](#about-climate-control), has just been released! (Did someone say 'Snow in Fall'? Winter Is Coming!)**
+**The first of these mods, [Climate Control](#about-climate-control), has just been released!** *(Did someone say 'Snow in Fall'?)*
 
-This project follows a modular design, meaning you can pick-and-choose which ones to include in your playthrough. In many cases, each mod will also allow you to default to one of several different templates, so mods will work straight out-of-the-box. Though if you'd prefer, you can also tweak each number to your liking and craft your own unique weather experience.
+This project follows a modular design, meaning you can pick-and-choose which ones to include in your playthrough. In many cases, each mod will also allow you to default to one of several different templates, so the mods will work straight out-of-the-box. Though if you'd prefer, you can also tweak each value to your liking, crafting your own unique weather experience.
 
-*Read on for a summary of each mod's features.*
+*Read on for the summary of each mod's features.*
 
-*Alternatively, [skip to installation](#getting-started) or [share feedback][discussions-tab].*
+*Alternatively, [skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
@@ -98,7 +96,7 @@ This project follows a modular design, meaning you can pick-and-choose which one
 
 This mod is the central framework containing common functionality for the other mods. It also handles cross-compatibility features stemming from the modular design and implements all external mod integrations. If no other mods in the series are installed, the Framework can only print weather updates.
 
-***For players:*** *This mod **must** be installed. Without it, the others will not work.*
+***For players:*** *This mod* **must** *be installed. Without it, the others will not work.*
 
 ***For modders:*** *All integrations should go through this mod. An API will be officially released soon.*
 
@@ -108,6 +106,8 @@ Central framework containing useful functions for sister mods. Required for the 
 
 <!--Climate Control-->
 ### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
+
+*See [config options](#climate-control-config).*
 
 which allows you to define custom weather probabilities for every day of the year. Yep, gone are the days where each day of the season followed exactly the same rules! Instead, now you might find an increasing chance for snow as Winter comes, or increasingly frequent thunderstorms with Summer on the horizon.
 
