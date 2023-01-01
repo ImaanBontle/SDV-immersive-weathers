@@ -75,22 +75,24 @@ Control the weather systems in Stardew Valley!
 <!--About the Mods-->
 ## About Immersive Weathers <a id="about"></a>
 
-*Note: This project is still in early (but active) development. The list of implemented features is growing, but I am a full-time graduate student, so please be patient while I flesh things out.*
+*This mod series is currently a work-in-progress. More mods and features will follow in future updates.*
 
-*For install instructions, see [Getting Started](#getting-started).*
+Have you felt saddened by the lack of weather mods for Stardew Valley? Well, I did. So I set out to fix that.
 
-After a few playthroughs of Stardew Valley, I couldn't help but realise I was asking myself the same repeat questions: Why did tomorrow's weather follow a fixed probability law? Why didn't each type of weather affect crops in more meaningful ways? And most bafflingly of all, why did the words of a single man on the telly seemingly have the power to change the weather overnight?
+**Introducing: Immersive Weathers, a brand-new family of weather-related mods!**
 
-The answer to all these questions is simple: Meteorology is hard, y'all!
+Each mod in Immersive Weathers adds some element of nuance or realism to Stardew's weather systems, from crafting your own custom weather probabilities and climates to modelling dynamic weather systems, simulating realistic (i.e. inaccurate) weather forecasts and even introducing optional gameplay challenges.
 
-So hard, in fact, that few weather mods exist for Stardew Valley. I set out to fix that, with the Immersive Weathers mod family. Each mod in the family* adds some element of nuance or realism to Stardew's weather systems, from crafting custom weather probabilities and climates, and simulating dynamic weather systems, to modelling realistic (i.e. inaccurate) weather forecasts, and introducing optional gameplay changes, the end result is a fully immersive and personalised weather experience.
+**The first of these mods, [Climate Control](#about-climate-control), has just been released! (Did someone say 'Snow in Fall'? Winter Is Coming!)**
 
-See below for a brief summary of what each mod can do.
+This project follows a modular design, meaning you can pick-and-choose which ones to include in your playthrough. In many cases, each mod will also allow you to default to one of several different templates, so mods will work straight out-of-the-box. Though if you'd prefer, you can also tweak each number to your liking and craft your own unique weather experience.
 
-**The first mod in this series, [Climate Control](#about-climate-control), has been released. More will be added in future updates.*
+*Read on for a summary of each mod's features.*
+
+*Alternatively, [skip ahead to installation](#getting-started) or [share your feedback][discussions-tab].*
 
 <!--Framework-->
-### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
+### Framework (Required mod) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
 
 Central framework containing useful functions for sister mods. Required for the other mods to work correctly. If others not installed, will only print weather predictions.
 
@@ -111,6 +113,8 @@ Allows you to set custom weather probabilities for each day of the year.
 
 <!--Getting Started-->
 ## Getting Started <a id="getting-started"></a>
+
+*NB: To use this mod series, you will need the [Framework mod](#about-framework). Make sure to download it! It handles all cross-compatibility, integrations and shared functionality.*
 
 Follow these steps to get Immersive Weathers running on your local copy of Stardew Valley.
 
@@ -380,6 +384,7 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [bugs-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=bug&template=bug_report.md&title=%5BBUG%5D%3A+> "Report a Bug/Problem"
 [smapi-log]: <https://smapi.io/log> "SMAPI Log Parser"
 [request-features-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues/new?assignees=ImaanBontle&labels=enhancement&template=feature_request.md&title=%5BFEATURE%5D%3A+> "Request a New Feature"
+[discussions-tab]: <https://github.com/ImaanBontle/SDV-immersive-weathers/discussions> "Start a Discussion"
 
 <!--Dependency Links-->
 [stardew-link]: <https://store.steampowered.com/app/413150/Stardew_Valley/> "Get Stardew Valley on Steam"
