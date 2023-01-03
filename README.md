@@ -198,14 +198,12 @@ The weather model determines the likelihood of weather changes for each day of t
 |---|---|---|
 | **Model Choice** | *custom, standard* <br> *[**Default:** standard]* | Determines the choice of weather model.
 
-<details><summary>
-
-*Resetting the custom model*
-
-</summary>
+<details><summary><em>Resetting the custom model</em></summary>
+<p>
 
 The *custom* model is preserved when resetting to Default. If you want to reset the *custom* model, delete `custom.json`, or copy the *standard* values into the *custom* model i.e. switch from *standard* to *custom*, open the values page, then click "Save" followed by "Save & Close".
 
+</p>
 </details>
 
 <div align="right">
