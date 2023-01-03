@@ -173,9 +173,9 @@ If you like this mod project, consider leaving a :thumbsup: on the [Nexus][nexus
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-*This section contains summaries of the available config options of each mod.*
+*This section contains the available configuration options for each mod. **Default values** are in bold.*
 
-NB: You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).
+*You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).*
 
 ### Framework <a id="framework-config"></a>
 
@@ -185,8 +185,8 @@ Each morning, players can choose to receive a forecast of the weather for today 
 
 | Name | Values | Summary |
 |---|---|---|
-| **SMAPI Terminal** | *true, false* | If *true*, weather predictions are printed to the SMAPI terminal. |
-| **In-Game HUD** | *true, false* | If *true*, weather predictions are printed using the in-game HUD. |
+| **SMAPI Terminal** | ***true**, false* | If *true*, weather predictions are printed to the SMAPI terminal. |
+| **In-Game HUD** | *true, **false*** | If *true*, weather predictions are printed using the in-game HUD. |
 
 ### Climate Control <a id="climate-control-config"></a>
 
@@ -196,12 +196,17 @@ The weather model determines the likelihood of weather changes for each day of t
 
 | Name | Values| Summary |
 |---|---|---|
-| **Model Choice** | *custom, standard* <br> *[**Default:** standard]* | Determines the choice of weather model.
+| **Model Choice** | ***standard**, custom* | Determines the choice of weather model. |
+| **Daily Weather Odds** | ***true**, false* | If *true*, interpolation will be used to estimate the daily weather odds. |
 
-<details><summary><em>Resetting the custom model</em></summary>
+<details><summary>Resetting custom models</summary>
 <p>
 
-The *custom* model is preserved when resetting to Default. If you want to reset the *custom* model, delete `custom.json`, or copy the *standard* values into the *custom* model i.e. switch from *standard* to *custom*, open the values page, then click "Save" followed by "Save & Close".
+*Custom* models are preserved whenever resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you should delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
+
+1. switching from *standard* to *custom*
+2. opening the values page
+3. clicking "Save" followed by "Save & Close"
 
 </p>
 </details>
