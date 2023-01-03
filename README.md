@@ -276,7 +276,7 @@ In general, any mod which alters the weather is likely incompatible. Note that [
 
 *If you would like to suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [view the latest changelog][framework-changelog].*
 
-The following list contains some possible ideas for this mod project. I initially made this list to serve as a source of inspiration for me. However, please don't view it as any sort of long-term commitment. I work best when I have a 'scratchpad' I can dive through for ideas and most of these were just written down as they occured to me.
+This list contains some possible future ideas for this mod project. However, please do not view this as a list of guaranteed features. It is more of a 'personal scratchpad' than a 'feature roadmap', and is primarily meant to be used as a source of inspiration.
 
 - [x] Daily weather odds
 	- [ ] Add more climate templates
