@@ -179,12 +179,16 @@ NB: You can change these options in-game using [Generic Mod Config Menu][gmcm-li
 
 ### Framework <a id="framework-config"></a>
 
-The following options are available:
+#### Weather Reports:
+
+Each morning, the Framework can be set to print weather updates for the player. These updates describe the weather today and provide a forecast for tomorrow's weather.
+
+The possible options are listed below:
 
 | Option | Values | Summary |
 |---|---|---|
-| **Terminal Logging** | *true, false* | Prints daily weather predictions to the SMAPI terminal each morning. |
-| **HUD Logging** | *true, false* | Prints daily weather predictions to the in-game HUD each morning. |
+| **SMAPI Terminal** | *true, false* | If *true*, prints daily weather predictions to the SMAPI terminal each morning. |
+| **In-Game HUD** | *true, false* | If *true*, prints daily weather predictions to the in-game HUD each morning. |
 
 ### Climate Control <a id="climate-control-config"></a>
 
