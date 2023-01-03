@@ -173,20 +173,20 @@ If you like this mod project, consider leaving a :thumbsup: on the [Nexus][nexus
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-*This section contains the available configuration options for each mod. **Default values** are in bold.*
+*NB: Default values are **shown in bold.***
 
-*You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).*
+This section contains the available configuration options for each mod. You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).
 
 ### Framework <a id="framework-config"></a>
 
 #### Weather Reports:
 
-Each morning, players can choose to receive a forecast of the weather for today and tomorrow. These options determine whether the player receives these messages, and if so, how.
+Each morning, you can choose to receive a forecast of the weather for today and tomorrow. These options determine whether you receive these messages, and if so, how.
 
-| Name | Values | Summary |
-|---|---|---|
-| **SMAPI Terminal** | ***true**, false* | If *true*, weather predictions are printed to the SMAPI terminal. |
-| **In-Game HUD** | *true, **false*** | If *true*, weather predictions are printed using the in-game HUD. |
+| Name | Values | Description |
+|:---|:---|:---|
+| SMAPI Terminal | ***true**, false* | If *true*, weather predictions are printed to the SMAPI terminal. |
+| In-Game HUD | *true, **false*** | If *true*, weather predictions are printed using the in-game HUD. |
 
 ### Climate Control <a id="climate-control-config"></a>
 
@@ -194,12 +194,12 @@ Each morning, players can choose to receive a forecast of the weather for today 
 
 The weather model determines the likelihood of weather changes for each day of the year (e.g. the chance of rain, snow, thunderstorms etc.). You can make your own custom model or use one of the provided templates.
 
-| Name | Values| Summary |
-|---|---|---|
-| **Model Choice** | ***standard**, custom* | Determines the choice of weather model. |
-| **Daily Weather Odds** | ***true**, false* | If *true*, interpolation will be used to estimate the daily weather odds. |
+| Name | Values | Description |
+|:---|:---|:---|
+| Model Choice | ***standard**, custom* | Determines the choice of weather model. |
+| Daily Odds | ***true**, false* | If *true*, interpolation will be used to estimate the daily weather odds. |
 
-<details><summary>Resetting custom models</summary>
+<details><summary><em>Resetting custom models</em></summary>
 <p>
 
 *Custom* models are preserved whenever resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you should delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
@@ -210,6 +210,14 @@ The weather model determines the likelihood of weather changes for each day of t
 
 </p>
 </details>
+
+In addition to selecting one of the model templates above, you can also manually edit the probabilities. If using [Generic Mod Config Menu][gmcm-link], then this can be done via the in-game menu. Otherwise, this can be done by editing the `.json` files in `IW-ClimateControl/models` for each model.
+
+	For each type of weather (rain, storm, wind, snow), you may assign any value between 0 and 100 for time periods covering days 1-9, days 10-19, and days 20-28 of each season.
+
+#### Debug Logging:
+
+When debug logging is enabled, SMAPI will output the dice rolls and other useful information.
 
 <div align="right">
 
