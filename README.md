@@ -181,18 +181,28 @@ NB: You can change these options in-game using [Generic Mod Config Menu][gmcm-li
 
 #### Weather Reports:
 
-Each morning, the Framework can be set to print weather updates for the player. These updates describe the weather today and provide a forecast for tomorrow's weather.
+Each morning, players can choose to receive a forecast of the weather for today and tomorrow. These options determine whether the player receives these messages, and if so, how.
 
-The possible options are listed below:
-
-| Option | Values | Summary |
+| Name | Values | Summary |
 |---|---|---|
-| **SMAPI Terminal** | *true, false* | If *true*, prints daily weather predictions to the SMAPI terminal each morning. |
-| **In-Game HUD** | *true, false* | If *true*, prints daily weather predictions to the in-game HUD each morning. |
+| **SMAPI Terminal** | *true, false* | If *true*, weather predictions are printed to the SMAPI terminal. |
+| **In-Game HUD** | *true, false* | If *true*, weather predictions are printed using the in-game HUD. |
 
 ### Climate Control <a id="climate-control-config"></a>
 
-**COMING SOON**
+#### Weather Models:
+
+The weather model determines the likelihood of weather changes for each day of the year (e.g. the chance of rain, snow, thunderstorms etc.). You can make your own custom model or use one of the provided templates.
+
+| Name | Values| Summary |
+|---|---|---|
+| **Model Choice** | *custom, standard* <br> *[**Default:** standard]* | Determines the choice of weather model.
+
+<details><summary>*Resetting the custom model*</summary>
+<p>
+The *custom* model is preserved when resetting to Default. If you want to reset the *custom* model, delete `custom.json`, or copy the *standard* values into the *custom* model i.e. switch from *standard* to *custom*, open the values page, then click "Save" followed by "Save & Close".
+</p>
+</details>
 
 <div align="right">
 
