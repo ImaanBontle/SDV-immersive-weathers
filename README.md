@@ -139,7 +139,7 @@ In the settings menu, you can define your own custom template or tweak the exist
 <!--Getting Started-->
 ## Getting Started <a id="getting-started"></a>
 
-*This section covers everything you need to know to get Immersive Weathers running properly in Stardew Valley.*
+*This section covers everything you need to get Immersive Weathers running in Stardew Valley.*
 
 <!--Requirements-->
 ### Requirements: <a id="requirements"></a>
@@ -173,9 +173,9 @@ If you like this mod project, consider leaving a :thumbsup: on the [Nexus][nexus
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-*This section contains summaries of the config options for each mod.*
+*This section contains summaries of the available config options of each mod.*
 
-*NB: You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).*
+NB: You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).
 
 ### Framework <a id="framework-config"></a>
 
@@ -357,7 +357,7 @@ Turkish    | ❑                                  | ❑
 <!--Support-->
 ## Support My Mods <a id="support"></a>
 
-If you would like to support my work, you can [buy me a coffee][ko-fi-link]. However, this is entirely optional. My mods are available for free and without any expectation. 
+If you would like to support my work, you can [buy me a coffee][ko-fi-link]. However, this is entirely optional. My mods are available for free and without expectation. 
 
 <div align="right">
 
@@ -368,9 +368,9 @@ If you would like to support my work, you can [buy me a coffee][ko-fi-link]. How
 <!--License-->
 ## License <a id="license"></a>
 
-The source code for this mod is open-source and available under the [MIT license][license-link].
+Please do not host my official releases without my written consent.
 
-Please do not host my releases without written consent.
+The source code for this mod is available under the [MIT license][license-link].
 
 <div align="right">
 
