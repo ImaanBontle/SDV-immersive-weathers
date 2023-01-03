@@ -80,15 +80,13 @@ Control the weather systems in Stardew Valley!
 
 *Read on for a summary of each mod's features. Alternatively, [skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
-**Introducing Immersive Weathers, a brand-new family of weather-related mods!**
-
-Have you ever felt saddened by the lack of weather mods for Stardew Valley? Well, I definitely have. And I set out to fix that.
+**Introducing Immersive Weathers, a brand-new family of weather-related mods!** Have you ever felt saddened by the lack of weather mods for Stardew Valley? Well, I definitely have. And I set out to fix that.
 
 Each mod in Immersive Weathers adds some element of nuance or realism to Stardew's weather systems, resulting in a much more immersive and dynamic weather experience than the vanilla game. These planned changes range from crafting your own custom weather probabilities and climates to modelling dynamic weather systems, simulating realistic (i.e. inaccurate) weather forecasts or adding optional gameplay challenges.
 
-This project follows a modular design, meaning you can pick-and-choose which mods to include in your playthrough. In many cases, each mod also allows you to use one of many weather templates, so they'll usually work straight out-of-the-box. However, if you'd prefer more direct control, you can also tweak the numbers manually, crafting your own customised weather.
-
 **So far, the first mod in the series, [Climate Control](#about-climate-control), has been released! (Did someone say 'Snow in Fall'?)** More features will be added in future updates.
+
+This project follows a modular design, meaning you can pick-and-choose which mods to include in your playthrough. In many cases, each mod also allows you to use one of many weather templates, so they'll usually work straight out-of-the-box. However, if you'd prefer more direct control, you can also tweak the numbers manually, crafting your own customised weather.
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
@@ -104,11 +102,7 @@ This mod is the central framework containing some common functionality needed fo
 
 ***For players:** This mod will not work properly with mods that change the weather ([see incompatible mods](#incompatible)).*
 
-The first of the sister mods to be released, Climate Control allows you to define custom weather probabilities for every day of the year, rather than using the fixed seasonal rules from the vanilla game.
-
-Yup, gone are the days of weather being unrealistically confined to the separate seasons! Now, you might witness more frequent thunderstorms as Summer arrives, or shiver from the increasing chances of snow as Winter rolls over the horizon. Finally, an excuse to dress up as Ned Stark on Spirit's Eve!
-
-#### Features:
+The first of the sister mods to be released, Climate Control allows you to define custom weather probabilities for every day of the year, rather than using the fixed seasonal rules from the vanilla game. Yup, gone are the days of weather being unrealistically confined to the separate seasons! Now, you might witness more frequent thunderstorms as Summer arrives, or shiver from the increasing chances of snow as Winter rolls over the horizon. Finally, an excuse to dress up as Ned Stark on Spirit's Eve!
 
 - Unique daily weather odds:
     - Experience snow in Fall or rain in Winter, thanks to cubic spline interpolation.
@@ -174,9 +168,10 @@ If you like this mod project, consider leaving a :thumbsup: on the [Nexus][nexus
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-This section contains the available configuration options for each mod. You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).
+*Default values are **shown in bold**.*
 
-*NB: Default values are **shown in bold.***
+This section contains the available configuration options for each mod.
+You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).
 
 ### Framework <a id="framework-config"></a>
 
@@ -184,10 +179,10 @@ This section contains the available configuration options for each mod. You can 
 
 Each morning, you can choose to receive a forecast of the weather for today and tomorrow. These options determine whether you receive these messages, and if so, how.
 
-| Name | Values | Description |
+| Name | Value | Description |
 |:---|:---|:---|
-| SMAPI Terminal | ***true**, false* | If *true*, weather predictions are printed to the SMAPI terminal. |
-| In-Game HUD | *true, **false*** | If *true*, weather predictions are printed using the in-game HUD. |
+| **SMAPI Terminal** | ***true**, false* | *If *true*, weather predictions are printed to the SMAPI terminal.* |
+| **In-Game HUD** | *true, **false*** | *If *true*, weather predictions are printed using the in-game HUD.* |
 
 ### Climate Control <a id="climate-control-config"></a>
 
@@ -195,15 +190,15 @@ Each morning, you can choose to receive a forecast of the weather for today and 
 
 The weather model determines the likelihood of weather changes for each day of the year (e.g. the chance of rain, snow, thunderstorms etc.). You can make your own custom model or use one of the provided templates.
 
-| Name | Values | Description |
+| Name | Value | Description |
 |:---|:---|:---|
-| Model Choice | ***standard**, custom* | Determines the choice of weather model. |
-| Daily Odds | ***true**, false* | If *true*, interpolation will be used to estimate the daily weather odds. |
+| **Model Choice** | ***standard**, custom* | *Determines the choice of weather model.* |
+| **Daily Odds** | ***true**, false* | *If *true*, interpolation will be used to estimate the daily weather odds.* |
 
-<details><summary><em>Resetting custom models</em></summary>
+<details><summary>Resetting custom models</summary>
 <p>
 
-Custom models are preserved whenever resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you can delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
+Custom models are preserved when resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you can delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
 
 1. Switching from *standard* to *custom*
 2. Opening the values page
@@ -212,19 +207,11 @@ Custom models are preserved whenever resetting with [Generic Mod Config Menu][gm
 </p>
 </details>
 
-#### Weather Odds:
-
 In addition to selecting one of the model templates above, you can also manually edit the probabilities. If using [Generic Mod Config Menu][gmcm-link], then this can be done via the in-game menu, sorted by weather or by season. Otherwise, this can be done by manually editing the JSON files in the `models` folder.
-
-<details><summary><em>Effects of interpolation</em></summary>
-<p>
 
 You may assign any decimal value between 0 and 100 to days 1-9, 10-19 and 20-28 within each season for each type of weather (rain, storm, snow, wind). If interpolation is enabled, these numbers will be held fixed for days 5, 15 and 24 respectively. Otherwise, they will be treated as fixed for the entirety of each time period.
 
 ***For the curious:** You can see the effects of changing the settings by looking at the daily weather probabilities in the `data` folder. These will update in real-time when using [Generic Mod Config Menu][gmcm-link].*
-
-</p>
-</details>
 
 #### Debug Logging:
 
@@ -316,7 +303,7 @@ In general, any mod which alters the weather is likely incompatible. Note that [
 
 *To suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [see the latest changelog][framework-changelog].*
 
-This list contains some future ideas for this mod project. Please do not treat this as a guaranteed feature plan. It's more like  a 'personal scratchpad' than a 'roadmap', and is intended primarily to be used as a source of inspiration.
+This list contains some future ideas for this mod project. Please do not treat this as a guaranteed plan. It's more like a 'personal scratchpad' than a 'roadmap', and is intended primarily as a central source of inspiration.
 
 <details><summary>List of feature ideas</summary>
 
@@ -362,9 +349,7 @@ This project is open-source and contributions are welcome, particularly in the f
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
 
-If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to check if the issue resolves itself. If the bug persists or you do not see your mod included in the list, you can [submit a bug report][bugs-link]. You should answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] in the report.
-
-If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
+If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to check if the issue resolves itself. If the bug persists or you do not see your mod included in the list, you can [submit a bug report][bugs-link]. You should answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] in the report. If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
 ### Suggestions <a id="suggestions"></a>
@@ -412,9 +397,9 @@ If you would like to support my work, you can [buy me a coffee][ko-fi-link]. How
 <!--License-->
 ## License <a id="license"></a>
 
-Please do not host my official releases without my written consent.
-
 The source code for this mod is available under the [MIT license][license-link].
+
+Please do not host my official releases without my written consent.
 
 <div align="right">
 
