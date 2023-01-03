@@ -75,7 +75,7 @@ Control the weather systems in Stardew Valley!
 <!--About the Mods-->
 ## About Immersive Weathers <a id="about"></a>
 
-*This mod series is a work-in-progress.*
+*Read below for a summary of each mod's features. Alternatively, [skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
 Have you ever felt saddened by the lack of weather mods for Stardew Valley? Well, I definitely have. And I set out to fix that.
 
@@ -83,43 +83,36 @@ Have you ever felt saddened by the lack of weather mods for Stardew Valley? Well
 
 Each mod in Immersive Weathers adds some element of nuance or realism to Stardew's weather systems, resulting in a much more immersive and dynamic weather experience than the vanilla game. These planned changes range from crafting your own custom weather probabilities and climates to modelling dynamic weather systems, simulating realistic (i.e. inaccurate) weather forecasts or adding optional gameplay challenges.
 
-**So far, the first mod in the series, [Climate Control](#about-climate-control), has been released!** *(Did someone say 'Snow in Fall'?)*
-
-**More features will be coming in future updates.**
-
 This project follows a modular design, meaning you can pick-and-choose which mods to include in your playthrough. In many cases, each mod also allows you to use one of many weather templates, so they'll usually work straight out-of-the-box. However, if you'd prefer more direct control, you can also tweak the numbers manually, crafting your own customised weather.
 
-*Read below for a summary of each mod's features.*
-
-*Alternatively, [skip to installation](#getting-started) or [share your feedback][discussions-tab].*
+**So far, the first mod in the series, [Climate Control](#about-climate-control), has been released! (Did someone say 'Snow in Fall'?)** More features will be added in future updates.
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
-
-**Summary:** This mod is the central framework containing some common functionality needed for the other mods in the series. If none are installed, the Framework will simply print weather updates to the terminal/HUD. The Framework also handles internal cross-compatibility features and external mod integrations ([list of supported mods](#supported)).
 
 ***For players:*** *This mod must be installed.*
 
 ***For modders:*** *All integrations should go through this mod. An API will be released soon.*
 
+This mod is the central framework containing some common functionality needed for the other mods in the series. If none are installed, the Framework will simply print weather updates to the terminal/HUD. The Framework also handles internal cross-compatibility features and external mod integrations ([list of supported mods](#supported)).
+
 <!--Climate Control-->
 ### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
 
-*NB: Make sure to install the [Framework](#about-framework)!*
+*NB: This mod will not work properly with mods that change the weather ([see incompatible mods](#incompatible)).*
 
-**Summary:** The first of the sister mods to be released, Climate Control allows you to define custom weather probabilities for every day of the year, rather than using the fixed seasonal rules from the vanilla game.
+The first of the sister mods to be released, Climate Control allows you to define custom weather probabilities for every day of the year, rather than using the fixed seasonal rules from the vanilla game.
 
 Yup, gone are the days of weather being unrealistically confined to the separate seasons! Now, you might witness more frequent thunderstorms as Summer arrives, or shiver from the increasing chances of snow as Winter rolls over the horizon. Finally, an excuse to dress up as Ned Stark on Spirit's Eve!
 
 #### Featuring:
 
 - Unique daily weather odds:
-    - Experience snow in Fall or rain in Winter, thanks to brand-new cubic spline interpolation. Or just use fixed rules during the early-, mid- and late-season for a more predictable experience
-- Choose the 'standard' climate, or make your own:
-    - Inspired by the vanilla game, but with more gradual seasonal changes
-    - More climates coming soon!
-
-***For players:** This mod will not work properly with mods that change tomorrow's weather ([see incompatible mods](#incompatible)).*
+    - Experience snow in Fall or rain in Winter, thanks to cubic spline interpolation.
+	- For a more predictable experience, use fixed rules instead in the early-, mid- and late-season.
+- Use the 'standard' climate, or make your own:
+    - Inspired by the vanilla game, the standard climate has more gradual seasonal changes
+    - More climates will be coming soon!
 
 **Daily Weather:**
 
@@ -146,30 +139,30 @@ In the settings menu, you can define your own custom template or tweak the exist
 <!--Getting Started-->
 ## Getting Started <a id="getting-started"></a>
 
-This section explains how to get Immersive Weathers running on your local copy of Stardew Valley.
+*This section covers everything you need to know to get Immersive Weathers running properly in Stardew Valley.*
 
 <!--Requirements-->
 ### Requirements: <a id="requirements"></a>
 
-To install this mod series, you must first:
+To use this mod series, you must first:
 
-- Own [Stardew Valley v1.5.6][stardew-link] on Windows/MacOS/Linux.
-- Install [SMAPI][smapi-link] ([instructions][smapi-instructions]).
+- Own [Stardew Valley v1.5.6][stardew-link] for Windows/MacOS/Linux.
+- [Install SMAPI][smapi-link] ([see instructions][smapi-instructions]).
 
 <!--Installation-->
 ### Installation <a id="installation"></a>
 
-Meet the requirements, then:
+Ensure that you have met the requirements, then:
 
-1. Download [the latest version of the Framework][nexus-link].
-2. Extract the zip file to your `Stardew Valley/Mods` folder ([see wiki][smapi-mod-wiki]).
-3. Repeat for each sister mod you want to use ([mod summaries](#about)).
-    - So far, only Climate Control is released.
-4. Install any [supported mods](#supported).
-5. Launch SMAPI to generate each mod's `config.json`.
-6. Enjoy!
+1. Download the latest version of [the Framework][nexus-link].
+2. Extract the zip file to your `Mods` folder ([wiki guide][smapi-mod-wiki]).
+3. Repeat for each mod you want to use ([mod overviews](#about)).
+    - So far, this only includes Climate Control.
+4. Install any of [the supported mods](#supported).
+5. Launch SMAPI once, to generate each mod's `config.json`.
+6. Enjoy the mods!
 
-Consider leaving a :thumbsup: on the [Nexus][nexus-link]. This helps other players find the series!
+If you like this mod project, consider leaving a :thumbsup: on the [Nexus][nexus-link]. This makes it easier to find for players like you!
 
 <div align="right">
 
@@ -180,9 +173,9 @@ Consider leaving a :thumbsup: on the [Nexus][nexus-link]. This helps other playe
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-This section summarises the config options for each mod.
+*This section contains summaries of the config options for each mod.*
 
-*NB: You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` inside each mod's folder (generated after running SMAPI once).*
+*NB: You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).*
 
 ### Framework <a id="framework-config"></a>
 
@@ -206,7 +199,7 @@ The following options are available:
 <!--Documentation-->
 ## Documentation <a id="docs"></a>
 
-This section contains the links to the READMEs and other documentation.
+*This section contains links to the READMEs and other mod documentation.*
 
 - Climate Control ([README][climate-control-readme])
 
@@ -219,7 +212,7 @@ This section contains the links to the READMEs and other documentation.
 <!--Known Issues-->
 ## Known Issues <a id="issues"></a>
 
-This section contains updates on any known mod issues.
+*This section contains updates on any known mod issues.*
 
 ### Framework
 
@@ -227,7 +220,9 @@ None known.
 
 ### Climate Control:
 
-- Due to the way the game currently handles thunderstorms, an existing storm may continue if it is supposed to rain tomorrow, but the issue will fix itself on the next sunny/windy day. This will be fixed in a coming update. 
+- Due to the way the game currently handles thunderstorms, an existing storm might continue whenever it is supposed to rain tomorrow.
+    - The issue will resolve itself at the start of the next sunny/windy day.
+	- This issue will be patched in a coming update. 
 
 <!--Storms-to-rain flags not resetting in ClimateControl-->
 
@@ -240,12 +235,12 @@ None known.
 <!--Compatibility-->
 ## Compatibility <a id="compatibility"></a>
 
-The following is a list of all supported, recommended and incompatible mods.
+*The following is a list of all supported, recommended and incompatible mods.*
 
 <!--Supported-->
 ### Supported Mods <a id="supported"></a>
 
-The following mods are officially supported by Immersive Weathers. When using these in-game, you will enable special functionality.
+The following mods are officially supported by Immersive Weathers. When using these in-game, you will get special functionality.
 
 - **[Generic Mod Config Menu][gmcm-link]** - allows editing of the configuration in-game.
 - **[Even Better RNG][even-better-rng-link]** - enables more accurate dice rolls for tomorrow's weather.
@@ -253,7 +248,7 @@ The following mods are officially supported by Immersive Weathers. When using th
 <!--Recommended-->
 ### Recommended Mods <a id="recommended"></a>
 
-The following mods are entirely optional but may enhance your experience. However, you don't need these to enjoy Immersive Weathers (I certainly don't use them all myself), so please only install those which sound interesting to you.
+The following mods are entirely optional but may enhance your experience. However, you don't need these mods to enjoy Immersive Weathers (I don't use them all myself). Please only install those which sound interesting to you.
 
 - **[Thunder and Frog Sounds][thunder-frog-link]** (requires [Custom Music][custom-music-link]) - for a more relaxing, cozy thunderstorm ambience.
 - **[Stardew Survival Project][survival-link]** - if you enjoy survival gameplay and like the idea of micro-managing your farmer's body temperature.
@@ -261,9 +256,7 @@ The following mods are entirely optional but may enhance your experience. Howeve
 <!--Incompatible-->
 ### Incompatible Mods <a id="incompatible"></a>
 
-In general, any mod which alters the weather is likely incompatible. However, note that [Content Patcher][content-patcher-link] packs which only change the appearance of weather *should* still be compatible.
-
-Currently, the list of known weather mods includes:
+In general, any mod which alters the weather is likely incompatible. Note that [Content Patcher][content-patcher-link] packs which change the appearance of weather *should* still be compatible. Currently, the list of known weather mods and their status includes:
 
 - **[More Rain][more-rain-link]** - *incompatible*. Alters the weather probabilities.
 - **[Rain Plus][rain-plus-link]** - *likely incompatible*. Forces rain on certain days of the week.
@@ -281,9 +274,9 @@ Currently, the list of known weather mods includes:
 <!--Future Plans-->
 ## Planned Features <a id="future"></a>
 
-*Note: I initially made this list to serve as a source of inspiration for me. I work best when I have a 'scratchpad' I can dive through for ideas. Most of these were simply written down as they occured to me. They definitely should not be viewed as any sort of commitment.*
+*If you would like to suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [view the latest changelog][framework-changelog].*
 
-The following list contains some possible ideas for this mod project. If you would like to suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [view the latest changelog][framework-changelog].
+The following list contains some possible ideas for this mod project. I initially made this list to serve as a source of inspiration for me. However, please don't view it as any sort of long-term commitment. I work best when I have a 'scratchpad' I can dive through for ideas and most of these were just written down as they occured to me.
 
 - [x] Daily weather odds
 	- [ ] Add more climate templates
@@ -318,28 +311,26 @@ The following list contains some possible ideas for this mod project. If you wou
 <!--Contributing-->
 ## Contribute to this Project <a id="contribute"></a>
 
-This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations). For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
-
 *Please be patient if I haven't responded immediately. I am likely busy with my studies.*
+
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations). For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
 
-If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to check if the issue resolves itself.
-
-If the bug persists or you do not see your mod included in the list, you can [submit a bug report][bugs-link]. You should answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] in the report.
+If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to check if the issue resolves itself. If the bug persists or you do not see your mod included in the list, you can [submit a bug report][bugs-link]. You should answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] in the report.
 
 If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
 ### Feature Suggestions <a id="suggestions"></a>
 
-If you would like to suggest a feature for this mod family, please feel free to [submit a request][request-features-link]. While I can't guarantee these will all be included in a future release, I am definitely open to new ideas and would love to hear from other players. You will naturally be credited for any suggestions that get implemented in future releases. 
+If you would like to suggest a feature for this mod family, please feel free to [submit a feature request][request-features-link]. While I can't guarantee these will be included in future releases, I am open to new ideas and would love to hear from you. You will be credited for suggestions that get implemented in later releases. 
 
 <!--Translations-->
 ### Translations <a id="translations"></a>
 
-*Translation support will be added in the next minor release. In anticipation of this, I am adding the following table of translations. Please note that the associated `default.json` files are **currently empty** and **should be ignored**.*
+*Translation support will be added in the next minor release. In anticipation, I am adding the following table of translations. Please note that the associated `default.json` files **are currently empty and should be ignored**.*
 
 (❑ = untranslated, ↻ = partly translated, ✓ = fully translated)
 
@@ -366,7 +357,7 @@ Turkish    | ❑                                  | ❑
 <!--Support-->
 ## Support My Mods <a id="support"></a>
 
-If you would like to support my work, you can [buy me a coffee][ko-fi-link]. Please note, this is entirely optional. My mods are available for free and without expectation. 
+If you would like to support my work, you can [buy me a coffee][ko-fi-link]. However, this is entirely optional. My mods are available for free and without any expectation. 
 
 <div align="right">
 
@@ -377,7 +368,9 @@ If you would like to support my work, you can [buy me a coffee][ko-fi-link]. Ple
 <!--License-->
 ## License <a id="license"></a>
 
-The source code for this mod is open-source and available under the [MIT license][license-link]. However, please do not host my releases without written consent.
+The source code for this mod is open-source and available under the [MIT license][license-link].
+
+Please do not host my releases without written consent.
 
 <div align="right">
 
@@ -388,16 +381,16 @@ The source code for this mod is open-source and available under the [MIT license
 <!--Acknowledgements-->
 ## Special Thanks <a id="acknowledgements"></a>
 
-I'd like to extend a huge thank you to [ConcernedApe][concernedape] for creating this joyful masterpiece. Without your imagination, generosity and dedication, none of us would be here. You deserve all of your success and more. Thank you from the bottom of my heart.
+I'd like to extend a huge thank you to [ConcernedApe][concernedape] for creating this masterpiece. Without your imagination, generosity and dedication, we wouldn't be here. Thank you from the bottom of my heart. You deserve all of your success and more.
 
-Additionally, I'd like to thank [Pathoschild][pathoschild] for creating SMAPI and for enabling the modding commmunity to thrive because of it. I'd also like to thank all the modders who contributed to its success over the years, for building this community, and for contributing collectively to the [amazing resources][stardew-modding-wiki] that taught me how to mod in C#.
+I'd additionally like to thank [Pathoschild][pathoschild] for creating SMAPI and for enabling the modding commmunity to thrive. I'd like to thank the modders who collectively contributed to its success, built this community, and created the [amazing resources][stardew-modding-wiki] that showed me how to mod in C#.
 
-I would also like to specifically mention the following individuals:
+I would also like to specifically thank the following individuals:
 
 - [spacechase0][spacechase0] for creating the [Generic Mod Config Menu][gmcm-link] and its API.
-- [Pepoluan][Pepoluan] for providing an API for [Even Better RNG][even-better-rng-link].
+- [Pepoluan][Pepoluan] for providing the API for [Even Better RNG][even-better-rng-link].
 
-Lastly, I'd like to thank personally all the players who have downloaded and enjoyed my mods. I am extremely grateful for your support. I hope you have many happy years ahead in the Valley.
+In closing, I'd like to personally thank all the players who have downloaded and enjoyed my mods. I am eternally grateful for your support. May you have many happy years ahead in the Valley.
 
 <div align="right">
 
