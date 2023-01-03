@@ -31,6 +31,7 @@ Control the weather systems in Stardew Valley!
 
 <!--Table of Contents-->
 # Table of Contents
+
 - [About](#about)
 	- [Framework](#about-framework)
 	- [Climate Control](#about-climate-control)
@@ -55,7 +56,7 @@ Control the weather systems in Stardew Valley!
 - [License](#license)
 - [Thanks](#thanks)
 
-# Readme TODO List:
+<details><summary><strong>Readme TODO List:</strong></summary>
 
 - [x] Flesh out mod overviews
 - [x] Proofread Getting Started
@@ -72,14 +73,16 @@ Control the weather systems in Stardew Valley!
 - [ ] Prepare README for Climate Control
 - [ ] Prepare Supp Docs for Climate Control
 
+</details>
+
 <!--About the Mods-->
 ## About Immersive Weathers <a id="about"></a>
 
-*Read below for a summary of each mod's features. Alternatively, [skip to installation](#getting-started) or [share your feedback][discussions-tab].*
-
-Have you ever felt saddened by the lack of weather mods for Stardew Valley? Well, I definitely have. And I set out to fix that.
+*Read on for a summary of each mod's features. Alternatively, [skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
 **Introducing Immersive Weathers, a brand-new family of weather-related mods!**
+
+Have you ever felt saddened by the lack of weather mods for Stardew Valley? Well, I definitely have. And I set out to fix that.
 
 Each mod in Immersive Weathers adds some element of nuance or realism to Stardew's weather systems, resulting in a much more immersive and dynamic weather experience than the vanilla game. These planned changes range from crafting your own custom weather probabilities and climates to modelling dynamic weather systems, simulating realistic (i.e. inaccurate) weather forecasts or adding optional gameplay challenges.
 
@@ -99,13 +102,13 @@ This mod is the central framework containing some common functionality needed fo
 <!--Climate Control-->
 ### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
 
-*NB: This mod will not work properly with mods that change the weather ([see incompatible mods](#incompatible)).*
+***For players:** This mod will not work properly with mods that change the weather ([see incompatible mods](#incompatible)).*
 
 The first of the sister mods to be released, Climate Control allows you to define custom weather probabilities for every day of the year, rather than using the fixed seasonal rules from the vanilla game.
 
 Yup, gone are the days of weather being unrealistically confined to the separate seasons! Now, you might witness more frequent thunderstorms as Summer arrives, or shiver from the increasing chances of snow as Winter rolls over the horizon. Finally, an excuse to dress up as Ned Stark on Spirit's Eve!
 
-#### Featuring:
+#### Features:
 
 - Unique daily weather odds:
     - Experience snow in Fall or rain in Winter, thanks to cubic spline interpolation.
@@ -127,8 +130,6 @@ If you would prefer a simpler weather approach, interpolation can also be disabl
 By default, the mod uses a pre-defined 'standard climate'. This is the climate most similar to vanilla, featuring gentle rain showers in Spring, brief thunderstorms in early Summer, dry, windy weather in Fall, and continous snowfall in Winter. However, when combined with cubic spline interpolation, this produces a smoother weather profile and more gradual season changes.
 
 In the settings menu, you can define your own custom template or tweak the existing one. In future updates, you can expect more templates themed around various real-world biomes, each allowing for similar customisation.
-
-***For the curious:** You can see the effects of changing the settings by looking at the daily weather probabilities in the mod's `IW-ClimateControl/data` folder. These will update in real-time when using [Generic Mod Config Menu][gmcm-link].*
 
 <div align="right">
 
@@ -173,9 +174,9 @@ If you like this mod project, consider leaving a :thumbsup: on the [Nexus][nexus
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-*NB: Default values are **shown in bold.***
-
 This section contains the available configuration options for each mod. You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).
+
+*NB: Default values are **shown in bold.***
 
 ### Framework <a id="framework-config"></a>
 
@@ -202,22 +203,32 @@ The weather model determines the likelihood of weather changes for each day of t
 <details><summary><em>Resetting custom models</em></summary>
 <p>
 
-*Custom* models are preserved whenever resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you should delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
+Custom models are preserved whenever resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you can delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
 
-1. switching from *standard* to *custom*
-2. opening the values page
-3. clicking "Save" followed by "Save & Close"
+1. Switching from *standard* to *custom*
+2. Opening the values page
+3. Clicking "Save" followed by "Save & Close"
 
 </p>
 </details>
 
-In addition to selecting one of the model templates above, you can also manually edit the probabilities. If using [Generic Mod Config Menu][gmcm-link], then this can be done via the in-game menu. Otherwise, this can be done by editing the `.json` files in `IW-ClimateControl/models` for each model.
+#### Weather Odds:
 
-	For each type of weather (rain, storm, wind, snow), you may assign any value between 0 and 100 for time periods covering days 1-9, days 10-19, and days 20-28 of each season.
+In addition to selecting one of the model templates above, you can also manually edit the probabilities. If using [Generic Mod Config Menu][gmcm-link], then this can be done via the in-game menu, sorted by weather or by season. Otherwise, this can be done by manually editing the JSON files in the `models` folder.
+
+<details><summary><em>Effects of interpolation</em></summary>
+<p>
+
+You may assign any decimal value between 0 and 100 to days 1-9, 10-19 and 20-28 within each season for each type of weather (rain, storm, snow, wind). If interpolation is enabled, these numbers will be held fixed for days 5, 15 and 24 respectively. Otherwise, they will be treated as fixed for the entirety of each time period.
+
+***For the curious:** You can see the effects of changing the settings by looking at the daily weather probabilities in the `data` folder. These will update in real-time when using [Generic Mod Config Menu][gmcm-link].*
+
+</p>
+</details>
 
 #### Debug Logging:
 
-When debug logging is enabled, SMAPI will output the dice rolls and other useful information.
+When debug logging is enabled, SMAPI will output the dice rolls and other useful information to the terminal.
 
 <div align="right">
 
@@ -262,7 +273,7 @@ None known.
 </div>
 
 <!--Compatibility-->
-## Compatibility <a id="compatibility"></a>
+## Mod Compatibility <a id="compatibility"></a>
 
 *The following is a list of all supported, recommended and incompatible mods.*
 
@@ -303,9 +314,11 @@ In general, any mod which alters the weather is likely incompatible. Note that [
 <!--Future Plans-->
 ## Planned Features <a id="future"></a>
 
-*If you would like to suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [view the latest changelog][framework-changelog].*
+*To suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [see the latest changelog][framework-changelog].*
 
-This list contains some possible future ideas for this mod project. However, please do not view this as a list of guaranteed features. It is more of a 'personal scratchpad' than a 'feature roadmap', and is primarily meant to be used as a source of inspiration.
+This list contains some future ideas for this mod project. Please do not treat this as a guaranteed feature plan. It's more like  a 'personal scratchpad' than a 'roadmap', and is intended primarily to be used as a source of inspiration.
+
+<details><summary>List of feature ideas</summary>
 
 - [x] Daily weather odds
 	- [ ] Add more climate templates
@@ -331,6 +344,8 @@ This list contains some possible future ideas for this mod project. However, ple
 	- [ ] Toggleable difficulty modes
 	- [ ] In-game mail?
 
+</details>
+
 <div align="right">
 
 [[Back to top](#return-to-top)]
@@ -352,7 +367,7 @@ If you encounter any bugs, please first remove any [incompatible mods](#incompat
 If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
-### Feature Suggestions <a id="suggestions"></a>
+### Suggestions <a id="suggestions"></a>
 
 If you would like to suggest a feature for this mod family, please feel free to [submit a feature request][request-features-link]. While I can't guarantee these will be included in future releases, I am open to new ideas and would love to hear from you. You will be credited for suggestions that get implemented in later releases. 
 
@@ -384,7 +399,7 @@ Turkish    | ❑                                  | ❑
 </div>
 
 <!--Support-->
-## Support My Mods <a id="support"></a>
+## Support <a id="support"></a>
 
 If you would like to support my work, you can [buy me a coffee][ko-fi-link]. However, this is entirely optional. My mods are available for free and without expectation. 
 
