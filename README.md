@@ -195,10 +195,22 @@ The weather model determines the likelihood of weather changes for each day of t
 | **Model Choice** | ***standard**, custom* | *Determines the choice of weather model.* |
 | **Daily Odds** | ***true**, false* | *If *true*, interpolation will be used to estimate the daily weather odds.* |
 
+<details><summary>Editing weather models</summary>
+<p>
+
+In addition to selecting one of the model templates above, you can also manually edit the probabilities. If using [Generic Mod Config Menu][gmcm-link], then this can be done via the in-game menu, sorted by weather or by season. Otherwise, this can be done by manually editing the JSON files in the `models` folder.
+
+You may assign any decimal value between 0 and 100 to days 1-9, 10-19 and 20-28 within each season for each type of weather (rain, storm, snow, wind). If interpolation is enabled, these numbers will be held fixed for days 5, 15 and 24 respectively. Otherwise, they will be treated as fixed for the entirety of each time period.
+
+***For the curious:** You can see the effects of changing the settings by looking at the daily weather probabilities in the `data` folder. These will update in real-time when using [Generic Mod Config Menu][gmcm-link].*
+
+</p>
+</details>
+
 <details><summary>Resetting custom models</summary>
 <p>
 
-Custom models are preserved when resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you can delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
+Custom models are preserved when resetting with [Generic Mod Config Menu][gmcm-link]. If you want to reset any changes, you must delete `models/custom.json`. Alternatively, you can copy the *standard* values into the *custom* model by
 
 1. Switching from *standard* to *custom*
 2. Opening the values page
@@ -206,12 +218,6 @@ Custom models are preserved when resetting with [Generic Mod Config Menu][gmcm-l
 
 </p>
 </details>
-
-In addition to selecting one of the model templates above, you can also manually edit the probabilities. If using [Generic Mod Config Menu][gmcm-link], then this can be done via the in-game menu, sorted by weather or by season. Otherwise, this can be done by manually editing the JSON files in the `models` folder.
-
-You may assign any decimal value between 0 and 100 to days 1-9, 10-19 and 20-28 within each season for each type of weather (rain, storm, snow, wind). If interpolation is enabled, these numbers will be held fixed for days 5, 15 and 24 respectively. Otherwise, they will be treated as fixed for the entirety of each time period.
-
-***For the curious:** You can see the effects of changing the settings by looking at the daily weather probabilities in the `data` folder. These will update in real-time when using [Generic Mod Config Menu][gmcm-link].*
 
 #### Debug Logging:
 
@@ -305,7 +311,7 @@ In general, any mod which alters the weather is likely incompatible. Note that [
 
 This list contains some future ideas for this mod project. Please do not treat this as a guaranteed plan. It's more like a 'personal scratchpad' than a 'roadmap', and is intended primarily as a central source of inspiration.
 
-<details><summary>List of feature ideas</summary>
+<details><summary>List of ideas</summary>
 
 - [x] Daily weather odds
 	- [ ] Add more climate templates
@@ -344,12 +350,18 @@ This list contains some future ideas for this mod project. Please do not treat t
 
 *Please be patient if I haven't responded immediately. I am likely busy with my studies.*
 
-This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations). For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations).
+
+For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
 
-If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to check if the issue resolves itself. If the bug persists or you do not see your mod included in the list, you can [submit a bug report][bugs-link]. You should answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] in the report. If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
+If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to check if the issue resolves itself.
+
+If the bug persists or you do not see your mod included in the list, you can [submit a bug report][bugs-link]. You should answer the prompts to the best of your ability and mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log] in the report.
+
+If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
 ### Suggestions <a id="suggestions"></a>
