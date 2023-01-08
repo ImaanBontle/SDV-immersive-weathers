@@ -253,9 +253,8 @@ None known.
 
 ### Climate Control:
 
-- Due to the way the game currently handles thunderstorms, an existing storm might continue whenever it is supposed to rain tomorrow.
-    - The issue will resolve itself at the start of the next sunny/windy day.
-	- This issue will be patched in a coming update. 
+- Due to the way the game currently handles thunderstorms, an existing storm might continue whenever it is supposed to rain tomorrow. The issue will resolve itself at the start of the next sunny/windy day. This will be patched in a coming update. 
+- The TV will misreport windy weather as snow in Summer and Winter, because it is not expecting it in these seasons. A patch will be investigated for this.
 
 <!--Storms-to-rain flags not resetting in ClimateControl-->
 
