@@ -84,7 +84,7 @@ Have you ever yearned for some way to add nuance or realism to Stardew's' weathe
 
 **Introducing: Immersive Weathers!**
 
-With this mod series, I will slowly be adding depth and variety to the in-game weather. Some of the planned features include custom climates, dynamic weather, realistic forecasts and optional gameplay challenges. Each mod will allow you to tweak the settings individually, or use one of several pre-defined weather templates for an easier, streamlined setup.
+ With this mod series, I will slowly be adding depth and variety to the in-game weather. Some of the planned changes include custom climates, dynamic weather, realistic forecasts and optional gameplay challenges. Each mod will allow you to tweak the numbers individually, or use one of several pre-defined weather templates for an easier, streamlined setup. The end result is a realistic, fully-customisable weather experience.
 
 **The first mod in the series, [Climate Control](#about-climate-control), has just been released (did someone say 'Snow in Fall'?). Stay tuned for more news!**
 
@@ -102,8 +102,6 @@ This mod is the central framework containing common functionality needed for the
 <!--Climate Control-->
 ### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
 
-*See the [README][climate-control-github].*
-
 ***For players:** This mod will not work properly with other mods that change the weather ([see incompatible mods](#incompatible)).*
 
 The first of the mods, Climate Control allows you to define custom weather probabilities for each day of the year. Yup, gone are the days where weather was unrealistically confined to particular seasons! Now, you can experience more frequent thunderstorms in Summer, or increasing snowfall in late Fall. Finally, an excuse to dress up as Ned Stark for Spirit's Eve!
@@ -118,6 +116,8 @@ The first of the mods, Climate Control allows you to define custom weather proba
 	- Inspired by the vanilla game, the default *standard* climate retains each season's identity but with more gradual changes.
 	- The *custom* climate allows you to design your own personalised weather.
 	- More templates coming soon!
+
+*See the [README][climate-control-github].*
 
 <div align="right">
 
