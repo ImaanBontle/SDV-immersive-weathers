@@ -11,6 +11,7 @@ using static ImmersiveWeathers.IIWAPI;
 
 // TODO: Write custom log messages for weather changes
 // TODO: Improve comments <----- v1.0.0
+// TODO: Rename config options
 
 namespace ImmersiveWeathers
 {
