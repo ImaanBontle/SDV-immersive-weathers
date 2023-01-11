@@ -88,9 +88,7 @@ With this mod series, I will slowly be adding more depth and variety to the in-g
 
 **The first mod in the series, [Climate Control](#about-climate-control), has just been released (did someone say 'Snow in Fall'?). Stay tuned for more news!**
 
-This project follows a modular design, so you can pick-and-choose which mods to use.
- 
-Read below for a summary of each mod.
+This project follows a modular design, so you can pick-and-choose which mods to use. Read below for a summary of each mod.
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
