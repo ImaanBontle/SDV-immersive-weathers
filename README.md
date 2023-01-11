@@ -84,14 +84,16 @@ Have you ever yearned for some way to add nuance or realism to Stardew's' weathe
 
 **Introducing: Immersive Weathers!**
 
-With this mod series, I will slowly be adding more depth and variety to the in-game weather. Some of the planned changes include custom climates, dynamic weather, realistic forecasts and optional gameplay challenges. Each mod will allow you to tweak the settings individually, or to use one of several pre-defined weather templates for an easier, streamlined setup, with the end goal of making a realistic, fully-customisable weather experience.
+With Immersive Weathers, I will slowly be adding more depth and variety to the in-game weather, with the end goal of making a realistic, fully-customisable experience. Each mod will allow you to tweak the settings individually, or to use one of several pre-defined weather templates for an easier, streamlined setup. Some of the planned features include custom climates, dynamic weather, realistic forecasts and optional gameplay challenges.
 
-**The first mod in the series, [Climate Control](#about-climate-control), has just been released (did someone say 'Snow in Fall'?). Stay tuned for more news!**
+**The first mod in the series, [Climate Control](#about-climate-control), has just been released (did someone say 'Snow in Fall'?). Stay tuned for more updates!**
 
 This project follows a modular design, so you can pick-and-choose which mods to use. Read below for a summary of each mod.
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
+
+*See the [README][climate-control-github].*
 
 ***For players:*** *This mod must be installed.*
 
@@ -116,8 +118,6 @@ The first of the mods, Climate Control allows you to define custom weather proba
 	- Inspired by the vanilla game, the default *standard* climate retains each season's identity but with more gradual changes.
 	- The *custom* climate allows you to design your own personalised weather.
 	- More templates coming soon!
-
-*See the [README][climate-control-github].*
 
 <div align="right">
 
