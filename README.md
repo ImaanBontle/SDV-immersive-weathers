@@ -80,11 +80,11 @@ Control the weather systems in Stardew Valley!
 
 *[Skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
-Have you ever yearned for some way to add nuance or realism to Stardew's' weather? Or felt saddened at the general lack of weather mods for Stardew? Well, the drought is finally over!
+Have you ever yearned for some way to add nuance or realism to Stardew's' weather? Or felt saddened at the general lack of weather mods for Stardew? Well, the dry spell is finally over!
 
 **Introducing: Immersive Weathers!**
 
-With this series, I will slowly be adding more depth and variety to the in-game weather, with the end goal of creating a realistic, fully-customisable experience. Some of the planned features include custom climates, dynamic weather, realistic forecasts and optional gameplay challenges. Each mod will also allow you to tweak the settings individually, or to use one of several pre-defined weather templates for an easier, streamlined setup. 
+With this series, I will slowly be adding more depth and variety to the in-game weather with the end goal of creating a realistic, fully-customisable weather experience. Some of the planned features include custom climates, dynamic weather, realistic forecasts and optional gameplay challenges. Each mod will also allow you to tweak the settings individually, or to use one of several pre-defined weather templates for an easier, streamlined setup. 
 
 **The first mod in the series, [Climate Control](#about-climate-control), has just been released (did someone say 'Snow in Fall'?). Stay tuned for more updates!**
 
@@ -114,9 +114,9 @@ The first of the mods, Climate Control allows you to define custom weather proba
 	- Experience snow in Fall or rain in Winter, thanks to cubic spline interpolation.
 	- For a more predictable experience, use fixed rules in the early-, mid- and late-season instead.
 - Pre-defined climates:
-	- Choose one of the pre-defined templates or make your own!
-	- Inspired by the vanilla game, the default *standard* climate retains each season's identity but with more gradual changes.
-	- The *custom* climate allows you to design your own personalised weather.
+	- Choose one of the pre-defined templates. Or, make your own!
+	- Inspired by the vanilla game, the default *standard* climate retains each season's identity but with more gradual weather changes.
+	- Meanwhile, the *custom* climate allows you to design your own personalised weather.
 	- More templates coming soon!
 
 <div align="right">
@@ -147,11 +147,11 @@ Ensure that you have carefully read the requirements, then:
 
 1. Download the [latest version of the Framework][nexus-link] and [each of your chosen mods](#about).
 2. For each mod, extract the ZIP file to your `Mods` folder (see [wiki guide][smapi-mod-wiki]).
-3. Install any of [the supported mods](#supported).
+3. Install [any of the supported mods](#supported).
 4. Launch SMAPI once, to generate each mod's `config.json`.
 5. Enjoy!
 
-Consider leaving a :thumbsup: on each mod's [Nexus page][nexus-link]! This makes it easier for other players to find.
+Consider leaving a :thumbsup: on each mod's [Nexus page][nexus-link]! This makes it easier for other players to find!
 
 <div align="right">
 
@@ -175,11 +175,11 @@ Consider leaving a :thumbsup: on each mod's [Nexus page][nexus-link]! This makes
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-*This section contains the available config options. **Default values are shown in bold**.*
+*This section covers the available config options. **Default values are shown in bold**.*
 
 *For other mods in the series, see the [mod documentation](#docs).*
 
-You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or through manually editing the `config.json` contained in each mod's folder (generated after running SMAPI at least once).
+You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` in each mod's folder (generated after running SMAPI at least once).
 
 ### Weather Reports:
 
@@ -199,7 +199,7 @@ Each morning, you can choose to receive a forecast for the weather today and tom
 <!--Known Issues-->
 ## Known Issues <a id="issues"></a>
 
-*This section contains updates on any known issues.*
+*This section contains updates on any known issues. For mod-specific issues, see the [mod documentation](#docs).*
 
 No known issues.
 
@@ -228,17 +228,17 @@ The following mods are officially supported by Immersive Weathers. When used in-
 The following mods are entirely optional. You don't need these to enjoy Immersive Weathers but they may enhance your experience. I don't use them all myself, so please only install those which sound interesting to you.
 
 - **[Thunder and Frog Sounds][thunder-frog-link]** (requires [Custom Music][custom-music-link]) - for a more relaxing, cozy thunderstorm ambience.
-- **[Stardew Survival Project][survival-link]** - if you enjoy survival gameplay and like the idea of micro-managing your farmer's body temperature.
+- **[Stardew Survival Project][survival-link]** - for those who enjoy survival gameplay and like the idea of micro-managing the farmer's body temperature.
 
 <!--Incompatible-->
 ### Incompatible Mods <a id="incompatible"></a>
 
-The following is a list of all mods which are not supported or are incompatible. In general, any mod which alters the weather is going to cause unpredictable behaviour. However, [Content Patcher packs][content-patcher-link] should still be fine to use with this series.
+The following is a list of all mods which are not supported or are incompatible with *one or more* mods in the series. For mod-specific compatibility, see the [mod documentation](#docs). In general, any mod which alters the weather is going to cause unpredictable behaviour. You should be cautious when using these. However, [Content Patcher packs][content-patcher-link] should still be fine.
 
 - **[More Rain][more-rain-link]** - *incompatible*. Alters the weather probabilities.
 - **[Rain Plus][rain-plus-link]** - *incompatible*. Forces rain on certain days of the week.
 - **[Winter Rain][winter-rain-link]** - *incompatible*. Changes the winter weather probabilities.
-- **[Climates of Ferngill][climates-ferngill-link]** - *use with caution*. No problems yet, but this will break in the future. 
+- **[Climates of Ferngill][climates-ferngill-link]** - *use with caution*. No problems yet, but this will break in the future.
 - **[Weather Machine][weather-machine-link] / [Real Weather][real-weather-link]** - *incompatible*. Changes the way weather is calculated and adds new weather types. Use this if you prefer using live weather data rather than generated weather.
 - **[Extreme Weather][extreme-weather-link]** - *incompatible*. Hilarious mod. But lol, why would you use these together?
 
@@ -253,7 +253,7 @@ The following is a list of all mods which are not supported or are incompatible.
 
 *To suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [see the latest changelog][framework-changelog].*
 
-This list contains some future ideas for this mod project. Please note that this is not a guaranteed plan. It's more like a 'source of inspiration' than a 'roadmap'.
+This list contains some future ideas for this mod project. Please note that this is not a guaranteed plan. It's more of an inspiration source than a roadmap.
 
 <details><summary>List of ideas</summary>
 
@@ -306,7 +306,9 @@ This list contains some future ideas for this mod project. Please note that this
 
 This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations).
 
-For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link]. Please be patient if I haven't responded immediately. I am likely busy with my studies.
+For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
+
+Please be patient if I haven't responded immediately. I am likely busy with my studies.
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
@@ -318,7 +320,9 @@ If you would like submit a bugfix, you can do so by submitting a pull request us
 <!--Feature Suggestions-->
 ### Suggestions <a id="suggestions"></a>
 
-If you would like to suggest a feature for this project, please feel free to [submit a feature request][request-features-link]. While I can't guarantee these will be included in future releases, I would love to hear from you. You will be credited for any suggestions that get implemented.
+If you would like to suggest a feature for this project, please [submit a feature request][request-features-link]. While I can't guarantee these will be included in future releases, I would love to hear from you!
+
+You will be credited for any suggestions that get implemented.
 
 <!--Translations-->
 ### Translations <a id="translations"></a>
@@ -352,7 +356,7 @@ Turkish    | ❑                                  | ❑
 <!--Support-->
 ## Support <a id="support"></a>
 
-If you like to support my work, you can [buy me a coffee][ko-fi-link]. However, this is entirely optional. My mods are available for free and without expectation. 
+If you would like to support my work, you can [buy me a coffee][ko-fi-link]. However, this is entirely optional. My mods are available for free and without expectation.
 
 <div align="right">
 
@@ -376,16 +380,16 @@ The source code for this mod is available under the [MIT license][license-link].
 
 I'd like to extend a **huge thanks** to [ConcernedApe][concernedape] for creating this masterpiece. Without your imagination, generosity and dedication, we wouldn't be here. You deserve all of your success and more. Thank you from the bottom of my heart.
 
-I'd additionally like to thank [Pathoschild][pathoschild] for creating SMAPI and, through it, enabling the modding commmunity to thrive. I am also very grateful to the modders who contributed to its success, who built this community, and who collectively curated the [amazing resources][stardew-modding-wiki] that taught me how to mod in C#.
+I'd additionally like to thank [Pathoschild][pathoschild] for creating SMAPI and, through it, enabling the modding commmunity to thrive. I am very grateful to the modders who contributed to its success, who built this community, and who collectively curated the [amazing resources][stardew-modding-wiki] that taught me how to mod in C#.
 
-I would like to specifically thank the following individuals by name:
+I would like to thank the following individuals by name:
 
 - [spacechase0][spacechase0] for creating the [Generic Mod Config Menu][gmcm-link] and its API.
 - [Pepoluan][Pepoluan] for providing the API for [Even Better RNG][even-better-rng-link].
 
-I would also like to thank my loving family and friends, for believing in my project and for your support since its inception. Your love means the world to me.
+I would also like to thank my loving family and friends, for believing in my project and for your encouragement since its inception. Your love means the world to me.
 
-To all the players who have downloaded and enjoyed my mods: Thank you. I am eternally grateful. May you have many happy years ahead in the Valley.
+To all the players who have downloaded and enjoyed my mods: Thank you. I am eternally grateful for your support. May you have many happy years in the Valley.
 
 <div align="right">
 
