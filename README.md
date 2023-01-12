@@ -42,11 +42,11 @@ Control the weather in Stardew Valley!
 - [Configuration](#config)
     - [Framework](#framework-config)
 	- [Climate Control](#climate-control-config)
-- [Known Issues](#issues)
 - [Compatibility](#compatibility)
 	- [Supported](#supported)
 	- [Recommended](#recommended)
 	- [Incompatible](#incompatible)
+- [Known Issues](#issues)
 - [Future Plans](#future)
 - [Contributing](#contribute)
 	- [Bug Reports](#bugs)
@@ -80,7 +80,7 @@ Control the weather in Stardew Valley!
 
 *[Skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
-Have you ever yearned for some way to add nuance or realism to Stardew's' weather? Or felt saddened at the general lack of weather mods for Stardew? Well, the dry spell is finally over!
+Have you ever yearned for some way to add more nuance or realism to Stardew's' weather? Or felt saddened at the general lack of weather mods for Stardew? Well, the dry spell is finally over!
 
 **Introducing: Immersive Weathers!**
 
@@ -196,19 +196,6 @@ Each morning, you can choose to receive a forecast for the weather today and tom
 
 </div>
 
-<!--Known Issues-->
-## Known Issues <a id="issues"></a>
-
-*This section contains updates on any known issues. For mod-specific issues, see the [mod documentation](#docs).*
-
-No known issues.
-
-<div align="right">
-
-[[Back to top](#return-to-top)]
-
-</div>
-
 <!--Compatibility-->
 ## Mod Compatibility <a id="compatibility"></a>
 
@@ -233,7 +220,7 @@ The following mods are entirely optional. You don't need these to enjoy Immersiv
 <!--Incompatible-->
 ### Incompatible Mods <a id="incompatible"></a>
 
-The following is a list of all mods which are not supported or are incompatible with *one or more* mods in the series. For mod-specific compatibility, see the [mod documentation](#docs). In general, any mod which alters the weather is going to cause unpredictable behaviour. You should be cautious when using these. However, [Content Patcher packs][content-patcher-link] should still be fine.
+The following is a list of all mods which are not supported or are incompatible with *one or more* mods in the series. In general, any mod which alters the weather is going to cause unpredictable behaviour. You should be cautious when using these. However, [Content Patcher packs][content-patcher-link] should still be fine.
 
 - **[More Rain][more-rain-link]** - *incompatible*. Alters the weather probabilities.
 - **[Rain Plus][rain-plus-link]** - *incompatible*. Forces rain on certain days of the week.
@@ -241,6 +228,19 @@ The following is a list of all mods which are not supported or are incompatible 
 - **[Climates of Ferngill][climates-ferngill-link]** - *use with caution*. No problems yet, but this will break in the future.
 - **[Weather Machine][weather-machine-link] / [Real Weather][real-weather-link]** - *incompatible*. Changes the way weather is calculated and adds new weather types. Use this if you prefer using live weather data rather than generated weather.
 - **[Extreme Weather][extreme-weather-link]** - *incompatible*. Hilarious mod. But lol, why would you use these together?
+
+<div align="right">
+
+[[Back to top](#return-to-top)]
+
+</div>
+
+<!--Known Issues-->
+## Known Issues <a id="issues"></a>
+
+*This section contains known issues with the Framework. For mod-specific issues, see the [mod documentation](#docs).*
+
+No known issues.
 
 <div align="right">
 
