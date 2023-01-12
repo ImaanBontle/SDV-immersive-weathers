@@ -320,9 +320,7 @@ If you would like submit a bugfix, you can do so by submitting a pull request us
 <!--Feature Suggestions-->
 ### Suggestions <a id="suggestions"></a>
 
-If you would like to suggest a feature for this project, please [submit a feature request][request-features-link]. While I can't guarantee these will be included in future releases, I would love to hear from you!
-
-You will be credited for any suggestions that get implemented.
+If you would like to suggest a feature for this project, please [submit a feature request][request-features-link]. While I can't guarantee these will be included in future releases, I would still love to hear from you. You will be credited for any suggestions that get implemented.
 
 <!--Translations-->
 ### Translations <a id="translations"></a>
