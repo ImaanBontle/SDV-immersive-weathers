@@ -5,9 +5,13 @@ name-template: v$RESOLVED_VERSION
 tag-template: v$RESOLVED_VERSION
 template: >
   ## What Changed 🚀
-  
+
+
+
   DELETE THIS IF THERE ARE NO HIGHLIGHTS
-  
+
+
+
   $CHANGES
   
   
