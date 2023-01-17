@@ -49,8 +49,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.ImaanBontleRepoActionToken }}
         
-      - name: Sleep for 30 seconds
-        run: sleep 30
+      - name: Sleep for 120 seconds
+        run: sleep 120
         env:
           GH_TOKEN: ${{ secrets.ImaanBontleRepoActionToken }}
         
