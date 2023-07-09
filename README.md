@@ -80,15 +80,19 @@ Control the weather in Stardew Valley!
 
 *[Skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
-Have you ever yearned for some way to add more nuance or realism to Stardew's' weather? Or felt saddened at the general lack of weather mods for Stardew? Well, the dry spell is finally over!
+Have you yearned for a way to add more nuance, variety and realism to Stardew's weather, but been saddened by the general lack of weather mods on the Nexus? Well, fear not! The dry spell is at an end!
 
-**Introducing: Immersive Weathers!**
+**Introducing: Immersive Weathers, a brand new mod series with the ultimate goal of bringing greater depth,  immersion and variety to Stardew Valley's weather system!**
 
-With this series, I will slowly be adding more depth and variety to the in-game weather with the end goal of creating a realistic, fully-customisable weather experience. Some of the planned features include custom climates, dynamic weather, realistic forecasts and optional gameplay challenges. Each mod will also allow you to tweak the settings individually, or to use one of several pre-defined weather templates for an easier, streamlined setup. 
+Each mod in the series will bring increased complexity and variety, with each mod focusing on a particular feature. Some of these planned features including custom climates, dynamic weather changes, realistic (i.e. *mostly* reliable) weather forecasts, optional gameplay challenges and even potentially new weather types.
 
-**The first mod in the series, [Climate Control](#about-climate-control), has just been released (did someone say 'Snow in Fall'?). Stay tuned for more updates!**
+This project is entirely modular in design, so users may pick-and-choose from any of the mods depending on their preferences, provided they have at least installed [The Framework](#about-framework) (this mod), as the other mods won't work without it. Other than that, features operate largely independently of one another (although cool interactions may occur when certain mods are used together).
 
-This project follows a modular design, so you can pick-and-choose which mods to use. Read below for a summary of each mod.
+**The first mod in the series, [Climate Control](#about-climate-control), has just been released *(did someone say 'Snow in Fall'?)*, with more on the way!**
+
+ However, other than that, users are free to pick-and-choose from the series based on their preferences, with the features activating completely independently of one another (although some cool integrations will occur if certain sister mods are used together). 
+
+For an overview of each mod's features, read the summaries below.
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
