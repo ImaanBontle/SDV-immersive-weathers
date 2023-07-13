@@ -96,9 +96,9 @@ This project is entirely modular in design, so users may pick-and-choose from an
 For an overview of each mod's features, read the individual mod summaries below.
 
 <!--Mod Summaries-->
-## Mod Summaries <a id="mod-summaries"></a>
+## Individual Mods <a id="mod-summaries"></a>
 
-*This section contains the mod summaries, download links and any supporting documentation.*
+*This section contains the mod summaries, download links and supporting documentation.*
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
