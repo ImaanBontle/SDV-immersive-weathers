@@ -134,6 +134,7 @@ The first of the sister mods, Climate Control allows you to define custom weathe
 	- **Custom:** The *custom* climate allows you to design your own personalised weather experience without risking making changes to any of the pre-existing templates.
 - *Coming soon...*
     - *More templates!*
+	- *Bug fixes.*
 
 <div align="right">
 
