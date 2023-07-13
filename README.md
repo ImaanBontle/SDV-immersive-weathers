@@ -103,11 +103,13 @@ For an overview of each mod's features, read the individual mod summaries below.
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
 
-***For players:*** *This mod must be installed.*
+*See the [list of supported mods](#supported).*
 
-***For modders:*** *All integrations should go through this mod. An API will be released soon.*
+***For players:*** *This mod **MUST** be installed.*
 
-This mod is the central framework containing common functionality needed for the other mods in the series. If no mods in the series are installed, the Framework will only print daily weather updates. The Framework also handles internal cross-compatibility features and external mod integrations *(see the [list of supported mods](#supported))*.
+***For modders:*** *All integrations should go through this mod. An API for this will be released soon.*
+
+This mod is the central framework containing the common functionality shared between the mods in this series. It is required for the other mods to work and, if no other mods are installed, will print only daily weather updates. Additionally, the Framework handles internal cross-compatibility features (interactions between mods) and external mod integrations (interactions with other mods). 
 
 <!--Climate Control-->
 ### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
