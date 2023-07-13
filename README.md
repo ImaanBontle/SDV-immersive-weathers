@@ -103,7 +103,7 @@ For an overview of each mod's features, read the individual mod summaries below.
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
 
-*See the [list of supported mods](#supported).*
+*See [list of supported mods](#supported).*
 
 ***For players:*** *This mod **MUST** be installed.*
 
@@ -114,7 +114,7 @@ This mod is the central framework containing the common functionality shared bet
 <!--Climate Control-->
 ### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
 
-*See the [README][climate-control-github].*
+*See [README][climate-control-github].*
 
 ***For players:** This mod will not work properly with other mods that change the weather ([see incompatible mods](#incompatible)).*
 
