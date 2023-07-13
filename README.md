@@ -77,23 +77,23 @@ Control the weather in Stardew Valley!
 </details>
 
 <!--About the Mods-->
-## About Immersive Weathers <a id="about"></a>
+## About This Project <a id="about"></a>
 
 *[Skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
-Have you yearned for a way to add more nuance, variety and realism to Stardew's weather, but been saddened by the general lack of weather mods on the Nexus? Well, fear not! The dry spell is at an end!
+Are you yearning for a way to add more nuance, variety and realism to Stardew Valley's weather, but feeling saddened by the overall lack of weather mods currently available on the Nexus? Do you worry that your dreams of embarking on an atmospheric adventure and becoming a fair-weathered farmer will never materialise? Well, fear not! The dry spell is finally over!
 
-**Introducing: Immersive Weathers, a brand new mod series with the ultimate goal of bringing greater depth,  immersion and variety to Stardew Valley's weather system!**
+**Introducing: Immersive Weathers, an ambitious mod project currently in development which aims to enhance and elevate your in-game weather experience, adding further depth, immersion, and variety to your farming adventure!**
 
-Each mod in the series will bring increased complexity and variety, with each mod focusing on a particular feature. Some of these planned features including custom climates, dynamic weather changes, realistic (i.e. *mostly* reliable) weather forecasts, optional gameplay challenges and even potentially new weather types.
+Each mod in the series focuses on a different aspect of the weather, offering increased complexity and diversity compared to the in-game systems. Planned features include custom climates, dynamic weather changes, realistic yet partially-unreliable weather forecasts, an expanded range of weather types, optional gameplay challenges and more complex weather modelling. Additionally, Immersive Weathers features a modular design, allowing players to customize the weather system to their liking.
 
-This project is entirely modular in design, so users may pick-and-choose from any of the mods depending on their preferences, provided they have at least installed [The Framework](#about-framework) (this mod), as the other mods won't work without it. Other than that, features operate largely independently of one another (although cool interactions may occur when certain mods are used together).
+To begin their meteorological journey, players must first [install the Framework mod](#about-framework). This essential mod serves as the backbone for the project, enabling the core functionality, providing seamless integration between the sister mods and handling all external mod integrations. Once this is installed, players are then free to mix-and-match from the remaining mods in the project to suit their preferences, swapping features in-and-out as desired (notably, some cool interactions may occur when certain mods are used in conjunction).
 
-**The first mod in the series, [Climate Control](#about-climate-control), has just been released *(did someone say 'Snow in Fall'?)*, with more on the way!**
+**The first mod in the series, [Climate Control](#about-climate-control), has just been released *(did someone say 'Snow in Fall'?)*, with more on the way soon! Stay tuned for future updates and new additions!**
 
- However, other than that, users are free to pick-and-choose from the series based on their preferences, with the features activating completely independently of one another (although some cool integrations will occur if certain sister mods are used together). 
+Immersive Weathers is an ongoing project, with plans to expand and refine the mod collection to deliver the most immersive weather experience possible. Your feedback is invaluable, so don't hesitate to share your thoughts and experiences. If you find yourself enjoying this project, please leave an endorsement on each mod's respective Nexus page &mdash; it helps spread the word to fellow players!
 
-For an overview of each mod's features, read the individual mod summaries below.
+For an overview of each mod's features, please see the [individual mod summaries](#mod-summaries) below.
 
 <!--Mod Summaries-->
 ## Individual Mods <a id="mod-summaries"></a>
@@ -118,23 +118,23 @@ This mod is the central framework containing the common functionality shared bet
 
 ***For players:** This mod will not work properly with other mods that change the weather ([see incompatible mods](#incompatible)).*
 
-The first of the sister mods, Climate Control allows you to define custom weather probabilities for each day of the year. Yup, gone are the days where weather was unrealistically confined to particular seasons! Now, you can experience more frequent thunderstorms in Summer, or increasing snowfall in late Fall. Finally, an excuse to dress up as Ned Stark for Spirit's Eve!
+The first of the sister mods, Climate Control generates unique weather odds for each day, gradually shifting from one season to the next. Snow becomes more likely as Winter approaches, rain transforms into thunderstorms by the start of Summer, and weather patterns smoothly evolve throughout the year. Say goodbye to abrupt changes and embrace a more realistic and finely tuned weather system in Stardew Valley.
 
 **Key features:**
 
-- Unique daily weather odds:
+- **Unique daily weather odds:**
 	- Experience snow in Fall or rain in Winter, thanks to cubic spline interpolation.
-	- For a more predictable weather experience, use fixed rules instead for the early-, mid- and late-season.
-- Pre-defined climates:
-	- Choose from one of several pre-defined climates. Or, craft your own!
-	- Each template's weather can be adjusted to your liking. Go crazy modelling your hometown!
-	- Submit climate suggestions for possible inclusion in future updates!
-- Available templates:
-	- **Standard:** Inspired by the vanilla game, the *standard* climate retains each season's original identity but features more gradual weather changes for an overall more immersive experience.
-	- **Custom:** The *custom* climate allows you to design your own personalised weather experience without risking making changes to any of the pre-existing templates.
-- *Coming soon...*
-    - *More templates!*
-	- *Bug fixes.*
+	- Alternatively, for a more predictable weather experience, use fixed rules for the early-, mid- and late-season.
+- **Pre-defined templates:**
+	- Choose from one of several pre-defined climate templates. Alternatively, craft your own!
+	- Each template's weather can be adjusted to your liking. Go crazy with the sliders and model your hometown!
+	- Submit climate ideas for potential inclusion in future updates.
+- **Available climates:**
+	- *Standard:* Inspired by the vanilla game, the standard climate retains each season's original identity but features more gradual weather changes for an overall more immersive experience.
+	- *Custom:* The custom climate allows you to design your own personalised weather experience without risking making changes to any of the pre-existing templates.
+- ***Coming soon...***
+    - More templates!
+	- Bug fixes.
 
 <div align="right">
 
