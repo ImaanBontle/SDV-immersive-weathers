@@ -118,18 +118,22 @@ This mod is the central framework containing the common functionality shared bet
 
 ***For players:** This mod will not work properly with other mods that change the weather ([see incompatible mods](#incompatible)).*
 
-The first of the mods, Climate Control allows you to define custom weather probabilities for each day of the year. Yup, gone are the days where weather was unrealistically confined to particular seasons! Now, you can experience more frequent thunderstorms in Summer, or increasing snowfall in late Fall. Finally, an excuse to dress up as Ned Stark for Spirit's Eve!
+The first of the sister mods, Climate Control allows you to define custom weather probabilities for each day of the year. Yup, gone are the days where weather was unrealistically confined to particular seasons! Now, you can experience more frequent thunderstorms in Summer, or increasing snowfall in late Fall. Finally, an excuse to dress up as Ned Stark for Spirit's Eve!
 
 **Key features:**
 
 - Unique daily weather odds:
 	- Experience snow in Fall or rain in Winter, thanks to cubic spline interpolation.
-	- For a more predictable experience, use fixed rules in the early-, mid- and late-season instead.
+	- For a more predictable weather experience, use fixed rules instead for the early-, mid- and late-season.
 - Pre-defined climates:
-	- Choose one of the pre-defined templates. Or, make your own!
-	- Inspired by the vanilla game, the default *standard* climate retains each season's identity but with more gradual weather changes.
-	- Meanwhile, the *custom* climate allows you to design your own personalised weather.
-	- More templates coming soon!
+	- Choose from one of several pre-defined climates. Or, craft your own!
+	- Each template's weather can be adjusted to your liking. Go crazy modelling your hometown!
+	- Submit climate suggestions for possible inclusion in future updates!
+- Available templates:
+	- **Standard:** Inspired by the vanilla game, the *standard* climate retains each season's original identity but features more gradual weather changes for an overall more immersive experience.
+	- **Custom:** The *custom* climate allows you to design your own personalised weather experience without risking making changes to any of the pre-existing templates.
+- *Coming soon...*
+    - *More templates!*
 
 <div align="right">
 
