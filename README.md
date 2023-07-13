@@ -32,7 +32,8 @@ Control the weather in Stardew Valley!
 <!--Table of Contents-->
 # Table of Contents
 
-- [About](#about)
+- [About This Project](#about)
+- [Individual Mods](#mod-summaries)
 	- [Framework](#about-framework)
 	- [Climate Control](#about-climate-control)
 - [Getting Started](#getting-started)
@@ -92,7 +93,12 @@ This project is entirely modular in design, so users may pick-and-choose from an
 
  However, other than that, users are free to pick-and-choose from the series based on their preferences, with the features activating completely independently of one another (although some cool integrations will occur if certain sister mods are used together). 
 
-For an overview of each mod's features, read the summaries below.
+For an overview of each mod's features, read the individual mod summaries below.
+
+<!--Mod Summaries-->
+## Mod Summaries <a id="mod-summaries"></a>
+
+*This section contains the mod summaries, download links and any supporting documentation.*
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
