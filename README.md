@@ -390,9 +390,9 @@ Turkish    | ❑                                  | ❑
 </div>
 
 <!--Support-->
-## Support <a id="support"></a>
+## Support My Work <a id="support"></a>
 
-If you would like to support my work, you can [buy me a coffee][ko-fi-link]. However, this is entirely optional. My mods are available for free and without expectation.
+If you would like to support my work, you can always [buy me a coffee][ko-fi-link]. However, please note that this is completely optional. My mods are available for free and entirely without expectation!
 
 <div align="right">
 
@@ -403,7 +403,7 @@ If you would like to support my work, you can [buy me a coffee][ko-fi-link]. How
 <!--License-->
 ## License <a id="license"></a>
 
-The source code for this mod is available under the [MIT license][license-link]. Please do not host my official releases without my written consent.
+The source code for this mod is open-source and is available under the [MIT license][license-link]. However, please do not host my official releases without my written consent.
 
 <div align="right">
 
@@ -423,9 +423,11 @@ I would like to thank the following individuals by name:
 - [spacechase0][spacechase0] for creating the [Generic Mod Config Menu][gmcm-link] and its API.
 - [Pepoluan][Pepoluan] for providing the API for [Even Better RNG][even-better-rng-link].
 
-I would also like to thank my loving family and friends, for believing in my project and for your encouragement since its inception. Your love means the world to me.
+I would also like to thank my loving family and friends, for believing in my project, for your encouragement since its inception and for your guidance and advice on countless little details. Your love and faith means the world to me.
 
-To all the players who have downloaded and enjoyed my mods: Thank you. I am eternally grateful for your support. May you have many happy years in the Valley.
+A further thanks goes to ChatGPT and the folks at OpenAI, whose technology has made navigating my learning difficulty and writing these long texts infinitely more bearable.
+
+Lastly, to all the players who have downloaded and enjoyed my mods: Thank you. I am eternally grateful for your support. May your skies be clear and may you have many more happy years in the Valley.
 
 <div align="right">
 
