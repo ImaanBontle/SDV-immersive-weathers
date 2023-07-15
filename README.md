@@ -42,7 +42,7 @@ Control the weather in Stardew Valley!
 - [Documentation](#docs)
 - [Configuration](#config)
 - [Known Issues](#issues)
-- [Compatibility](#compatibility)
+- [Mod Compatibility](#compatibility)
 	- [Supported](#supported)
 	- [Recommended](#recommended)
 	- [Compatible](#compatible)
