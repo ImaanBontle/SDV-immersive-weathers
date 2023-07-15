@@ -226,25 +226,25 @@ The following mods are officially supported and will activate special functional
 <!--Recommended-->
 ### Recommended Mods <a id="recommended"></a>
 
-The following mods are optional but may enhance your experience.
+The following mods are optional and may enhance your experience.
 
-- **[Thunder and Frog Sounds][thunder-frog-link]** (requires [Custom Music][custom-music-link]) - for a more relaxing, cozy thunderstorm ambience.
-- **[Dynamic Reflections][dynamic-reflections-link]** &ndash; realistic rain puddles and beautiful water reflections.
-- **[Wind Effects][wind-effects-link]** (use [unofficial patch][wind-effects-unofficial]) &ndash; grass and trees sway realistically in the wind.
+- **[Thunder and Frog Sounds][thunder-frog-link]** (requires [Custom Music][custom-music-link]) - provides a more relaxing, cozy thunderstorm ambience.
+- **[Dynamic Reflections][dynamic-reflections-link]** &ndash; creates realistic rain puddles and beautiful water reflections.
+- **[Wind Effects][wind-effects-link]** (use [unofficial patch][wind-effects-unofficial]) &ndash; grass and trees now sway realistically in the wind.
 
 <!--Compatible-->
 ### Compatible Mods <a id="compatible"></a>
 
 The following mods are currently compatible with ImmersiveWeathers and should be safe to use.
 
-- **[Dynamic Night-Time][dynamic-nighttime-link]** &ndash; *should be compatible*. Does not affect the weather.
-- **[Casual Life][casual-life-link]** &ndash; *should be compatible*. Similar to Dynamic Night-Time.
-- **All [Content Patcher packs][content-patcher-link]** &ndash; *natively compatible*. Always safe to use, purely visual mods.
+- **[Dynamic Night-Time][dynamic-nighttime-link]** &ndash; *compatible*. Does not affect the weather.
+- **[Casual Life][casual-life-link]** &ndash; *compatible*. Similar to Dynamic Night-Time.
+- **All [Content Patcher][content-patcher-link] packs** &ndash; *natively compatible*. Purely visual mods, always safe to use.
 
 <!--Semi-Compatible-->
 ### Semi-Compatible Mods <a id="semi-compatible"></a>
 
-The following mods are not officially supported and may cause problems when used simultaneously. As always, your mileage may vary.
+The following mods are not officially supported and may cause problems when used simultaneously. Your mileage may vary.
 
 - **[Climates of Ferngill][climates-ferngill-link]** &ndash; *use with caution*. No problems yet, but this will break in the future.
 
@@ -258,13 +258,12 @@ The following mods are incompatible with at least one mod in the series.
 - **[Winter Rain][winter-rain-link]** - *incompatible*. Changes the winter weather probabilities.
 - **[Weather Machine][weather-machine-link] / [Real Weather][real-weather-link]** - *incompatible*. Changes the way weather is calculated and adds new weather types. Use this if you prefer using live weather data rather than generated weather.
 - **[Extreme Weather][extreme-weather-link]** - *incompatible*. Hilarious mod. But lol, why would you use these together?
-
-In general, any mod which alters the weather is going to cause unpredictable behaviour, so you should be cautious when using these. [Content Patcher packs][content-patcher-link] should still work fine, however.
+- In general, any mod which alters the weather is going to cause unpredictable behaviour, so you should be cautious when using these. However, [Content Patcher packs][content-patcher-link] which only change the appearance of weather should still work fine.
 
 <!--Interesting-->
 ### Interesting Mods <a id="interesting"></a>
 
-The following mods may be interesting to you if you are a fan of ImmersiveWeathers. Please do not take this as a recommendation as I don't necessarily use these mods myself. This list is purely for informational purposes and the curious-at-heart.
+The following mods may be interesting but this is NOT to be considered a recommendation/endorsement. I don't use all these mods myself and this list is provided purely for informational purposes.
 
 - **[Stardew Survival Project][survival-link]** - for those who enjoy survival gameplay and like the idea of micro-managing the farmer's body temperature.
 
