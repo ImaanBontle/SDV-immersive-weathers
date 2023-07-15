@@ -101,7 +101,7 @@ ImmersiveWeathers is an ongoing project, with plans to expand and refine the mod
 <!--Mod Summaries-->
 ## Mod Summaries <a id="mod-summaries"></a>
 
-*This section contains the mod overviews and download links. For individual READMEs, see [mod documentation](#docs).*
+*This section contains mod overviews and download links. For individual READMEs, see [mod documentation](#docs).*
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
