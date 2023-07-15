@@ -344,30 +344,28 @@ This list *very loosely* outlines some feature ideas for this mod project. Howev
 <!--Contributing-->
 ## Contribute to this Project <a id="contribute"></a>
 
-This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) and [translation support](#translations).
+*Please be patient if I haven't responded to you immediately. I am likely busy with studies.*
 
-For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also attempt to contact me via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
-
-Please be patient if I haven't responded immediately. I am likely busy with my studies.
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) or [translation support](#translations). For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also contact me directly via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
 
-If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and re-run SMAPI to check if the issue resolves itself. If the bug persists or you do not see your mod included in the list, you can [submit a bug report][bugs-link]. Please answer the prompts to the best of your ability and mention any suspected mod conflicts. You should provide a link to your [SMAPI log][smapi-log] in the report.
+If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and then re-run SMAPI to check if the issue resolves itself. If the bug persists or if you do not see your mod included in the list of incompatible mods, then you may [submit a bug report][bugs-link]. In the report, you should make sure to mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log]. ***NB: Please only submit bug reports if you have confirmed that the bug is not present in the vanilla game itself!***
 
-If you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
+Alternatively, if you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/bugfix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
 ### Suggestions <a id="suggestions"></a>
 
-If you would like to suggest a feature for this project, please [submit a feature request][request-features-link]. While I can't guarantee these will be included in future releases, I would still love to hear from you. You will be credited for any suggestions that get implemented.
+If you would like to suggest a feature for this project, please [submit a feature request][request-features-link], as I would love to hear from you and do my best to read these. Of course, while I can't guarantee that these features will be included in future releases, you will still be credited for any features that do get implemented.
 
 <!--Translations-->
 ### Translations <a id="translations"></a>
 
-*Translation support will be added in the next minor release. In anticipation, I am adding the following table of translations.*
+*Translation support will be added in the next minor release.*
 
-***Please note that the associated `default.json` files are currently empty and should be ignored.***
+*In anticipation, the following table of translations has been prepared. Please note that the associated `default.json` files are currently empty and should be ignored.*
 
 (❑ = untranslated, ↻ = partly translated, ✓ = fully translated)
 
