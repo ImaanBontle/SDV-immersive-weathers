@@ -425,9 +425,9 @@ I would like to thank the following individuals by name:
 
 I would also like to thank my loving family and friends, for believing in my project, for your encouragement since its inception and for your guidance and advice on countless little details. Your love and faith means the world to me.
 
-A further thanks goes to ChatGPT and the folks at OpenAI, whose technology has made navigating my learning difficulty and writing these long texts infinitely more bearable.
+A further thanks goes to ChatGPT and the folks at OpenAI, whose technology has made navigating around my learning difficulty and writing these stupifying long texts infinitely more bearable.
 
-Lastly, to all the players who have downloaded and enjoyed my mods: Thank you. I am eternally grateful for your support. May your skies be clear and may you have many more happy years in the Valley.
+Lastly, to all the players who have downloaded and enjoyed my mods: Thank you so much. I am eternally grateful for your support. May your skies be clear and may you have many more happy years in the Valley.
 
 <div align="right">
 
