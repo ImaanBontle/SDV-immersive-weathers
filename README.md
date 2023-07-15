@@ -81,24 +81,26 @@ Control the weather in Stardew Valley!
 
 *[Skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
-Are you yearning for a way to add more nuance, variety and realism to Stardew Valley's weather, but feeling saddened by the overall lack of weather mods currently available on the Nexus? Do you worry that your dreams of embarking on an atmospheric adventure and becoming a fair-weathered farmer will never materialise? Well, fear not! The dry spell is finally over!
+Do you yearn to add more nuance, variety and realism to Stardew Valley's rather dry and predictable weather? Does the lack of weather mods currently available on the Nexus summon dark stormclouds overhead? Does your dream of embarking on an atmospheric adventure seem doomed to evaporate before your very eyes? Well, fear no longer! The dry spell is finally ending!
 
-**Introducing: Immersive Weathers, an ambitious mod project currently in development which aims to enhance and elevate your in-game weather experience, adding further depth, immersion, and variety to your farming adventure!**
+**Introducing: ImmersiveWeathers, an ambitious mod project currently in development which aims to enhance and elevate your in-game weather experience, adding further depth, immersion, and variety to your farming adventure!**
 
-Each mod in the series focuses on a different aspect of the weather, offering increased complexity and diversity compared to the in-game systems. Planned features include custom climates, dynamic weather changes, realistic yet partially-unreliable weather forecasts, an expanded range of weather types, optional gameplay challenges and more complex weather modelling. Additionally, Immersive Weathers features a modular design, allowing players to customize the weather system to their liking.
+ImmersiveWeathers is a brand new mod project where each mod in the series focuses on enhancing or expanding a different aspect of the weather, gradually adding increased complexity and realism to the in-game systems. Some of these planned features include custom climates, dynamic weather changes, realistic yet partially-unreliable weather forecasts, an expanded range of weather types, optional gameplay challenges and more complex weather modelling.
 
-To begin their meteorological journey, players must first [install the Framework mod](#about-framework). This essential mod serves as the backbone for the project, enabling the core functionality, providing seamless integration between the sister mods and handling all external mod integrations. Once this is installed, players are then free to mix-and-match from the remaining mods in the project to suit their preferences, swapping features in-and-out as desired (notably, some cool interactions may occur when certain mods are used in conjunction).
+Additionally, Immersive Weathers features an inherently modular design, allowing players to mix-and-match mods to suit their preferences and customize the weather system to their liking. Each mod's features are designed to operate largely independently (although, some cool interactions may occur when used in conjuction), meaning that players are free to make the experience as complex or as simple as they would like. *(Basically, don't like something, don't download it!)*
 
-**The first mod in the series, [Climate Control](#about-climate-control), has just been released *(did someone say 'Snow in Fall'?)*, with more on the way soon! Stay tuned for future updates and new additions!**
+To begin your meteorological journey, you must first install [the Framework mod](#about-framework). This essential mod serves as the backbone for the rest of the project, providing the essential functionality, enabling seamless integration between the sister mods, and handling all external mod integrations. Simply put, the other mods won't work without it!
 
-Immersive Weathers is an ongoing project, with plans to expand and refine the mod collection to deliver the most immersive weather experience possible. Your feedback is invaluable, so don't hesitate to share your thoughts and experiences. If you find yourself enjoying this project, please leave an endorsement on each mod's respective Nexus page &mdash; it helps spread the word to fellow players!
+Once this mod is installed, you are then free to choose from any of the remaining mods in the project. For an overview of each mod's features, please read the [individual mod summaries](#mod-summaries) below. And if you find yourself enjoying the mods in this project, please leave an endorsement on each mod's respective Nexus page &mdash; it helps spread the word to fellow players!
 
-For an overview of each mod's features, please see the [individual mod summaries](#mod-summaries) below.
+**UPDATE: The first mod in the series, [ClimateControl](#about-climate-control), has just been released *(did someone say 'Snow in Fall'?)*, with more on the way soon! Stay tuned for future updates!**
+
+ImmersiveWeathers is an ongoing project, with plans to expand and refine the mod collection to deliver the most immersive and atmospheric weather experience possible. [Your feedback is invaluable][discussions-tab], so don't hesitate to share your thoughts and experiences as we grow and develop this project together!
 
 <!--Mod Summaries-->
 ## Mod Summaries <a id="mod-summaries"></a>
 
-*This section contains the mod summaries, download links and supporting documentation.*
+*This section contains mod overviews and download links. For mod READMEs, see [documentation](#docs).*
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
@@ -112,7 +114,7 @@ For an overview of each mod's features, please see the [individual mod summaries
 This mod is the central framework containing the common functionality shared between the mods in this series. It is required for the other mods to work and, if no other mods are installed, will print only daily weather updates. Additionally, the Framework handles internal cross-compatibility features (interactions between mods) and external mod integrations (interactions with other mods). 
 
 <!--Climate Control-->
-### Climate Control ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
+### ClimateControl ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
 
 *See [README][climate-control-github].*
 
@@ -131,7 +133,7 @@ The first of the sister mods, Climate Control generates unique weather odds for 
 	- Submit climate ideas for potential inclusion in future updates.
 - **Available climates:**
 	- *Standard:* Inspired by the vanilla game, the standard climate retains each season's original identity but features more gradual weather changes for an overall more immersive experience.
-	- *Custom:* The custom climate allows you to design your own personalised weather experience without risking making changes to any of the pre-existing templates.
+	- *Custom:* The custom climate allows you to design your own personalised weather experience without risking changes to any of the pre-existing templates.
 - ***Coming soon...***
     - More templates!
 	- Bug fixes.
