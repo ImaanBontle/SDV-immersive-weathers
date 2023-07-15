@@ -247,6 +247,7 @@ The following mods are currently compatible with ImmersiveWeathers and should be
 The following mods are not officially supported and may cause problems when used simultaneously. Your mileage may vary.
 
 - **[Climates of Ferngill][climates-ferngill-link]** &ndash; *use with caution*. No problems yet, but this will break in the future.
+- **[Farmer's Almanac][almanac-link]** &ndash; *must disable weather forecasts*. Replaces in-game weather calculations with a deterministic, seed-based system.
 
 <!--Incompatible-->
 ### Incompatible Mods <a id="incompatible"></a>
@@ -503,6 +504,7 @@ REFERENCES FOR INSPIRATION LAYOUTS
 
 <!--Semi-Compatible Mods-->
 [climates-ferngill-link]: <https://www.moddrop.com/stardew-valley/mods/664033-climates-of-ferngill> "Climates of Ferngill on ModDrop"
+[almanac-link]: <> "Almanac on NexusMods"
 
 <!--Incompatible Mods-->
 [more-rain-link]: <https://www.nexusmods.com/stardewvalley/mods/441> "More Rain on NexusMods"
