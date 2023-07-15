@@ -176,7 +176,7 @@ If you enjoy the mods, please consider leaving a :thumbsup: on each mod's [Nexus
 <!--Documentation-->
 ## Documentation <a id="docs"></a>
 
-*This section contains the README links and other documentation.*
+*This section contains links to the READMEs and other documentation.*
 
 - The Framework (here!)
 - ClimateControl ([README][climate-control-readme])
@@ -190,11 +190,9 @@ If you enjoy the mods, please consider leaving a :thumbsup: on each mod's [Nexus
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-*See the [mod documentation](#docs) for other mods in the series.*
+*This section covers the settings for The Framework mod. For other mods in the series, see the [mod documentation](#docs).*
 
-This section covers the available config options for The Framework. You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` in each mod's folder (generated after running SMAPI at least once).
-
-**NB: Default values are shown in bold**.
+The following configuration options are available to change for The Framework mod. You can change these options in-game using the [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` in each mod's folder (generated after running SMAPI at least once). **NB: Default values are shown in bold**.
 
 ### Weather Reports:
 
