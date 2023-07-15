@@ -93,30 +93,26 @@ To begin your meteorological journey, you must first install [the Framework mod]
 
 Once this mod is installed, you are then free to choose from any of the remaining mods in the project. For an overview of each mod's features, please read the [individual mod summaries](#mod-summaries) below. And if you find yourself enjoying the mods in this project, please leave an endorsement on each mod's respective Nexus page &mdash; it helps spread the word to fellow players!
 
-**UPDATE: The first mod in the series, [ClimateControl](#about-climate-control), has just been released *(did someone say 'Snow in Fall'?)*, with more on the way soon! Stay tuned for future updates!**
+**UPDATE: The first mod in the series, [ClimateControl](#about-climate-control), has been released *(did someone say 'Snow in Fall'?)*. More are on the way soon. Stay tuned for future updates!**
 
 ImmersiveWeathers is an ongoing project, with plans to expand and refine the mod collection to deliver the most immersive and atmospheric weather experience possible. [Your feedback is invaluable][discussions-tab], so don't hesitate to share your thoughts and experiences as we grow and develop this project together!
 
 <!--Mod Summaries-->
 ## Mod Summaries <a id="mod-summaries"></a>
 
-*This section contains mod overviews and download links. For mod READMEs, see [documentation](#docs).*
+*This section contains the mod overviews and download links. For individual READMEs, see [mod documentation](#docs).*
 
 <!--Framework-->
 ### Framework (REQUIRED) ([Nexus][nexus-link]|[ModDrop][moddrop-link]|[GitHub][github-link]) <a id="about-framework"></a>
-
-*See [list of supported mods](#supported).*
 
 ***For players:*** *This mod **MUST** be installed.*
 
 ***For modders:*** *All integrations should go through this mod. An API for this will be released soon.*
 
-This mod is the central framework containing the common functionality shared between the mods in this series. It is required for the other mods to work and, if no other mods are installed, will print only daily weather updates. Additionally, the Framework handles internal cross-compatibility features (interactions between mods) and external mod integrations (interactions with other mods). 
+This mod is the central framework containing the common functionality shared between the mods in this series. It is required for the other mods to work and, if no other mods are installed, will print only daily weather updates. Additionally, the Framework handles internal cross-compatibility features (interactions between mods) and external mod integrations (interactions with other mods). See the [list of supported mods](#supported) for more information.
 
 <!--Climate Control-->
 ### ClimateControl ([Nexus][climate-control-nexus]|[ModDrop][climate-control-moddrop]|[GitHub][climate-control-github]) <a id="about-climate-control"></a>
-
-*See [README][climate-control-github].*
 
 ***For players:** This mod will not work properly with other mods that change the weather ([see incompatible mods](#incompatible)).*
 
@@ -147,30 +143,29 @@ The first of the sister mods, Climate Control generates unique weather odds for 
 <!--Getting Started-->
 ## Getting Started <a id="getting-started"></a>
 
-*This section covers the installation process for Immersive Weathers.*
+*This section covers the installation process for ImmersiveWeathers.*
 
 <!--Requirements-->
 ### Requirements: <a id="requirements"></a>
 
-To use this mod series, you must:
+In order to use this mod series, you must first:
 
-- Own [Stardew Valley v1.5.6][stardew-link] for Windows/MacOS/Linux.
-- [Install SMAPI][smapi-link] (see [instructions][smapi-instructions]).
-- Decide [which mods to use](#about).
-   - *So far, only Climate Control is released.*
+- Own [Stardew Valley v1.5.6][stardew-link] for Windows/MacOS/Linux/Android.
+- Install [SMAPI][smapi-link] (see [instructions][smapi-instructions]).
+- Decide on [which mods to use](#mod-summaries).
 
 <!--Installation-->
 ### Installation <a id="installation"></a>
 
-Ensure that you have carefully read the requirements, then:
+Ensure that you have [read the requirements](#requirements), then:
 
-1. Download the [latest version of the Framework][nexus-link] and [each of your chosen mods](#about).
+1. Download the [latest version of the Framework][nexus-link] and [each of your chosen mods](#mod-summaries).
 2. For each mod, extract the ZIP file to your `Mods` folder (see [wiki guide][smapi-mod-wiki]).
-3. Install [any of the supported mods](#supported).
-4. Launch SMAPI once, to generate each mod's `config.json`.
+3. Optionally, install [any supported mods](#supported).
+4. Launch SMAPI at least once to generate each mod's `config.json`.
 5. Enjoy!
 
-Consider leaving a :thumbsup: on each mod's [Nexus page][nexus-link]! This makes it easier for other players to find!
+If you enjoy the mods, please consider leaving a :thumbsup: on each mod's [Nexus page][nexus-link] &mdash; this makes it easier for players to find!
 
 <div align="right">
 
@@ -183,7 +178,8 @@ Consider leaving a :thumbsup: on each mod's [Nexus page][nexus-link]! This makes
 
 *This section contains the README links and other documentation.*
 
-- Climate Control ([README][climate-control-readme])
+- The Framework (here!)
+- ClimateControl ([README][climate-control-readme])
 
 <div align="right">
 
@@ -194,20 +190,20 @@ Consider leaving a :thumbsup: on each mod's [Nexus page][nexus-link]! This makes
 <!--Config Options-->
 ## Configuration <a id="config"></a>
 
-*This section covers the available config options. **Default values are shown in bold**.*
+*See the [mod documentation](#docs) for other mods in the series.*
 
-*For other mods in the series, see the [mod documentation](#docs).*
+This section covers the available config options for The Framework. You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` in each mod's folder (generated after running SMAPI at least once).
 
-You can change these options in-game using [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` in each mod's folder (generated after running SMAPI at least once).
+**NB: Default values are shown in bold**.
 
 ### Weather Reports:
 
-Each morning, you can choose to receive a forecast for the weather today and tomorrow. The following options determine whether you will receive these messages and how.
+Each morning, you can choose to receive a forecast of the predicted weather today and tomorrow. The following options determine whether you will receive these messages and how they will appear.
 
 | Name | Value | Description |
 |:---|:---|:---|
 | **SMAPI Terminal** | ***true**, false* | *If *true*, weather predictions are printed to the SMAPI terminal.* |
-| **In-Game HUD** | *true, **false*** | *If *true*, weather predictions are printed using the in-game HUD.* |
+| **In-Game HUD** | *true, **false*** | *If *true*, weather predictions are printed using the in-game HUD every morning.* |
 
 <div align="right">
 
@@ -218,35 +214,60 @@ Each morning, you can choose to receive a forecast for the weather today and tom
 <!--Compatibility-->
 ## Mod Compatibility <a id="compatibility"></a>
 
-*The following is a list of all supported, recommended and incompatible mods.*
+*The following is a list of all [supported](#supported), [recommended](#recommended), [compatible](#compatible), [semi-compatible](#semi-compatible), [incompatible](#incompatible) and [interesting](#interesting) mods.*
 
 <!--Supported-->
 ### Supported Mods <a id="supported"></a>
 
-The following mods are officially supported by Immersive Weathers. When used in-game, you will see special functionality.
+The following mods are officially supported and will activate special functionality in-game when used.
 
-- **[Generic Mod Config Menu][gmcm-link]** - allows editing of the configuration in-game.
+- **[Generic Mod Config Menu][gmcm-link]** - allows editing of the config options in-game.
 - **[Even Better RNG][even-better-rng-link]** - enables more accurate dice rolls for tomorrow's weather.
 
 <!--Recommended-->
 ### Recommended Mods <a id="recommended"></a>
 
-The following mods are entirely optional. You don't need these to enjoy Immersive Weathers but they may enhance your experience. I don't use them all myself, so please only install those which sound interesting to you.
+The following mods are optional but may enhance your experience.
 
 - **[Thunder and Frog Sounds][thunder-frog-link]** (requires [Custom Music][custom-music-link]) - for a more relaxing, cozy thunderstorm ambience.
-- **[Stardew Survival Project][survival-link]** - for those who enjoy survival gameplay and like the idea of micro-managing the farmer's body temperature.
+- **[Dynamic Reflections][dynamic-reflections-link]** &ndash; realistic rain puddles and beautiful water reflections.
+- **[Wind Effects][wind-effects-link]** (use [unofficial patch][wind-effects-unofficial]) &ndash; grass and trees sway realistically in the wind.
+
+<!--Compatible-->
+### Compatible Mods <a id="compatible"></a>
+
+The following mods are currently compatible with ImmersiveWeathers and should be safe to use.
+
+- **[Dynamic Night-Time][dynamic-nighttime-link]** &ndash; *should be compatible*. Does not affect the weather.
+- **[Casual Life][casual-life-link]** &ndash; *should be compatible*. Similar to Dynamic Night-Time.
+- **All [Content Patcher packs][content-patcher-link]** &ndash; *natively compatible*. Always safe to use, purely visual mods.
+
+<!--Semi-Compatible-->
+### Semi-Compatible Mods <a id="semi-compatible"></a>
+
+The following mods are not officially supported and may cause problems when used simultaneously. As always, your mileage may vary.
+
+- **[Climates of Ferngill][climates-ferngill-link]** &ndash; *use with caution*. No problems yet, but this will break in the future.
 
 <!--Incompatible-->
 ### Incompatible Mods <a id="incompatible"></a>
 
-The following is a list of all mods which are not supported or are incompatible with *one or more* mods in the series. In general, any mod which alters the weather is going to cause unpredictable behaviour. You should be cautious when using these. However, [Content Patcher packs][content-patcher-link] should still be fine.
+The following mods are incompatible with at least one mod in the series.
 
 - **[More Rain][more-rain-link]** - *incompatible*. Alters the weather probabilities.
 - **[Rain Plus][rain-plus-link]** - *incompatible*. Forces rain on certain days of the week.
 - **[Winter Rain][winter-rain-link]** - *incompatible*. Changes the winter weather probabilities.
-- **[Climates of Ferngill][climates-ferngill-link]** - *use with caution*. No problems yet, but this will break in the future.
 - **[Weather Machine][weather-machine-link] / [Real Weather][real-weather-link]** - *incompatible*. Changes the way weather is calculated and adds new weather types. Use this if you prefer using live weather data rather than generated weather.
 - **[Extreme Weather][extreme-weather-link]** - *incompatible*. Hilarious mod. But lol, why would you use these together?
+
+In general, any mod which alters the weather is going to cause unpredictable behaviour, so you should be cautious when using these. [Content Patcher packs][content-patcher-link] should still work fine, however.
+
+<!--Interesting-->
+### Interesting Mods <a id="interesting"></a>
+
+The following mods may be interesting to you if you are a fan of ImmersiveWeathers. Please do not take this as a recommendation as I don't necessarily use these mods myself. This list is purely for informational purposes and the curious-at-heart.
+
+- **[Stardew Survival Project][survival-link]** - for those who enjoy survival gameplay and like the idea of micro-managing the farmer's body temperature.
 
 <div align="right">
 
