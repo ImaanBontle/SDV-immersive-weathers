@@ -250,7 +250,7 @@ The following mods are optional and may enhance your experience.
 
 The following mods are currently compatible with ImmersiveWeathers and should be safe to use.
 
-- **[Dynamic Night-Time][dynamic-nighttime-link]** &ndash; *compatible*. Does not affect the weather.
+- **[Dynamic Night Time][dynamic-nighttime-link]** &ndash; *compatible*. Does not affect the weather.
 - **[Casual Life][casual-life-link]** &ndash; *compatible*. Similar to Dynamic Night-Time.
 - **All [Content Patcher][content-patcher-link] packs** &ndash; *natively compatible*. Purely visual mods, always safe to use.
 
@@ -260,7 +260,7 @@ The following mods are currently compatible with ImmersiveWeathers and should be
 The following mods are not officially supported and may cause problems when used simultaneously. Your mileage may vary.
 
 - **[Climates of Ferngill][climates-ferngill-link]** &ndash; *use with caution*. No problems yet, but this will break in the future.
-- **[Farmer's Almanac][almanac-link]** &ndash; *must disable weather forecasts*. Replaces in-game weather calculations with a deterministic, seed-based system.
+- **[Almanac][almanac-link]** &ndash; *must disable weather forecasts*. Replaces in-game weather calculations with a deterministic, seed-based system.
 
 <!--Incompatible-->
 ### Incompatible Mods <a id="incompatible"></a>
