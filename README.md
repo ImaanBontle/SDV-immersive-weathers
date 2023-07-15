@@ -49,7 +49,7 @@ Control the weather in Stardew Valley!
 	- [Incompatible](#incompatible)
 	- [Interesting](#interesting)
 - [Known Issues](#issues)
-- [Roadmap](#future)
+- [Feature Roadmap](#future)
 - [Contributing](#contribute)
 	- [Bug Reports](#bugs)
 	- [Feature Suggestions](#suggestions)
@@ -287,7 +287,7 @@ No known issues.
 </div>
 
 <!--Future Plans-->
-## Planned Features <a id="future"></a>
+## Feature Roadmap <a id="future"></a>
 
 *To suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [see the latest changelog][framework-changelog].*
 
