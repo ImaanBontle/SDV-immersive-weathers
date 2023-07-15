@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-# Immersive Weathers <a id="return-to-top"></a>
+# ImmersiveWeathers <a id="return-to-top"></a>
 
 Control the weather in Stardew Valley!
 
@@ -32,8 +32,8 @@ Control the weather in Stardew Valley!
 <!--Table of Contents-->
 # Table of Contents
 
-- [About This Project](#about)
-- [Individual Mods](#mod-summaries)
+- [About ImmersiveWeathers](#about)
+- [Mod Summaries](#mod-summaries)
 	- [Framework](#about-framework)
 	- [Climate Control](#about-climate-control)
 - [Getting Started](#getting-started)
@@ -77,7 +77,7 @@ Control the weather in Stardew Valley!
 </details>
 
 <!--About the Mods-->
-## About This Project <a id="about"></a>
+## About ImmersiveWeathers <a id="about"></a>
 
 *[Skip to installation](#getting-started) or [share your feedback][discussions-tab].*
 
@@ -96,7 +96,7 @@ Immersive Weathers is an ongoing project, with plans to expand and refine the mo
 For an overview of each mod's features, please see the [individual mod summaries](#mod-summaries) below.
 
 <!--Mod Summaries-->
-## Individual Mods <a id="mod-summaries"></a>
+## Mod Summaries <a id="mod-summaries"></a>
 
 *This section contains the mod summaries, download links and supporting documentation.*
 
