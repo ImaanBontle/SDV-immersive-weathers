@@ -353,7 +353,7 @@ This project is open-source and contributions are welcome, particularly in the f
 
 If you encounter any bugs, please first remove any [incompatible mods](#incompatible) and then re-run SMAPI to check if the issue resolves itself. If the bug persists or if you do not see your mod included in the list of incompatible mods, then you may [submit a bug report][bugs-link]. In the report, you should make sure to mention any suspected mod conflicts. You will need to provide a link to your [SMAPI log][smapi-log]. ***NB: Please only submit bug reports if you have confirmed that the bug is not present in the vanilla game itself!***
 
-Alternatively, if you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/bugfix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
+Alternatively, if you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
 ### Suggestions <a id="suggestions"></a>
