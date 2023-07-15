@@ -494,18 +494,18 @@ REFERENCES FOR INSPIRATION LAYOUTS
 <!--Recommended Mods-->
 [thunder-frog-link]: <https://www.nexusmods.com/stardewvalley/mods/7450> "Thunder and Frog Sounds on NexusMods"
 [custom-music-link]: <https://www.nexusmods.com/stardewvalley/mods/3043?tab=files&BH=2> "Custom Music on NexusMods"
-[dynamic-reflections-link]: <> "Dynamic Reflections on NexusMods"
-[wind-effects-link]: <> "Wind Effects on NexusMods"
-[wind-effects-unofficial]: <> "Unofficial patch for Wind Effects on SDVForums"
+[dynamic-reflections-link]: <https://www.nexusmods.com/stardewvalley/mods/12831> "Dynamic Reflections on NexusMods"
+[wind-effects-link]: <https://www.nexusmods.com/stardewvalley/mods/6647> "Wind Effects on NexusMods"
+[wind-effects-unofficial]: <https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/page-105#post-80633> "Unofficial patch for Wind Effects on forums.stardewvalley.net"
 
 <!--Compatible Mods-->
-[dynamic-nighttime-link]: <> "Dynamic Night-Time on NexusMods"
-[casual-life-link]: <> "Casual Life on NexusMods"
+[dynamic-nighttime-link]: <https://www.nexusmods.com/stardewvalley/mods/2072> "Dynamic Night Time on NexusMods"
+[casual-life-link]: <https://www.nexusmods.com/stardewvalley/mods/6011> "Casual Life on NexusMods"
 [content-patcher-link]: <https://www.nexusmods.com/stardewvalley/mods/1915> "Content Patcher on NexusMods"
 
 <!--Semi-Compatible Mods-->
 [climates-ferngill-link]: <https://www.moddrop.com/stardew-valley/mods/664033-climates-of-ferngill> "Climates of Ferngill on ModDrop"
-[almanac-link]: <> "Almanac on NexusMods"
+[almanac-link]: <https://www.nexusmods.com/stardewvalley/mods/11022> "Almanac on NexusMods"
 
 <!--Incompatible Mods-->
 [more-rain-link]: <https://www.nexusmods.com/stardewvalley/mods/441> "More Rain on NexusMods"
