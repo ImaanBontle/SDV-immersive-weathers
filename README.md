@@ -50,7 +50,7 @@ Control the weather in Stardew Valley!
 	- [Incompatible](#incompatible)
 	- [Interesting](#interesting)
 - [Feature Roadmap](#future)
-- [Contributing](#contribute)
+- [Contributions](#contribute)
 	- [Bug Reports](#bugs)
 	- [Feature Suggestions](#suggestions)
 	- [Translations](#translations)
