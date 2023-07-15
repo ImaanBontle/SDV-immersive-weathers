@@ -290,47 +290,48 @@ No known issues.
 <!--Future Plans-->
 ## Feature Roadmap <a id="future"></a>
 
-*To suggest/contribute a feature, [see contributions](#contribute). For upcoming releases, [see the latest changelog][framework-changelog].*
+*To suggest/contribute a feature, see [contributions](#contribute). For upcoming releases, see the [latest changelog][framework-changelog].*
 
-This list contains some future ideas for this mod project. Please note that this is not a guaranteed plan. It's more of an inspiration source than a roadmap.
+This list *very loosely* outlines some feature ideas for this mod project. Howeve, please note that this is flexible and not all these features are guaranteed to be implemented. Think of it as a source of inspiration rather than as a strict roadmap per se.
 
-<details><summary>List of ideas</summary>
+<details><summary>Feature ideas</summary>
 
 - [x] Daily weather odds
 	- [ ] Add more climate templates
 - [ ] Dynamic weather transitions
     - [ ] Varying weather intensities
-	- [ ] Early/late (non-day-start) weather changes (is this even possible?)
+	- [ ] Early/late (non-start-of-day) weather changes (is this even possible???)
 - [ ] Custom weather effects
     - [ ] Dynamic wind directions/intensities
-	- [ ] Custom sprites (doable)
+	- [ ] Custom sprites (should be doable)
     - [ ] Dynamic daylight (e.g. overcast, partly cloudy)
-	- [ ] Audio/ambience? Maybe
+	- [ ] Audio/ambience? (Maybe)
 - [ ] Custom weather types
-	- [ ] Sandstorm (desert)
 	- [ ] Sleet
 	- [ ] Fog
 	- [ ] Hail
+	- [ ] Sandstorm (desert)
 	- [ ] Cloudy/overcast
 	- [ ] Drizzle
 	- [ ] Monkey's wedding (if you know, you know)
-	- [ ] More fantastical weather? Cats & dogs lol
+	- [ ] More fantastical weather? (Cats & dogs lol)
 - [ ] Daylight savings time
-    - [ ] Likely conflicts with dynamic nighttime
-	- [ ] Would require custom implementation
+    - [ ] Likely conflicts with dynamic nighttime / casual life
+	- [ ] Would require custom implementation (not a priority)
 - [ ] Temperature and humidity simulations
     - [ ] Effects on weather forecasts
 	- [ ] Optional gameplay challenges (crops, stamina etc)
 	- [ ] Support for survival mods
 - [ ] Realistic weather forecasts
     - [ ] Stochastic variation
-	- [ ] Worse predictions farther in future
-	- [ ] In-game mail
+	- [ ] Short-sighted forecasts (Worse predictions farther in future)
+	- [ ] In-game mail (for major weather events, see below)
+	- [ ] Unique TV dialogue
 	- [ ] Almanac integration
 - [ ] Random weather events
     - [ ] Heat waves, droughts, frosts, gales, blizzards
 	- [ ] Difficulty modes
-	- [ ] Villager reactions (Schedules? Major headache)
+	- [ ] Villager reactions (Schedules? Major headache, ugh...)
 
 </details>
 
