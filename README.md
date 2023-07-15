@@ -153,7 +153,7 @@ In order to use this mod series, you must first:
 
 - Own [Stardew Valley v1.5.6][stardew-link] for Windows/MacOS/Linux/Android.
 - Install [SMAPI][smapi-link] (see [instructions][smapi-instructions]).
-- Decide on [which mods to use](#mod-summaries).
+- Decide [which mods to use](#mod-summaries).
 
 <!--Installation-->
 ### Installation <a id="installation"></a>
