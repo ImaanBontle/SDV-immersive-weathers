@@ -61,27 +61,6 @@ Control the weather in Stardew Valley!
 - [Special Thanks](#thanks)
 </details>
 
-<details><summary><strong>Readme TODO List:</strong></summary>
-
-- [x] Flesh out mod overviews
-- [x] Proofread Getting Started
-- [x] Draft Future Plans checklist
-- [x] Draft Contributions policy
-- [x] Draft Bug Report process
-- [x] Draft Feature Suggestion process
-- [x] Draft Translations placeholder
-- [x] Add Placeholder Translation Table
-- [x] Add Support My Work links
-- [x] Add License description
-- [x] Add Acknowledgements
-- [ ] Check all links
-- [ ] Prepare README for Climate Control
-- [ ] Prepare Supp Docs for Climate Control
-
-</details>
-
----
-
 <!--About the Mods-->
 ## About ImmersiveWeathers <a id="about"></a>
 
