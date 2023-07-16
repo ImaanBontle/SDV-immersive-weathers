@@ -57,8 +57,8 @@ Unleash Weather Wizardry and Bend the Skies to Your Will!
 	- [Translations](#translations)
 - [Support](#support)
 - [License](#license)
-- [Contributors](#contributors)
 - [Special Thanks](#thanks)
+- [Contributors](#contributors)
 </details>
 
 <!--About the Mods-->
@@ -393,19 +393,6 @@ The source code for this mod is open-source and is available under the [MIT lice
 
 </div>
 
-<!--Contributors-->
-## Contributors <a id="contributors"></a>
-
-Thank you to all the contributors who helped with this project!
-
-[![Image of all contributors][contributors-image]][contributors-link]
-
-<div align="right">
-
-[[Back to top](#return-to-top)]
-
-</div>
-
 <!--Special Thanks-->
 ## Special Thanks <a id="acknowledgements"></a>
 
@@ -423,6 +410,19 @@ I would also like to acknowledge [ChatGPT][chatgpt-link] and the team at [OpenAI
 My deep thanks also go to my loving family and friends. Your unwavering belief in my project, encouragement since its inception, and guidance on countless details have been invaluable. Your love and faith mean the world to me.
 
 Lastly, to all the players who have downloaded and enjoyed my mods: Thank you immensely. Your support is truly appreciated, and I am eternally grateful. May your skies always be clear, and may you find countless more joyous years in the Valley.
+
+<div align="right">
+
+[[Back to top](#return-to-top)]
+
+</div>
+
+<!--Contributors-->
+## Contributors <a id="contributors"></a>
+
+Thank you to all the contributors who helped with this project!
+
+[![Image of all contributors][contributors-image]][contributors-link]
 
 <div align="right">
 
