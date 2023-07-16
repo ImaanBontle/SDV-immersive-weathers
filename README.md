@@ -362,7 +362,7 @@ Alternatively, if you would like submit a bugfix, you can do so by submitting a 
 <!--Feature Suggestions-->
 ### Suggestions <a id="suggestions"></a>
 
-If you would like to suggest a feature for this project, please [submit a feature request][request-features-link], as I would love to hear from you and do my best to read these. Of course, while I can't guarantee that these features will be included in future releases, you will still be credited for any features that do get implemented.
+If you would like to suggest a feature for this project, please [submit a feature request][request-features-link]. I do my best to read these and I would love to hear from you. While I can't guarantee that any of these features will be included in future releases, you will still be credited for any features that do get implemented.
 
 <!--Translations-->
 ### Translations <a id="translations"></a>
