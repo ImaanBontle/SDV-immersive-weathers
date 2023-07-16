@@ -42,7 +42,6 @@ Control the weather in Stardew Valley!
 	- [Installation](#installation)
 - [Documentation](#docs)
 - [Configuration](#config)
-- [Known Issues](#issues)
 - [Mod Compatibility](#compatibility)
 	- [Supported](#supported)
 	- [Recommended](#recommended)
@@ -50,6 +49,7 @@ Control the weather in Stardew Valley!
 	- [Semi-Compatible](#semi-compatible)
 	- [Incompatible](#incompatible)
 	- [Interesting](#interesting)
+- [Known Issues](#issues)
 - [Roadmap](#future)
 - [Contributing](#contribute)
 	- [Bug Reports](#bugs)
@@ -214,19 +214,6 @@ Each morning, you can choose to receive a forecast of the predicted weather toda
 
 </div>
 
-<!--Known Issues-->
-## Known Issues <a id="issues"></a>
-
-*This section contains known issues with the Framework. For mod-specific issues, see the [mod documentation](#docs).*
-
-None.
-
-<div align="right">
-
-[[Back to top](#return-to-top)]
-
-</div>
-
 <!--Compatibility-->
 ## Mod Compatibility <a id="compatibility"></a>
 
@@ -284,6 +271,19 @@ The following mods are incompatible with at least one mod in the series.
 The following mods may be interesting but this is NOT to be considered a recommendation/endorsement. I don't use all these mods myself and this list is provided purely for informational purposes.
 
 - **[Stardew Survival Project][survival-link]** - for those who enjoy survival gameplay and like the idea of micro-managing the farmer's body temperature.
+
+<div align="right">
+
+[[Back to top](#return-to-top)]
+
+</div>
+
+<!--Known Issues-->
+## Known Issues <a id="issues"></a>
+
+*This section contains known issues with the Framework. For mod-specific issues, see the [mod documentation](#docs).*
+
+None.
 
 <div align="right">
 
