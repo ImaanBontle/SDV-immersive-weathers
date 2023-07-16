@@ -350,7 +350,7 @@ This list *very loosely* outlines some feature ideas for this mod project. Howev
 
 *Please be patient if I haven't responded to you immediately. I am likely busy with studies.*
 
-This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) or [translation support](#translations). For more substantial contributions, please fork the develop repo and submit a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also contact me directly via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) or [translation support](#translations). For more substantial contributions, please [fork the develop repo][fork-repo] and [submit a pull request][pulls-link] using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also contact me directly via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
@@ -463,7 +463,7 @@ REFERENCES FOR INSPIRATION LAYOUTS
 [issues-shield]: <https://img.shields.io/github/issues-raw/ImaanBontle/SDV-immersive-weathers>
 [issues-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/issues> "Issues"
 [pulls-shield]: <https://img.shields.io/github/issues-pr/ImaanBontle/SDV-immersive-weathers>
-[pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls> "Open pull requests"
+[pulls-link]: <https://github.com/ImaanBontle/SDV-immersive-weathers/pulls> "Pull requests"
 [last-commit-shield]: <https://img.shields.io/github/last-commit/ImaanBontle/SDV-immersive-weathers>
 
 <!--Repo Links-->
@@ -521,6 +521,9 @@ REFERENCES FOR INSPIRATION LAYOUTS
 
 <!--Interesting Mods-->
 [survival-link]: <https://www.nexusmods.com/stardewvalley/mods/14183> "Stardew Survival Project on NexusMods"
+
+<!--Contributions-->
+[fork-repo]: <https://github.com/ImaanBontle/SDV-immersive-weathers/fork> "Fork this repository"
 
 <!--Translations-->
 [framework-translation]: <https://github.com/ImaanBontle/SDV-immersive-weathers/tree/develop/i18n> "Framework i18n folder"
