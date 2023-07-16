@@ -281,9 +281,9 @@ The following mods may be interesting but this is NOT to be considered a recomme
 <!--Known Issues-->
 ## Known Issues <a id="issues"></a>
 
-*This section contains known issues with the Framework. For mod-specific issues, see the [mod documentation](#docs).*
+*This section contains known issues with the Framework mod. For mod-specific issues, see the [mod documentation](#docs).*
 
-None.
+No known issues.
 
 <div align="right">
 
