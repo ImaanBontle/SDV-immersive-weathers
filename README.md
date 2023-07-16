@@ -30,7 +30,8 @@ Control the weather in Stardew Valley!
 <br>
 
 <!--Table of Contents-->
-# Table of Contents
+<details open="open">
+<summary>Table of Contents</summary>
 
 - [About ImmersiveWeathers](#about)
 - [Mod Summaries](#mod-summaries)
@@ -57,6 +58,7 @@ Control the weather in Stardew Valley!
 - [Support My Work](#support)
 - [License](#license)
 - [Special Thanks](#thanks)
+</details>
 
 <details><summary><strong>Readme TODO List:</strong></summary>
 
@@ -76,6 +78,8 @@ Control the weather in Stardew Valley!
 - [ ] Prepare Supp Docs for Climate Control
 
 </details>
+
+---
 
 <!--About the Mods-->
 ## About ImmersiveWeathers <a id="about"></a>
