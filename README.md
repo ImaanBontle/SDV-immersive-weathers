@@ -42,6 +42,7 @@ Control the weather in Stardew Valley!
 	- [Installation](#installation)
 - [Documentation](#docs)
 - [Configuration](#config)
+- [Known Issues](#issues)
 - [Mod Compatibility](#compatibility)
 	- [Supported](#supported)
 	- [Recommended](#recommended)
@@ -49,13 +50,13 @@ Control the weather in Stardew Valley!
 	- [Semi-Compatible](#semi-compatible)
 	- [Incompatible](#incompatible)
 	- [Interesting](#interesting)
-- [Known Issues](#issues)
 - [Roadmap](#future)
 - [Contributing](#contribute)
 	- [Bug Reports](#bugs)
 	- [Feature Suggestions](#suggestions)
 	- [Translations](#translations)
-- [Support My Work](#support)
+- [Contributors](#contributors)
+- [Support](#support)
 - [License](#license)
 - [Special Thanks](#thanks)
 </details>
@@ -214,6 +215,19 @@ Each morning, you can choose to receive a forecast of the predicted weather toda
 
 </div>
 
+<!--Known Issues-->
+## Known Issues <a id="issues"></a>
+
+*This section contains known issues with the Framework mod. For mod-specific issues, see the [mod documentation](#docs).*
+
+No known issues.
+
+<div align="right">
+
+[[Back to top](#return-to-top)]
+
+</div>
+
 <!--Compatibility-->
 ## Mod Compatibility <a id="compatibility"></a>
 
@@ -278,19 +292,6 @@ The following mods may be interesting but this is NOT to be considered a recomme
 
 </div>
 
-<!--Known Issues-->
-## Known Issues <a id="issues"></a>
-
-*This section contains known issues with the Framework mod. For mod-specific issues, see the [mod documentation](#docs).*
-
-No known issues.
-
-<div align="right">
-
-[[Back to top](#return-to-top)]
-
-</div>
-
 <!--Future Plans-->
 ## Roadmap <a id="future"></a>
 
@@ -346,7 +347,7 @@ This is a *very loose* list that outlines some feature ideas for this mod projec
 </div>
 
 <!--Contributing-->
-## Contribute to this Project <a id="contribute"></a>
+## Contributing <a id="contribute"></a>
 
 *Please be patient if I haven't responded to you immediately. I am likely busy with studies.*
 
@@ -391,6 +392,19 @@ Turkish    | ❑                                  | ❑
 
 </div>
 
+<!--Contributors-->
+## Contributors <a id="contributors"></a>
+
+Thank you to all the contributors who helped with this project!
+
+[![Image of all contributors][contributors-image]][contributors-link]
+
+<div align="right">
+
+[[Back to top](#return-to-top)]
+
+</div>
+
 <!--Support-->
 ## Support My Work <a id="support"></a>
 
@@ -413,7 +427,7 @@ The source code for this mod is open-source and is available under the [MIT lice
 
 </div>
 
-<!--Acknowledgements-->
+<!--Special Thanks-->
 ## Special Thanks <a id="acknowledgements"></a>
 
 I'd like to extend a **huge thanks** to [ConcernedApe][concernedape] for creating this masterpiece. Without your imagination, generosity and dedication, we wouldn't be here. You deserve all of your success and more. Thank you from the bottom of my heart.
@@ -522,6 +536,8 @@ REFERENCES FOR INSPIRATION LAYOUTS
 
 <!--Contributions-->
 [fork-repo]: <https://github.com/ImaanBontle/SDV-immersive-weathers/fork> "Fork this repository"
+[contributors-graph]: <https://github.com/ImaanBontle/SDV-immersive-weathers/graphs/contributors> "List of contributors"
+[contributors-image]: <https://contrib.rocks/image?repo=ImaanBontle/SDV-immersive-weathers> "Thank you to all the contributors!"
 
 <!--Translations-->
 [framework-translation]: <https://github.com/ImaanBontle/SDV-immersive-weathers/tree/develop/i18n> "Framework i18n folder"
