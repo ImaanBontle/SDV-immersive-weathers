@@ -367,9 +367,7 @@ If you would like to suggest a feature for this project, please [submit a featur
 <!--Translations-->
 ### Translations <a id="translations"></a>
 
-*Translation support will be added in the next minor release.*
-
-*In anticipation, the following table of translations has been prepared. Please note that the associated `default.json` files are currently empty and should be ignored.*
+Translation support will be added in the next minor release. In anticipation, the following table of translations has been prepared. Please note that the associated `default.json` files are currently empty and should be ignored.
 
 (❑ = untranslated, ↻ = partly translated, ✓ = fully translated)
 
