@@ -292,11 +292,11 @@ No known issues.
 </div>
 
 <!--Future Plans-->
-## Feature Roadmap <a id="future"></a>
+## Roadmap <a id="future"></a>
 
 *To suggest/contribute a feature, see [contributions](#contribute). For upcoming releases, see the [latest changelog][framework-changelog].*
 
-This list *very loosely* outlines some feature ideas for this mod project. Howeve, please note that this is flexible and not all these features are guaranteed to be implemented. Think of it as a source of inspiration rather than as a strict roadmap per se.
+This is a *very loose* list that outlines some feature ideas for this mod project. Please note that this list is flexible and not all these features are necessarily guaranteed to be implemented. It should be viewed like a 'source of inspiration' rather than like a strict roadmap, per se.
 
 <details><summary>Feature ideas</summary>
 
