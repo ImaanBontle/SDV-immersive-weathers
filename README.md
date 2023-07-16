@@ -350,7 +350,7 @@ This is a *very loose* list that outlines some feature ideas for this mod projec
 
 *Please be patient if I haven't responded to you immediately. I am likely busy with studies.*
 
-This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) or [translation support](#translations). For more substantial contributions, please [fork the develop repo][fork-repo] and [submit a pull request][pulls-link] using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. You can also contact me directly via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) or [translation support](#translations). For more substantial contributions, please [fork the develop repo][fork-repo] and [submit a pull request][pulls-link] using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. A similar process can be followed for each of the sister mods. You can also contact me directly via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
