@@ -2,21 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>IW_ClimateControl</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="SDV-IW-climate-control\**" />
-    <EmbeddedResource Remove="SDV-IW-climate-control\**" />
-    <None Remove="SDV-IW-climate-control\**" />
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.2" />
+    <PackageReference Include="ServiceStack.Text" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.dll" />
-    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+    <ProjectReference Include="..\ImmersiveWeathers\ImmersiveWeathers.csproj">
+      <Private>False</Private>
+      <CopyLocalSatelliteAssemblies>False</CopyLocalSatelliteAssemblies>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -28,9 +26,6 @@
     </None>
     <None Update="LICENSE">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="README.md">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/ImaanBontle/SDV-IW-climate-control.git
+	branch = develop
+	commit = 8f26c5e236089686af3d590d027582537e27bd20
+	parent = 5c72c1f13799c76f78816bbc9a71e83abc34140d
+	method = merge
+	cmdver = 0.4.5
