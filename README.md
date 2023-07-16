@@ -2,7 +2,7 @@
 
 # ImmersiveWeathers <a id="return-to-top"></a>
 
-Control the weather in Stardew Valley!
+Unleash Weather Wizardry and Bend the Skies to Your Will!
 
 <!--Badges-->
 [![License][license-shield]][license-link]
