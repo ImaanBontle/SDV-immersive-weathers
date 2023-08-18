@@ -11,12 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.dll" />
-    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.xml" />
+    <None Remove="ModIntegrations\EvenBetterRNGAPI\XoshiroPRNG.Net.dll" />
+    <None Remove="ModIntegrations\EvenBetterRNGAPI\XoshiroPRNG.Net.xml" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.2" />
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
   </ItemGroup>
 
   <ItemGroup>

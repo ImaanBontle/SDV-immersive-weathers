@@ -1,12 +1,6 @@
-﻿using System;
+﻿using StardewValley;
+using System;
 using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks.Dataflow;
-using Microsoft.Xna.Framework;
-using StardewModdingAPI;
-using StardewModdingAPI.Events;
-using StardewModdingAPI.Utilities;
-using StardewValley;
 using static ImmersiveWeathers.IIWAPI;
 
 namespace ImmersiveWeathers
@@ -91,10 +85,7 @@ namespace ImmersiveWeathers
                     weatherNow = WeatherType.raining;
                 else if (weatherStatesToday["snowCheck"])
                     weatherNow = WeatherType.snowing;
-                else if (weatherStatesToday["windCheck"])
-                    weatherNow = WeatherType.windy;
-                else
-                    weatherNow = WeatherType.sunny;
+                else weatherNow = weatherStatesToday["windCheck"] ? WeatherType.windy : WeatherType.sunny;
                 return weatherNow;
             }
 
@@ -107,33 +98,15 @@ namespace ImmersiveWeathers
             /// </returns>
             private static WeatherType ParseWeather(int tomorrowState)
             {
-                WeatherType WeatherTomorrow;
-                switch (tomorrowState)
+                var WeatherTomorrow = tomorrowState switch
                 {
-                    case 0:
-                    case 4:
-                    case 6:
-                        if (((Game1.Date.DayOfMonth + 1)%13 == 0) && (Game1.Date.Season == "summer"))
-                            WeatherTomorrow = WeatherType.storming;
-                        else
-                            WeatherTomorrow = WeatherType.sunny;
-                        break;
-                    case 1:
-                        WeatherTomorrow = WeatherType.raining;
-                        break;
-                    case 2:
-                        WeatherTomorrow = WeatherType.windy;
-                        break;
-                    case 3:
-                        WeatherTomorrow = WeatherType.storming;
-                        break;
-                    case 5:
-                        WeatherTomorrow = WeatherType.snowing;
-                        break;
-                    default:
-                        WeatherTomorrow = WeatherType.unknown;
-                        break;
-                }
+                    0 or 4 or 6 => ((Game1.Date.DayOfMonth + 1) % 13 == 0) && (Game1.Date.Season == "summer") ? WeatherType.storming : WeatherType.sunny,
+                    1 => WeatherType.raining,
+                    2 => WeatherType.windy,
+                    3 => WeatherType.storming,
+                    5 => WeatherType.snowing,
+                    _ => WeatherType.unknown,
+                };
                 return WeatherTomorrow;
             }
         }

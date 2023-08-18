@@ -1,30 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.Design;
-using System.Dynamic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Threading;
-using System.Threading.Tasks.Dataflow;
-using EvenBetterRNG;
+﻿using EvenBetterRNG;
 using GenericModConfigMenu;
-using Microsoft.VisualBasic;
-using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
-using StardewModdingAPI.Utilities;
 using StardewValley;
-using StardewValley.Locations;
-using StardewValley.Monsters;
-using StardewValley.Tools;
+using System;
+using System.Reflection;
 using static ImmersiveWeathers.IIWAPI;
 
 // TODO: When SDV 1.6 releases, check for compatibility with new weather flags: weatherForTomorrow etc are switching to strings instead of integers. See https://stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.6 for more information.
-
 // TODO: Write custom log messages for weather changes
 // TODO: Improve comments <----- v1.0.0
+// TODO: Rename config options
 
 namespace ImmersiveWeathers
 {
@@ -190,7 +176,7 @@ namespace ImmersiveWeathers
             // Print appropriate weather update to SMAPI terminal.
             string weatherString = WeatherMan.Predict(weatherForecast);
             BroadCast(weatherString);
-            
+
             // Set flags back to false.
             foreach (PropertyInfo property in typeof(MorningUpdate).GetProperties())
             {
@@ -239,7 +225,7 @@ namespace ImmersiveWeathers
                     DayLoadedMessage(e);
                     if (CheckForSistersReady() && (s_config.PrintToTerminal || s_config.PrintHUDMessage))
                         Monitor.Log("All sister mods reported in. Preparing to broadcast weather predictions...", LogLevel.Trace);
-                        ForecastWeather();
+                    ForecastWeather();
                     break;
                 default:
                     break;
