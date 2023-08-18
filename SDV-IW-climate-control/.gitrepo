@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/ImaanBontle/SDV-IW-climate-control.git
 	branch = develop
-	commit = 8f26c5e236089686af3d590d027582537e27bd20
-	parent = 5c72c1f13799c76f78816bbc9a71e83abc34140d
+	commit = dcd6d99cf9c0979e16bf9eac509fe1c79d4d369a
+	parent = 7d884273388bf1fcfc8bfe4db5af7d8b3b979a11
 	method = merge
-	cmdver = 0.4.5
+	cmdver = 0.4.6
