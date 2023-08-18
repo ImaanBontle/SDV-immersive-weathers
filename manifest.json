@@ -1,11 +1,11 @@
 ﻿{
   "Name": "ImmersiveWeathers - Framework",
   "Author": "MsBontle",
-  "Version": "0.8.0",
-  "Description": "Framework for influencing the game's weather systems.",
+  "Version": "1.0.0",
+  "Description": "This mod serves as the central framework for ImmersiveWeather, providing essential shared functionality. In addition to its primary role, the Framework also handles the internal cross-compatibility features and external mod integrations.",
   "UniqueID": "MsBontle.ImmersiveWeathers",
   "EntryDll": "IW-ImmersiveWeathers.dll",
-  "MinimumApiVersion": "3.18.1",
+  "MinimumApiVersion": "3.18.4",
   "UpdateKeys": [ "Nexus:14658", "ModDrop:???", "GitHub:ImaanBontle/SDV-immersive-weathers" ],
   "Dependencies": [
     {

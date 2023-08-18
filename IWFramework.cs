@@ -8,7 +8,6 @@ using System.Reflection;
 using static ImmersiveWeathers.IIWAPI;
 
 // TODO: When SDV 1.6 releases, check for compatibility with new weather flags: weatherForTomorrow etc are switching to strings instead of integers. See https://stardewvalleywiki.com/Modding:Migrate_to_Stardew_Valley_1.6 for more information.
-
 // TODO: Write custom log messages for weather changes
 // TODO: Improve comments <----- v1.0.0
 // TODO: Rename config options
