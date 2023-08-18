@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.dll" />
-    <None Remove="EvenBetterRNGAPI\XoshiroPRNG.Net.xml" />
+    <None Remove="ModIntegrations\EvenBetterRNGAPI\XoshiroPRNG.Net.dll" />
+    <None Remove="ModIntegrations\EvenBetterRNGAPI\XoshiroPRNG.Net.xml" />
   </ItemGroup>
 
   <ItemGroup>
