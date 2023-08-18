@@ -55,7 +55,7 @@ Unleash Weather Wizardry and Bend the Skies to Your Will!
 	- [Bug Reports](#bugs)
 	- [Feature Suggestions](#suggestions)
 	- [Translations](#translations)
-- [Support](#support)
+- [Support My Work](#support)
 - [License](#license)
 - [Special Thanks](#thanks)
 - [Contributors](#contributors)
@@ -64,7 +64,7 @@ Unleash Weather Wizardry and Bend the Skies to Your Will!
 <!--About the Mods-->
 ## About ImmersiveWeathers <a id="about"></a>
 
-*[Skip to installation](#getting-started) or [share your feedback][discussions-tab].*
+*To get started, refer to [the installation guide](#getting-started). Or, [share your feedback][discussions-tab].*
 
 Are you yearning to infuse Stardew Valley's rather dry and predictable weather with more nuance, variety, and realism? Does the lack of weather mods currently available on the Nexus cast dark storm clouds over your head? Is your dream of embarking on an atmospheric adventure evaporating before your very eyes? Well, fear no longer! The dry spell is finally over!
 
@@ -177,7 +177,7 @@ If you enjoy the mods, please consider leaving a :thumbsup: on each mod's [Nexus
 
 *This section covers the settings for The Framework mod. For other mods in the series, see the [mod documentation](#docs).*
 
-The following configuration options are available to change for The Framework mod. You can change these options in-game using the [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` in each mod's folder (generated after running SMAPI at least once). **NB: Default values are shown in bold**.
+The following configuration options are available to change for The Framework mod. You can change these options in-game using the [Generic Mod Config Menu][gmcm-link] or by manually editing the `config.json` in each mod's folder (generated after running SMAPI at least once). **Default values are shown in bold**.
 
 ### Weather Reports:
 
@@ -197,9 +197,15 @@ Each morning, you can choose to receive a forecast of the predicted weather for 
 <!--Known Issues-->
 ## Known Issues <a id="issues"></a>
 
-*This section contains known issues with the Framework mod. For mod-specific issues, see the [mod documentation](#docs).*
+*This section highlights known issues with the Framework mod. For information on other mods, refer to the [mod documentation](#docs).*
 
-No known issues.
+### Upcoming Fixes
+
+- None.
+
+### Unresolved / No ETA
+
+- None.
 
 <div align="right">
 
@@ -330,24 +336,26 @@ This is a *very loose* list that outlines some potential feature ideas for this 
 
 *Please be patient if I haven't responded to you immediately. I am likely busy with studies.*
 
-This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) or [translation support](#translations). For more substantial contributions, please [fork the develop repo][fork-repo] and [submit a pull request][pulls-link] using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. A similar process can be followed for each of the sister mods. You can also contact me directly via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
+This project is open-source and contributions are welcome, particularly in the form of [bug fixes](#bugs), [feature suggestions](#suggestions) or [translation support](#translations). For more substantial contributions, please [fork the develop repo][fork-repo] and [submit a pull request][pulls-link] using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution label. A similar process can be followed for each of the sister mods. You can also attempt to contact me directly via [NexusMods][nexus-profile] or by [opening an issue][issues-link].
 
 <!--Bugs-->
 ### Bug Fixes/Reports <a id="bugs"></a>
 
-If you encounter any bugs, please remove [any incompatible mods](#incompatible) first and then re-run SMAPI to check if the issue resolves itself. If the bug persists or if you do not see your mod included in the list of incompatible mods, then you should [submit a bug report][bugs-link]. In the report, you should make sure to mention any suspected mod conflicts. You will also need to provide a link to your [SMAPI log][smapi-log]. ***Please only submit bug reports if you have confirmed that the bug is not present in the vanilla game itself!***
+If you encounter any bugs, please remove any [incompatible mods](#incompatible) first and then re-run SMAPI to check if the issue resolves itself. If the bug persists or if you do not see your mod included in the list, then you should [submit a bug report][bugs-link]. Please answer the prompts to the best of your ability and mention any suspected mod conflicts. You should also provide a link to your [SMAPI log][smapi-log] in the report.
+
+***Please only submit bug reports if you have confirmed that the bug is not present in the vanilla game itself!***
 
 Alternatively, if you would like submit a bugfix, you can do so by submitting a pull request using the https://github.com/ImaanBontle/SDV-immersive-weathers/labels/fix and https://github.com/ImaanBontle/SDV-immersive-weathers/labels/contribution labels.
 
 <!--Feature Suggestions-->
-### Suggestions <a id="suggestions"></a>
+### Feature Suggestions <a id="suggestions"></a>
 
-If you would like to suggest a feature for this project, please [submit a feature request][request-features-link]. I will do my best to read these and I would love to hear from you. While I can't guarantee that these features will be included in future releases, you will be credited for features that do get implemented.
+If you would like to suggest a feature for this project, please [submit a feature request][request-features-link]. I do my best to read these and I would love to hear from you. While I can't guarantee that these suggestions will be included in future releases, you will be credited for any features that do get implemented.
 
 <!--Translations-->
 ### Translations <a id="translations"></a>
 
-*Translation support will be added in the next minor release. In anticipation, the following table of translations has been prepared. Please note that the associated `default.json` files are currently empty and should be ignored.*
+*Translation support will be added in the next minor release. In anticipation, I am adding the following table of translations. Please note that the associated `default.json` files are currently empty and should be ignored.*
 
 (❑ = untranslated, ↻ = partly translated, ✓ = fully translated)
 
@@ -374,7 +382,7 @@ Turkish    | ❑                                  | ❑
 <!--Support-->
 ## Support My Work <a id="support"></a>
 
-If you would like to support my work, you can always [buy me a coffee][ko-fi-link]. However, please note that this is completely optional. My mods are available for free and entirely without expectation!
+If you would like to support my work, you have the option to [buy me a coffee][ko-fi-link]. However, please note that this is completely voluntary. My mods are available for free and entirely without expectation!
 
 <div align="right">
 
@@ -385,7 +393,7 @@ If you would like to support my work, you can always [buy me a coffee][ko-fi-lin
 <!--License-->
 ## License <a id="license"></a>
 
-The source code for this mod is open-source and is available under the [MIT license][license-link]. However, please do not host my official releases without my written consent.
+The source code for this mod is open-source and is released under the [MIT license][license-link]. However, please refrain from hosting my official releases without obtaining my written consent.
 
 <div align="right">
 
