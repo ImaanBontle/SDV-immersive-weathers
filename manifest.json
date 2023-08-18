@@ -1,7 +1,7 @@
 ﻿{
   "Name": "ImmersiveWeathers - Framework",
   "Author": "MsBontle",
-  "Version": "0.8.0",
+  "Version": "1.0.0",
   "Description": "Framework for influencing the game's weather systems.",
   "UniqueID": "MsBontle.ImmersiveWeathers",
   "EntryDll": "IW-ImmersiveWeathers.dll",
